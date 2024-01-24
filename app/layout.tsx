@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "@/app/globals.css";
 import { cakra, turretRoad } from "@/ui/fonts";
-import Navbar from "@/ui/components/sections/navbar";
+import { Navbar } from "@/app/home";
+import Section from "@/ui/components/layouts/section";
 
 export const metadata: Metadata = {
   title: "Techletics '24",
@@ -20,10 +21,13 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/logos/techletics-metal.svg" />
       </head>
-      <body className={`${turretRoad.variable} ${cakra.variable} antialiased bg-tertiary`}>
-        <header className="px-6 sm:px-12 border-quarternary bg-tertiary border-b-2">
+      <body
+        className={`${turretRoad.variable} ${cakra.variable} antialiased bg-tertiary`}
+      >
+        <Section>
           <Navbar />
-        </header>
+        </Section>
+
         {children}
       </body>
     </html>

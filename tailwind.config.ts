@@ -25,6 +25,10 @@ const config: Config = {
         primary: ["var(--font-cakra)"],
         secondary: ["var(--font-turret-road)"],
       },
+      fontSize: {
+        big: "184px",
+        xxl: "256px",
+      },
     },
   },
   plugins: [],

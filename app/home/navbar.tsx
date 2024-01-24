@@ -5,14 +5,14 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
-import Modal from "../modal";
+import Modal from "@/ui/components/modal";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
   return (
-    <nav className="relative z-1 border-quarternary bg-tertiary border-x-2 px-4 py-2 sm:px-8 sm:py-4 lg:px-16 lg:py-9">
+    <nav className="relative z-1">
       {/* Navbar Menu */}
       <div className="flex w-[100%] sm:justify-between">
         <div className="font-primary flex-col items-start space-y-1 tracking-wide lowercase hidden lg:block">

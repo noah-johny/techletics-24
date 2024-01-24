@@ -1,11 +1,16 @@
-import Navbar from "../ui/components/sections/navbar";
+import { Hero } from "@/app/home";
+import Section from "@/ui/components/layouts/section";
 
 export default function Home() {
   return (
     <>
-      <section>{/* Hero section goes here */}</section>
+      <Section>
+        <Hero />
+      </Section>
 
-      <footer>{/* Footer goes here */}</footer>
+      <Section>
+        <Hero />
+      </Section>
     </>
   );
 }
