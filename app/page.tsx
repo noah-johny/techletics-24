@@ -4,11 +4,7 @@ import Section from "@/ui/components/layouts/section";
 export default function Home() {
   return (
     <>
-      <Section>
-        <Hero />
-      </Section>
-
-      <Section>
+      <Section full>
         <Hero />
       </Section>
     </>

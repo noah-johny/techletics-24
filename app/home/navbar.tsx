@@ -1,18 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import Modal from "@/ui/components/modal";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
   return (
-    <nav className="relative z-1">
+    <nav className="relative z-2">
       {/* Navbar Menu */}
       <div className="flex w-[100%] sm:justify-between">
         <div className="font-primary flex-col items-start space-y-1 tracking-wide lowercase hidden lg:block">
@@ -80,7 +78,7 @@ const Navbar = () => {
           {({ isOpen, setIsOpen }) => (
             <>
               {isOpen && (
-                <div className="fixed top-20 left-0 w-full h-full flex overflow-auto bg-modal-logo bg-no-repeat bg-cover z-[-1] lg:hidden">
+                <div className="fixed top-20 left-0 w-full h-full flex overflow-auto bg-modal-logo bg-no-repeat bg-cover z-[1] lg:hidden">
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-tertiary bg-opacity-95 z-[-1]"></div>
 
