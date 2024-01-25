@@ -12,9 +12,10 @@ const TextMarquee = ({
 }: TextMarqueeProps) => {
   return (
     <Marquee>
-      {[...Array(10)].map((_, index) =>
+      {[...Array(10)].map((index) =>
         type === "primary" ? (
           <p
+            key={index}
             className={clsx("font-primary flex gap-3 text-2xl md:text-3xl", {
               "text-tertiary": mode === "light",
               "text-primary": mode === "dark",
@@ -22,13 +23,14 @@ const TextMarquee = ({
           >
             <span className="ml-4">🌞</span>
             <span>ͲechlςͲics</span>
-            <span className="font-secondary font-extrabold">&#39;24</span>
+            <span className="font-secondary font-extrabold">&apos;24</span>
             <span>✺</span>
             <span>ͲechlςͲics</span>
-            <span className="font-secondary font-extrabold">&#39;24</span>
+            <span className="font-secondary font-extrabold">&apos;24</span>
           </p>
         ) : (
           <p
+            key={index}
             className={clsx("font-primary flex gap-3 text-3xl", {
               "text-tertiary": mode === "light",
               "text-primary": mode === "dark",

@@ -12,7 +12,7 @@ const About = () => {
         <span className="whitespace-nowrap">
           <span className="text-primary">
             ͲechlςͲics{" "}
-            <span className="font-secondary font-extrabold">&#39;24</span>
+            <span className="font-secondary font-extrabold">&apos;24</span>
           </span>
         </span>{" "}
         <span className="whitespace-nowrap">is for Уou.</span>
@@ -23,13 +23,19 @@ const About = () => {
           <TechleticsLogo />
         </div>
         <p className="font-secondary font-regular text-xl md:text-2xl min-w-[300px] flex-1 text-justify">
-          Join us for the third edition of Techletics, the techno-cultural
-          festival of Christ College of Engineering. Explore, learn, and enjoy
-          the latest innovations and trends in technology and culture.
-          Participate in workshops, competitions, exhibitions, performances, and
-          more. Win prizes and awards. Illuminate your mind, ignite your
-          passion, and inspire your future. Techletics '24 is the ultimate
-          rendezvous of innovation and zest. Don’t miss it.
+          Join us for the <span className="font-semibold">third edition</span>{" "}
+          of Techletics, the{" "}
+          <span className="font-semibold">
+            techno-cultural festival of Christ College of Engineering
+          </span>
+          . Explore, learn, and enjoy the latest innovations and trends in
+          technology and culture. Participate in workshops, competitions,
+          exhibitions, performances, and more. Win prizes and awards.{" "}
+          <span className="font-semibold">
+            Illuminate your mind, ignite your passion, and inspire your future
+          </span>
+          . Techletics &apos;24 is the ultimate rendezvous of innovation and
+          zest. Don&apos;t miss it.
         </p>
       </div>
     </div>
