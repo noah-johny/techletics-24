@@ -122,7 +122,7 @@ const Navbar = () => {
       {isOpen && (
         <div className="bg-tertiary w-full h-screen overflow-hidden flex bg-modal-logo bg-no-repeat bg-cover z-[-1] lg:hidden">
           {/* Overlay */}
-          <div className="absolute inset-0 bg-tertiary bg-opacity-95 z-[-1]"></div>
+          <div className="absolute inset-0 bg-tertiary bg-opacity-85 z-[-1]"></div>
           {/* Menu */}
           <div className="font-primary text-secondary text-5xl p-16 sm:p-24 sm:text-7xl gap-8 sm:gap-4">
             <Link href="/" className="group w-fit">

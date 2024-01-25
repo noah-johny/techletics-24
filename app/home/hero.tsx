@@ -52,7 +52,7 @@ const Hero = () => {
   const seconds = String(timeLeft?.seconds).padStart(2, "0");
 
   return (
-    <main className="flex flex-col lg:gap-6 justify-center items-center bg-hero-img bg-no-repeat bg-cover h-screen overflow-hidden bg-tertiary">
+    <main className="flex flex-col min-h-[456px] lg:gap-6 justify-center items-center bg-hero-img bg-no-repeat bg-cover h-screen overflow-hidden bg-tertiary">
       {/* Hero Text */}
       <section className="relative w-fit h-fit flex-col text-secondary font-primary lowercase text-wider scale-[0.36] sm:scale-50 md:scale-75 lg:scale-100">
         <p className="text-7xl w-full text-center">ILLUMINⱭͲe. IGNIͲЄ.</p>
