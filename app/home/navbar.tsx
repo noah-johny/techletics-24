@@ -103,8 +103,9 @@ const Navbar = () => {
             className="flex text-secondary gap-x-2 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl tracking-wide lowercase static self-center sm:absolute sm:top-1/2 sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 sm:justify-center leading-tight"
           >
             <p className="font-primary">ͲechlςͲics</p>
-            <p className="font-secondary font-extrabold">'24</p>
+            <p className="font-secondary font-extrabold">&#39;24</p>
           </Link>
+
           {/* Contact Btn */}
           <Image
             src="/images/contact-btn.svg"
