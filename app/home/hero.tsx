@@ -1,8 +1,8 @@
 "use client";
 
-import { CountdownWrapper } from "@/ui/components/svg";
+import { CountdownWrapper } from "@/components/svg";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 
 interface Time {
   days?: number;
@@ -52,8 +52,9 @@ const Hero = () => {
   const seconds = String(timeLeft?.seconds).padStart(2, "0");
 
   return (
-    <div className="flex flex-col lg:gap-6 justify-center items-center bg-hero-img bg-no-repeat bg-cover h-[86vh] overflow-hidden">
-      <div className="relative w-fit h-fit flex-col text-secondary font-primary lowercase text-wider scale-[0.36] sm:scale-50 md:scale-75 lg:scale-100">
+    <main className="flex flex-col lg:gap-6 justify-center items-center bg-hero-img bg-no-repeat bg-cover h-screen overflow-hidden bg-tertiary">
+      {/* Hero Text */}
+      <section className="relative w-fit h-fit flex-col text-secondary font-primary lowercase text-wider scale-[0.36] sm:scale-50 md:scale-75 lg:scale-100">
         <p className="text-7xl w-full text-center">ILLUMINⱭͲe. IGNIͲЄ.</p>
         <Image
           src="/images/techletics-sticker.svg"
@@ -69,10 +70,10 @@ const Hero = () => {
           </p>
           <p className="font-primary lowercase text-center text-4xl">🌞</p>
         </div>
-      </div>
+      </section>
 
       {/* Countdown */}
-      <div className="relative w-[632px] text-secondary font-secondary hidden mt-12 mb-24 md:flex md:items-center md:justify-center md:scale-75 lg:scale-100">
+      <section className="relative w-[632px] text-secondary font-secondary hidden mt-12 md:flex md:items-center md:justify-center md:scale-75 lg:scale-100">
         {/* Timer */}
         <div className="absolute flex gap-4 left-10 w-fit">
           <div className="flex flex-col text-center w-fit -space-y-1">
@@ -95,7 +96,6 @@ const Hero = () => {
             <p className="font-medium text-md text-primary">SECONDS</p>
           </div>
         </div>
-
         {/* Date */}
         <div className="absolute flex flex-col right-4 text-center w-fit">
           <p className="font-bold text-4xl text-primary">01-03</p>
@@ -104,12 +104,11 @@ const Hero = () => {
             <p className="font-medium text-md">, 2024</p>
           </div>
         </div>
-
         <div className="absolute">
           <CountdownWrapper />
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 
