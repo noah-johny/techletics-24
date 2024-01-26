@@ -3,6 +3,7 @@ import "@/app/globals.css";
 import { cakra, turretRoad } from "@/public/fonts";
 import Navbar from "@/components/navbar";
 import Section from "@/layouts/section";
+import Footer from "./_components/footer";
 
 export const metadata: Metadata = {
   title: "Techletics '24",
@@ -29,6 +30,9 @@ export default function RootLayout({
         </Section>
 
         {children}
+        <Section>
+          <Footer />
+        </Section>
       </body>
     </html>
   );
