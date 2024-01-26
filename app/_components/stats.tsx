@@ -1,5 +1,3 @@
-"use cliient";
-
 import { StatsBgElements } from "@/components/svg";
 
 const Stats = () => {
