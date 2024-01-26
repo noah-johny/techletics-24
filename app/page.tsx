@@ -1,6 +1,7 @@
 import { About, Hero, Stats } from "@/app/_components";
 import TextMarquee from "@/components/marquee";
 import Section from "@/layouts/section";
+import Events from "./_components/events";
 
 export default function Home() {
   return (
@@ -28,6 +29,10 @@ export default function Home() {
       <section className="bg-primary py-2 md:py-4">
         <TextMarquee type="secondary" />
       </section>
+
+      <Section explorable>
+        <Events />
+      </Section>
     </>
   );
 }
