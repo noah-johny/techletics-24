@@ -52,9 +52,9 @@ const Hero = () => {
   const seconds = String(timeLeft?.seconds).padStart(2, "0");
 
   return (
-    <main className="flex flex-col min-h-[456px] lg:gap-6 justify-center items-center bg-hero-img bg-no-repeat bg-cover h-screen overflow-hidden bg-tertiary">
+    <div className="flex flex-col min-h-[456px] lg:gap-6 justify-center items-center bg-hero-img bg-no-repeat bg-cover h-screen overflow-hidden bg-tertiary">
       {/* Hero Text */}
-      <section className="relative w-fit h-fit flex-col text-secondary font-primary lowercase text-wider scale-[0.36] sm:scale-50 md:scale-75 lg:scale-100">
+      <div className="relative w-fit h-fit flex-col text-secondary font-primary lowercase text-wider scale-[0.36] sm:scale-50 md:scale-75 lg:scale-100">
         <p className="text-7xl w-full text-center">ILLUMINⱭͲe. IGNIͲЄ.</p>
         <Image
           src="/images/techletics-sticker.svg"
@@ -70,7 +70,7 @@ const Hero = () => {
           </p>
           <p className="font-primary lowercase text-center text-4xl">🌞</p>
         </div>
-      </section>
+      </div>
 
       {/* Countdown */}
       <section className="relative w-[632px] text-secondary font-secondary hidden mt-12 md:flex md:items-center md:justify-center md:scale-75 lg:scale-100">
@@ -108,7 +108,7 @@ const Hero = () => {
           <CountdownWrapper />
         </div>
       </section>
-    </main>
+    </div>
   );
 };
 

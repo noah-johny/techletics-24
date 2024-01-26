@@ -31,3 +31,10 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Custom CSS */
+@layer base {
+  .text-stroke-primary {
+    -webkit-text-stroke: 2px #dfff1b;
+  }
+}

@@ -1,4 +1,4 @@
-import { About, Hero } from "@/app/home";
+import { About, Hero, Stats } from "@/app/home";
 import TextMarquee from "@/components/marquee";
 import Section from "@/layouts/section";
 
@@ -15,6 +15,10 @@ export default function Home() {
 
       <Section explorable navigate="/about">
         <About />
+      </Section>
+
+      <Section>
+        <Stats />
       </Section>
 
       <section className="bg-tertiary py-2 md:py-4 border-quarternary border border-x-0 border-t-0">
