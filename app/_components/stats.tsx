@@ -3,7 +3,7 @@ import { StatsBgElements } from "@/components/svg";
 const Stats = () => {
   return (
     <div className="reative flex justify-center items-center">
-      <div className="min-w-[960px] opacity-50">
+      <div className="opacity-50 overflow-clip">
         <StatsBgElements />
       </div>
 
