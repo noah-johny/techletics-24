@@ -1,4 +1,4 @@
-import { About, Hero, Stats } from "@/app/_components";
+import { About, Hero, Stats } from "@/app/home";
 import TextMarquee from "@/components/marquee";
 import Section from "@/layouts/section";
 

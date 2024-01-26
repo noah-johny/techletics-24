@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "@/app/globals.css";
 import { cakra, turretRoad } from "@/public/fonts";
-import { Navbar } from "@/app/_components";
+import { Navbar } from "@/app/home";
 import Section from "@/layouts/section";
 
 export const metadata: Metadata = {
@@ -27,6 +27,7 @@ export default function RootLayout({
         <Section float>
           <Navbar />
         </Section>
+
         {children}
       </body>
     </html>
