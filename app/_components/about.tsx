@@ -1,5 +1,3 @@
-"use client";
-
 import { TechleticsLogo } from "@/components/svg/logos";
 
 const About = () => {
