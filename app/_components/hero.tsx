@@ -2,7 +2,7 @@
 
 import { CountdownWrapper } from "@/components/svg";
 import Image from "next/image";
-import { Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 interface Time {
   days?: number;

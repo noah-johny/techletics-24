@@ -11,7 +11,7 @@
 }
 .flip:hover .flip-content {
   transform: rotateY(-180deg);
-  transition: transform 800ms ease-in-out;
+  transition: transform 600ms ease-in-out;
 }
 
 .flip-front,

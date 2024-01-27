@@ -3,7 +3,8 @@ import "@/app/globals.css";
 import { cakra, turretRoad } from "@/public/fonts";
 import Navbar from "@/components/navbar";
 import Section from "@/layouts/section";
-import Footer from "./_components/footer";
+import Copyright from "@/components/copyright";
+import { Connect, SocialConnect } from "@/components/connect";
 
 export const metadata: Metadata = {
   title: "Techletics '24",
@@ -25,14 +26,16 @@ export default function RootLayout({
       <body
         className={`${turretRoad.variable} ${cakra.variable} antialiased bg-tertiary`}
       >
-        <Section float >
+        <Section float>
           <Navbar />
         </Section>
 
         {children}
-        <Section>
-          <Footer />
-        </Section>
+        <footer>
+          <Connect />
+          <SocialConnect />
+          <Copyright />
+        </footer>
       </body>
     </html>
   );
