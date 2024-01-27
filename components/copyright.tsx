@@ -1,6 +1,6 @@
 const Copyright = () => {
   return (
-    <div className="relative min-h-16 flex items-center justify-center overflow-clip m">
+    <div className="relative min-h-16 flex items-center justify-center overflow-clip bg-tertiary">
       <div className="absolute mt-2 md:mt-8">
         <span className="text-stroke-secondary font-bold text-transparent lowercase font-primary text-8xl md:text-9xl whitespace-nowrap tracking-widest leading-none align-middle">
           ͲechlςͲics
