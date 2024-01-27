@@ -25,7 +25,7 @@ export default function RootLayout({
       <body
         className={`${turretRoad.variable} ${cakra.variable} antialiased bg-tertiary`}
       >
-        <Section float>
+        <Section float >
           <Navbar />
         </Section>
 

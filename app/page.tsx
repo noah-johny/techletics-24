@@ -18,8 +18,12 @@ export default function Home() {
         <About />
       </Section>
 
-      <Section>
+      <Section noanimation={false}>
         <Stats />
+      </Section>
+
+      <Section explorable>
+        <Events />
       </Section>
 
       <section className="bg-tertiary py-2 md:py-4 border-quarternary border border-x-0 border-t-0">
@@ -29,10 +33,6 @@ export default function Home() {
       <section className="bg-primary py-2 md:py-4">
         <TextMarquee type="secondary" />
       </section>
-
-      <Section explorable>
-        <Events />
-      </Section>
     </>
   );
 }
