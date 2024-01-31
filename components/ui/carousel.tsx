@@ -8,6 +8,7 @@ import useEmblaCarousel, {
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { CustomCursorContext } from "@/context/custom-cursor-context";
 
 type CarouselApi = UseEmblaCarouselType[1];
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>;
@@ -199,6 +200,7 @@ const CarouselPrevious = React.forwardRef<
   React.ComponentProps<typeof Button>
 >(({ className, variant = "outline", size = "icon", ...props }, ref) => {
   const { orientation, scrollPrev, canScrollPrev } = useCarousel();
+  const { setCustomCursor } = React.useContext(CustomCursorContext)!;
 
   return (
     <Button
@@ -214,6 +216,8 @@ const CarouselPrevious = React.forwardRef<
       )}
       disabled={!canScrollPrev}
       onClick={scrollPrev}
+      onMouseEnter={() => setCustomCursor(false)}
+      onMouseLeave={() => setCustomCursor(true)}
       {...props}
     >
       <ArrowLeftIcon className="h-4 w-4" />
@@ -228,6 +232,7 @@ const CarouselNext = React.forwardRef<
   React.ComponentProps<typeof Button>
 >(({ className, variant = "outline", size = "icon", ...props }, ref) => {
   const { orientation, scrollNext, canScrollNext } = useCarousel();
+  const { setCustomCursor } = React.useContext(CustomCursorContext)!;
 
   return (
     <Button
@@ -243,6 +248,8 @@ const CarouselNext = React.forwardRef<
       )}
       disabled={!canScrollNext}
       onClick={scrollNext}
+      onMouseEnter={() => setCustomCursor(false)}
+      onMouseLeave={() => setCustomCursor(true)}
       {...props}
     >
       <ArrowRightIcon className="h-4 w-4" />

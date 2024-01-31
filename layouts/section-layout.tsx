@@ -3,9 +3,9 @@
 import { ExploreButton } from "@/components/svg/buttons";
 import clsx from "clsx";
 import Link from "next/link";
-import { ReactNode } from "react";
-import { motion } from "framer-motion";
-import AnimatedSectionLayout from "./animatedSectionLayout";
+import { ReactNode, useContext } from "react";
+import AnimatedSectionLayout from "./animated-section-layout";
+import { CustomCursorContext } from "@/context/custom-cursor-context";
 
 interface SectionProps {
   children: ReactNode;
@@ -16,7 +16,7 @@ interface SectionProps {
   noanimation?: boolean;
 }
 
-const Section = ({
+const SectionLayout = ({
   children,
   full = false,
   float = false,
@@ -24,6 +24,8 @@ const Section = ({
   navigate = "",
   noanimation = true,
 }: SectionProps) => {
+  const { setCustomCursor } = useContext(CustomCursorContext)!;
+
   return (
     <div
       className={clsx(
@@ -56,12 +58,16 @@ const Section = ({
             <Link
               href={navigate}
               className="absolute right-0 bottom-0 hidden md:block"
+              onMouseEnter={() => setCustomCursor(false)}
+              onMouseLeave={() => setCustomCursor(true)}
             >
               <ExploreButton />
             </Link>
             <Link
               href={navigate}
               className="absolute right-0 bottom-0 md:hidden"
+              onMouseEnter={() => setCustomCursor(false)}
+              onMouseLeave={() => setCustomCursor(true)}
             >
               <ExploreButton size={64} />
             </Link>
@@ -72,4 +78,4 @@ const Section = ({
   );
 };
 
-export default Section;
+export default SectionLayout;

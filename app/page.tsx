@@ -1,30 +1,30 @@
 import { About, Hero, Stats } from "@/app/_components";
 import TextMarquee from "@/components/marquee";
-import Section from "@/layouts/section";
 import Events from "./_components/events";
+import SectionLayout from "@/layouts/section-layout";
 
 export default function Home() {
   return (
     <>
-      <Section full>
+      <SectionLayout full>
         <Hero />
-      </Section>
+      </SectionLayout>
 
       <section className="bg-primary py-2 md:py-4">
         <TextMarquee />
       </section>
 
-      <Section explorable navigate="/about">
+      <SectionLayout explorable navigate="/about">
         <About />
-      </Section>
+      </SectionLayout>
 
-      <Section noanimation={false}>
+      <SectionLayout noanimation={false}>
         <Stats />
-      </Section>
+      </SectionLayout>
 
-      <Section explorable>
+      <SectionLayout explorable>
         <Events />
-      </Section>
+      </SectionLayout>
 
       <section className="bg-tertiary py-2 md:py-4 border-quarternary border border-x-0 border-t-0">
         <TextMarquee mode="dark" />

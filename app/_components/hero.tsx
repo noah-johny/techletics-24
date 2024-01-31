@@ -49,7 +49,7 @@ const Hero = () => {
     }, 1000);
 
     return () => clearTimeout(timer);
-  }, [i]);
+  });
 
   let days = String(timeLeft?.days);
   days?.length < 2 ? (days = days.padStart(2, "0")) : days;

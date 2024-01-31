@@ -1,21 +1,25 @@
-import Section from "@/layouts/section";
+"use client";
+
 import Image from "next/image";
 import { SocialIcon } from "./svg/icons";
-import Link from "next/link";
+import SectionLayout from "@/layouts/section-layout";
+import { CustomLink } from "@/components/custom";
 
 const SocialConnect = () => {
   return (
-    <Section full>
+    <SectionLayout full>
       <div className="flex flex-col lg:flex-row overflow-clip">
         {/* Left Section */}
         <div className="flex flex-col lg:flex-row gap-6 border-transparent lg:border-quarternary border-r justify-center items-center px-12 py-6 lg:p-12 lg:w-1/2">
-          <Image
-            src="/logos/cce-logo-landscape.png"
-            width={248}
-            height={64}
-            alt="Christ College of Engineering Logo"
-            priority
-          />
+          <CustomLink href="https://cce.edu.in">
+            <Image
+              src="/logos/cce-logo-landscape.png"
+              width={248}
+              height={64}
+              alt="Christ College of Engineering Logo"
+              priority
+            />
+          </CustomLink>
           <Image
             src="/icons/join.svg"
             width={16}
@@ -39,24 +43,24 @@ const SocialConnect = () => {
           </p>
 
           <div className="flex gap-6 z-[1]">
-            <Link
+            <CustomLink
               href="https://www.instagram.com/techleticscce"
               className="p-4 bg-secondary hover:bg-primary rounded-full"
             >
               <SocialIcon logo="instagram" />
-            </Link>
-            <Link
+            </CustomLink>
+            <CustomLink
               href="https://www.linkedin.com/school/christcollegeofengineering/"
               className="p-4 bg-secondary hover:bg-primary rounded-full"
             >
               <SocialIcon logo="linkedin" />
-            </Link>
-            <Link
+            </CustomLink>
+            <CustomLink
               href="https://twitter.com/IedcE71858"
               className="p-4 bg-secondary hover:bg-primary rounded-full"
             >
               <SocialIcon logo="x" />
-            </Link>
+            </CustomLink>
           </div>
 
           <Image
@@ -69,13 +73,13 @@ const SocialConnect = () => {
           />
         </div>
       </div>
-    </Section>
+    </SectionLayout>
   );
 };
 
 const Connect = () => {
   return (
-    <Section>
+    <SectionLayout>
       <div className="flex flex-col justify-center gap-12 py-6 lg:py-12 bg-tertiary font-primary text-secondary">
         <div className="flex gap-2 sm:gap-4 justify-between align-middle flex-wrap">
           <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl md:max-w-[80%] lg:max-w-[70%] xl:max-w-[60%] leading-tight tracking-wide lowercase flex flex-wrap">
@@ -106,12 +110,12 @@ const Connect = () => {
                 alt="Arrow Icon"
                 priority
               />
-              <Link
+              <CustomLink
                 href="https://cce.edu.in/"
                 className="font-secondary font-semibold text-xl md:text-2xl xl:text-3xl hover:text-primary"
               >
                 cce.edu.in
-              </Link>
+              </CustomLink>
             </div>
             <div className="flex gap-4 self-center">
               <Image
@@ -122,19 +126,25 @@ const Connect = () => {
                 priority
               />
               <div className="flex font-secondary font-extrabold text-lg md:text-xl xl:text-2xl flex-wrap">
-                <Link href="/" className="whitespace-nowrap hover:text-primary">
+                <CustomLink
+                  href="/"
+                  className="whitespace-nowrap hover:text-primary"
+                >
                   +91 1234567890
-                </Link>
+                </CustomLink>
                 <p>,&nbsp;</p>
-                <Link href="/" className="whitespace-nowrap hover:text-primary">
+                <CustomLink
+                  href="/"
+                  className="whitespace-nowrap hover:text-primary"
+                >
                   +91 9876543210
-                </Link>
+                </CustomLink>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </Section>
+    </SectionLayout>
   );
 };
 

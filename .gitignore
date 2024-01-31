@@ -8,6 +8,7 @@
 /coverage
 
 # next.js
+"local": "next -H $(cat .env.local.json | jq -r '.host')",
 /.next/
 /out/
 
@@ -24,7 +25,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env*.local
+.env*.local.*
 
 # vercel
 .vercel

@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "local": "next -H $(cat .env.local.json | jq -r '.host')",
     "lint": "next lint"
   },
   "dependencies": {

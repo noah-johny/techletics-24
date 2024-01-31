@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import "@/app/globals.css";
 import { cakra, turretRoad } from "@/public/fonts";
 import Navbar from "@/components/navbar";
-import Section from "@/layouts/section";
 import Copyright from "@/components/copyright";
 import { Connect, SocialConnect } from "@/components/connect";
+import { CustomCursorProvider } from "@/context/custom-cursor-context";
+import SectionLayout from "@/layouts/section-layout";
+import CustomCursor from "@/components/custom/cursor";
 
 export const metadata: Metadata = {
   title: "Techletics '24",
@@ -24,18 +26,23 @@ export default function RootLayout({
       </head>
 
       <body
-        className={`${turretRoad.variable} ${cakra.variable} antialiased bg-tertiary`}
+        className={`${turretRoad.variable} ${cakra.variable} antialiased bg-tertiary cursor-none`}
       >
-        <Section float>
-          <Navbar />
-        </Section>
+        <CustomCursorProvider>
+          <CustomCursor />
 
-        {children}
-        <footer>
-          <Connect />
-          <SocialConnect />
-          <Copyright />
-        </footer>
+          <SectionLayout float>
+            <Navbar />
+          </SectionLayout>
+
+          {children}
+
+          <footer>
+            <Connect />
+            <SocialConnect />
+            <Copyright />
+          </footer>
+        </CustomCursorProvider>
       </body>
     </html>
   );

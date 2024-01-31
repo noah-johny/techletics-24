@@ -1,5 +1,7 @@
-import styles from "./eventscard.module.css";
+import Image from "next/image";
+import styles from "./events-card.module.css";
 import clsx from "clsx";
+
 const EventsCard = () => {
   return (
     <div
@@ -7,10 +9,20 @@ const EventsCard = () => {
     >
       <div className={styles["flip-content"]}>
         <div className={styles["flip-front"]}>
-          <img src="/images/event-1-front.svg" />
+          <Image
+            src="/images/event-1-front.svg"
+            alt="Event 1 (Front Side)"
+            width={300}
+            height={375}
+          />
         </div>
         <div className={styles["flip-back"]}>
-          <img src="/images/event-1-back.svg" />
+          <Image
+            src="/images/event-1-back.svg"
+            alt="Event 1 (Back Side)"
+            width={300}
+            height={375}
+          />
         </div>
       </div>
     </div>

@@ -1,3 +1,5 @@
+import { CustomLink } from "@/components/custom";
+
 const Copyright = () => {
   return (
     <div className="relative min-h-16 flex items-center justify-center overflow-clip bg-tertiary">
@@ -8,12 +10,15 @@ const Copyright = () => {
         </span>
       </div>
       <div>
-        <span className="text-sm sm:text-md md:text-lg font-secondary items-center justify-center flex flex-wrap">
-          <span className="whitespace-nowrap">Copyright © 2024 </span>
-          <span className="text-primary whitespace-nowrap">
-            Christ College of Engineering
-          </span>
-          .<span className="whitespace-nowrap">All Rights Reserved</span>
+        <span className="text-sm sm:text-md md:text-lg text-secondary font-secondary items-center justify-center flex flex-wrap">
+          <span className="whitespace-nowrap">Copyright © 2024&nbsp;</span>
+          <CustomLink
+            href="https://cce.edu.in"
+            className="text-primary whitespace-nowrap"
+          >
+            Christ College of Engineering.&nbsp;
+          </CustomLink>
+          <span className="whitespace-nowrap">All Rights Reserved</span>
         </span>
       </div>
     </div>
