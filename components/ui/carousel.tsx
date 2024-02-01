@@ -200,7 +200,7 @@ const CarouselPrevious = React.forwardRef<
   React.ComponentProps<typeof Button>
 >(({ className, variant = "outline", size = "icon", ...props }, ref) => {
   const { orientation, scrollPrev, canScrollPrev } = useCarousel();
-  const { setCustomCursor } = React.useContext(CustomCursorContext)!;
+  const { setShowCursor } = React.useContext(CustomCursorContext)!;
 
   return (
     <Button
@@ -216,8 +216,8 @@ const CarouselPrevious = React.forwardRef<
       )}
       disabled={!canScrollPrev}
       onClick={scrollPrev}
-      onMouseEnter={() => setCustomCursor(false)}
-      onMouseLeave={() => setCustomCursor(true)}
+      onMouseEnter={() => setShowCursor(false)}
+      onMouseLeave={() => setShowCursor(true)}
       {...props}
     >
       <ArrowLeftIcon className="h-4 w-4" />
@@ -232,7 +232,7 @@ const CarouselNext = React.forwardRef<
   React.ComponentProps<typeof Button>
 >(({ className, variant = "outline", size = "icon", ...props }, ref) => {
   const { orientation, scrollNext, canScrollNext } = useCarousel();
-  const { setCustomCursor } = React.useContext(CustomCursorContext)!;
+  const { setShowCursor } = React.useContext(CustomCursorContext)!;
 
   return (
     <Button
@@ -248,8 +248,8 @@ const CarouselNext = React.forwardRef<
       )}
       disabled={!canScrollNext}
       onClick={scrollNext}
-      onMouseEnter={() => setCustomCursor(false)}
-      onMouseLeave={() => setCustomCursor(true)}
+      onMouseEnter={() => setShowCursor(false)}
+      onMouseLeave={() => setShowCursor(true)}
       {...props}
     >
       <ArrowRightIcon className="h-4 w-4" />

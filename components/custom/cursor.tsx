@@ -1,57 +1,76 @@
 "use client";
 
+import { useContext, useEffect, useState } from "react";
+import { Variants, motion } from "framer-motion";
 import { CustomCursorContext } from "@/context/custom-cursor-context";
-import { useState, useEffect, useContext } from "react";
+import "@/app/globals.css";
 
-const CustomCursor = () => {
-  const [cursorPosition, setCursorPosition] = useState({ x: -30, y: -30 });
-  const [followerPosition, setFollowerPosition] = useState({ x: -30, y: -30 });
-  const [isVisible, setIsVisible] = useState(false);
+const Cursor = () => {
+  const { cursorVariant, showCursor } = useContext(CustomCursorContext)!;
 
-  const { customCursor } = useContext(CustomCursorContext)!;
+  const [mousePosition, setMousePosition] = useState({
+    x: -30,
+    y: -30,
+  });
 
   useEffect(() => {
-    const moveCursor = (e: MouseEvent) => {
-      setCursorPosition({ x: e.clientX, y: e.clientY });
-      setFollowerPosition({ x: e.clientX, y: e.clientY });
+    const mouseMove = (e: MouseEvent) => {
+      setMousePosition({
+        x: e.clientX,
+        y: e.clientY,
+      });
     };
 
-    const handleMouseEnter = () => setIsVisible(true);
-    const handleMouseLeave = () => setIsVisible(false);
-
-    window.addEventListener("mousemove", moveCursor);
-    document.body.addEventListener("mouseenter", handleMouseEnter);
-    document.body.addEventListener("mouseleave", handleMouseLeave);
+    window.addEventListener("mousemove", mouseMove);
 
     return () => {
-      window.removeEventListener("mousemove", moveCursor);
-      document.body.removeEventListener("mouseenter", handleMouseEnter);
-      document.body.removeEventListener("mouseleave", handleMouseLeave);
+      window.removeEventListener("mousemove", mouseMove);
     };
   }, []);
 
+  const variants: Variants = {
+    default: {
+      height: 16,
+      width: 16,
+      x: mousePosition.x - 8,
+      y: mousePosition.y - 8,
+      backgroundColor: "#dfff1b",
+    },
+    title: {
+      height: 36,
+      width: 36,
+      x: mousePosition.x - 18,
+      y: mousePosition.y - 18,
+      backgroundColor: "#ffffff",
+      mixBlendMode: "difference",
+    },
+    highlightedTitle: {
+      height: 96,
+      width: 96,
+      x: mousePosition.x - 48,
+      y: mousePosition.y - 48,
+      backgroundColor: "#dfff1b",
+      mixBlendMode: "difference",
+    },
+    text: {
+      height: 36,
+      width: 36,
+      x: mousePosition.x - 18,
+      y: mousePosition.y - 18,
+      backgroundColor: "#ffffff",
+      mixBlendMode: "difference",
+    },
+  };
+
   return (
-    customCursor && (
-      <>
-        {/* Cursor Outline */}
-        <div
-          className="fixed -top-3 -left-3 z-20 pointer-events-none w-8 h-8 -translate-x-1/2 -translate-y-1/2 border-primary border-2 rounded-full"
-          style={{
-            transform: `translate(${followerPosition.x}px, ${followerPosition.y}px)`,
-            opacity: isVisible ? 1 : 0,
-          }}
-        ></div>
-        {/* Cursor Dot */}
-        <div
-          className="fixed top-0 left-0 z-20 pointer-events-none w-2 h-2 -translate-x-1/2 -translate-y-1/2 bg-secondary rounded-full bg-blend-difference"
-          style={{
-            transform: `translate(${cursorPosition.x}px, ${cursorPosition.y}px)`,
-            opacity: isVisible ? 1 : 0,
-          }}
-        ></div>
-      </>
+    showCursor && (
+      <motion.div
+        className="rounded-full fixed top-0 left-0 pointer-events-none z-20"
+        variants={variants}
+        animate={cursorVariant}
+      />
     )
   );
 };
 
-export default CustomCursor;
+export default Cursor;

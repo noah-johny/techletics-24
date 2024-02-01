@@ -24,7 +24,7 @@ const SectionLayout = ({
   navigate = "",
   noanimation = true,
 }: SectionProps) => {
-  const { setCustomCursor } = useContext(CustomCursorContext)!;
+  const { setShowCursor } = useContext(CustomCursorContext)!;
 
   return (
     <div
@@ -58,16 +58,16 @@ const SectionLayout = ({
             <Link
               href={navigate}
               className="absolute right-0 bottom-0 hidden md:block"
-              onMouseEnter={() => setCustomCursor(false)}
-              onMouseLeave={() => setCustomCursor(true)}
+              onMouseEnter={() => setShowCursor(false)}
+              onMouseLeave={() => setShowCursor(true)}
             >
               <ExploreButton />
             </Link>
             <Link
               href={navigate}
               className="absolute right-0 bottom-0 md:hidden"
-              onMouseEnter={() => setCustomCursor(false)}
-              onMouseLeave={() => setCustomCursor(true)}
+              onMouseEnter={() => setShowCursor(false)}
+              onMouseLeave={() => setShowCursor(true)}
             >
               <ExploreButton size={64} />
             </Link>

@@ -17,13 +17,13 @@ const CustomLink: React.FC<CustomLinkProps> = ({
   className,
   ...props
 }) => {
-  const { setCustomCursor } = useContext(CustomCursorContext)!;
+  const { setShowCursor } = useContext(CustomCursorContext)!;
 
   return (
     <Link
       {...props}
-      onMouseEnter={() => setCustomCursor(false)}
-      onMouseLeave={() => setCustomCursor(true)}
+      onMouseEnter={() => setShowCursor(false)}
+      onMouseLeave={() => setShowCursor(true)}
       className={className}
     >
       {children}

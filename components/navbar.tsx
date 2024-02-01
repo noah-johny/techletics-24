@@ -11,7 +11,7 @@ const Navbar = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  const { setCustomCursor } = useContext(CustomCursorContext)!;
+  const { setShowCursor } = useContext(CustomCursorContext)!;
 
   return (
     <nav className="flex flex-col gap-6">
@@ -23,8 +23,8 @@ const Navbar = () => {
             <div className="flex space-x-2 justify-between text-xl xl:text-2xl">
               <CustomLink
                 href="/"
-                onMouseEnter={() => setCustomCursor(false)}
-                onMouseLeave={() => setCustomCursor(true)}
+                onMouseEnter={() => setShowCursor(false)}
+                onMouseLeave={() => setShowCursor(true)}
                 className={clsx(
                   "cursor-pointer hover:text-primary hover:underline",
                   { "underline text-primary": pathname === "/" }
@@ -35,8 +35,8 @@ const Navbar = () => {
               <p>/</p>
               <CustomLink
                 href="/events"
-                onMouseEnter={() => setCustomCursor(false)}
-                onMouseLeave={() => setCustomCursor(true)}
+                onMouseEnter={() => setShowCursor(false)}
+                onMouseLeave={() => setShowCursor(true)}
                 className={clsx("cursor-pointer hover:text-primary", {
                   "underline text-primary": pathname === "/events",
                 })}
@@ -46,8 +46,8 @@ const Navbar = () => {
               <p>/</p>
               <CustomLink
                 href="/about"
-                onMouseEnter={() => setCustomCursor(false)}
-                onMouseLeave={() => setCustomCursor(true)}
+                onMouseEnter={() => setShowCursor(false)}
+                onMouseLeave={() => setShowCursor(true)}
                 className={clsx("cursor-pointer hover:text-primary", {
                   "underline text-primary": pathname === "/about",
                 })}
@@ -61,8 +61,8 @@ const Navbar = () => {
             <div className="flex w-[100%] justify-between text-md xl:text-lg">
               <CustomLink
                 href="https://www.instagram.com/techleticscce?igsh=Ym83cGQ2eHd0cjV6"
-                onMouseEnter={() => setCustomCursor(false)}
-                onMouseLeave={() => setCustomCursor(true)}
+                onMouseEnter={() => setShowCursor(false)}
+                onMouseLeave={() => setShowCursor(true)}
                 className={clsx("cursor-pointer hover:text-primary")}
               >
                 ‘22 EDIͲION
@@ -70,8 +70,8 @@ const Navbar = () => {
               <p>/</p>
               <CustomLink
                 href="#location"
-                onMouseEnter={() => setCustomCursor(false)}
-                onMouseLeave={() => setCustomCursor(true)}
+                onMouseEnter={() => setShowCursor(false)}
+                onMouseLeave={() => setShowCursor(true)}
                 className={clsx("cursor-pointer hover:text-primary")}
               >
                 locaͲion
@@ -79,8 +79,8 @@ const Navbar = () => {
               <p>/</p>
               <CustomLink
                 href="https://www.knowafest.com/explore/events/2019/01/3101-techletics-2019-christ-college-engineering-technical-festival-irinjalakuda"
-                onMouseEnter={() => setCustomCursor(false)}
-                onMouseLeave={() => setCustomCursor(true)}
+                onMouseEnter={() => setShowCursor(false)}
+                onMouseLeave={() => setShowCursor(true)}
                 className={clsx("cursor-pointer hover:text-primary")}
               >
                 blog
@@ -99,8 +99,8 @@ const Navbar = () => {
                 priority
                 className="cursor-pointer block scale-50 lg:hidden sm:scale-75"
                 onClick={() => setIsOpen(!isOpen)}
-                onMouseEnter={() => setCustomCursor(false)}
-                onMouseLeave={() => setCustomCursor(true)}
+                onMouseEnter={() => setShowCursor(false)}
+                onMouseLeave={() => setShowCursor(true)}
               />
             ) : (
               <Image
@@ -111,16 +111,16 @@ const Navbar = () => {
                 priority
                 className="cursor-pointer block scale-50 lg:hidden sm:scale-75"
                 onClick={() => setIsOpen(!isOpen)}
-                onMouseEnter={() => setCustomCursor(false)}
-                onMouseLeave={() => setCustomCursor(true)}
+                onMouseEnter={() => setShowCursor(false)}
+                onMouseLeave={() => setShowCursor(true)}
               />
             )}
           </>
           {/* Techletics '24 Text */}
           <CustomLink
             href="/"
-            onMouseEnter={() => setCustomCursor(false)}
-            onMouseLeave={() => setCustomCursor(true)}
+            onMouseEnter={() => setShowCursor(false)}
+            onMouseLeave={() => setShowCursor(true)}
             className="flex text-secondary gap-x-2 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl tracking-wide lowercase static self-center sm:absolute sm:top-1/2 sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 sm:justify-center leading-tight"
           >
             <p className="font-primary">ͲechlςͲics</p>
@@ -135,8 +135,8 @@ const Navbar = () => {
             alt="Contact Button"
             priority
             className="cursor-pointer scale-75 hidden lg:scale-100 sm:block"
-            onMouseEnter={() => setCustomCursor(false)}
-            onMouseLeave={() => setCustomCursor(true)}
+            onMouseEnter={() => setShowCursor(false)}
+            onMouseLeave={() => setShowCursor(true)}
           />
         </div>
       </div>
@@ -150,8 +150,8 @@ const Navbar = () => {
           <div className="font-primary text-secondary text-5xl p-16 sm:p-24 sm:text-7xl gap-8 sm:gap-4">
             <CustomLink
               href="/"
-              onMouseEnter={() => setCustomCursor(false)}
-              onMouseLeave={() => setCustomCursor(true)}
+              onMouseEnter={() => setShowCursor(false)}
+              onMouseLeave={() => setShowCursor(true)}
               className="group w-fit"
             >
               <p className="cursor-pointer group-hover:text-primary">HOME</p>
@@ -159,8 +159,8 @@ const Navbar = () => {
             </CustomLink>
             <CustomLink
               href="/events"
-              onMouseEnter={() => setCustomCursor(false)}
-              onMouseLeave={() => setCustomCursor(true)}
+              onMouseEnter={() => setShowCursor(false)}
+              onMouseLeave={() => setShowCursor(true)}
               className="group w-fit"
             >
               <p className="cursor-pointer group-hover:text-primary">EVENͲS</p>
@@ -168,8 +168,8 @@ const Navbar = () => {
             </CustomLink>
             <CustomLink
               href="/about"
-              onMouseEnter={() => setCustomCursor(false)}
-              onMouseLeave={() => setCustomCursor(true)}
+              onMouseEnter={() => setShowCursor(false)}
+              onMouseLeave={() => setShowCursor(true)}
               className="group w-fit"
             >
               <p className="cursor-pointer group-hover:text-primary">ABOUͲ</p>
@@ -177,8 +177,8 @@ const Navbar = () => {
             </CustomLink>
             <CustomLink
               href="https://www.instagram.com/techleticscce?igsh=Ym83cGQ2eHd0cjV6"
-              onMouseEnter={() => setCustomCursor(false)}
-              onMouseLeave={() => setCustomCursor(true)}
+              onMouseEnter={() => setShowCursor(false)}
+              onMouseLeave={() => setShowCursor(true)}
               className="group w-fit"
             >
               <p className="cursor-pointer group-hover:text-primary">
@@ -188,8 +188,8 @@ const Navbar = () => {
             </CustomLink>
             <CustomLink
               href="#location"
-              onMouseEnter={() => setCustomCursor(false)}
-              onMouseLeave={() => setCustomCursor(true)}
+              onMouseEnter={() => setShowCursor(false)}
+              onMouseLeave={() => setShowCursor(true)}
               className="group w-fit"
             >
               <p className="cursor-pointer group-hover:text-primary">
@@ -199,8 +199,8 @@ const Navbar = () => {
             </CustomLink>
             <CustomLink
               href="https://www.knowafest.com/explore/events/2019/01/3101-techletics-2019-christ-college-engineering-technical-festival-irinjalakuda"
-              onMouseEnter={() => setCustomCursor(false)}
-              onMouseLeave={() => setCustomCursor(true)}
+              onMouseEnter={() => setShowCursor(false)}
+              onMouseLeave={() => setShowCursor(true)}
               className="group w-fit"
             >
               <p className="cursor-pointer group-hover:text-primary">blog</p>
