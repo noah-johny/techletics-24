@@ -14,7 +14,7 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "modal-logo": "url('/logos/techletics-metal.svg')",
-        "hero-img": "url('/images/hero-img.png')",
+        "hero-img": "url('/images/hero-img.webp')",
       },
       colors: {
         primary: "#DFFF1B",

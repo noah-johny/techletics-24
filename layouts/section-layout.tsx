@@ -14,6 +14,8 @@ interface SectionProps {
   explorable?: boolean;
   navigate?: string;
   noanimation?: boolean;
+  transparent?: boolean;
+  glassMorphism?: boolean;
 }
 
 const SectionLayout = ({
@@ -23,15 +25,20 @@ const SectionLayout = ({
   explorable = false,
   navigate = "",
   noanimation = true,
+  transparent = false,
+  glassMorphism = false,
 }: SectionProps) => {
   const { setShowCursor } = useContext(CustomCursorContext)!;
 
   return (
     <div
       className={clsx(
-        "px-6 sm:px-12 bg-tertiary border border-x-0 border-t-0 border-quarternary",
+        "px-6 sm:px-12 border border-x-0 border-t-0 border-quarternary",
         {
           "z-10 fixed top-0 left-0 right-0": float,
+          "bg-tertiary": !transparent,
+          "bg-transparent": transparent,
+          "backdrop-blur-3xl": glassMorphism,
         }
       )}
     >

@@ -48,8 +48,6 @@ const CustomText: React.FC<CustomTextProps> = ({
   else if (highlightedDescription)
     className += "text-md md:text-xl lg:text-2xl text-justify text-secondary";
 
-  console.log(className);
-
   return (
     <span
       className={className}

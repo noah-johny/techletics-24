@@ -7,6 +7,7 @@ import { Connect, SocialConnect } from "@/components/connect";
 import { CustomCursorProvider } from "@/context/custom-cursor-context";
 import SectionLayout from "@/layouts/section-layout";
 import CustomCursor from "@/components/custom/cursor";
+import { Hero } from "./_components";
 
 export const metadata: Metadata = {
   title: "Techletics '24",
@@ -30,10 +31,6 @@ export default function RootLayout({
       >
         <CustomCursorProvider>
           <CustomCursor />
-
-          <SectionLayout float>
-            <Navbar />
-          </SectionLayout>
 
           {children}
 
