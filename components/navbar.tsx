@@ -15,19 +15,19 @@ const Navbar = () => {
 
   return (
     <nav className="flex flex-col gap-6">
-      <div className="relative z-2">
+      <div className="z-2 relative">
         {/* Navbar Menu */}
-        <div className="flex w-[100%] sm:justify-between">
-          <div className="font-primary flex-col items-start space-y-1 tracking-wide lowercase hidden lg:block">
+        <div className="flex w-full sm:justify-between">
+          <div className="hidden flex-col items-start space-y-1 font-primary lowercase tracking-wide lg:block">
             {/* Menu First Line */}
-            <div className="flex space-x-2 justify-between text-xl xl:text-2xl">
+            <div className="flex justify-between space-x-2 text-xl xl:text-2xl">
               <CustomLink
                 href="/"
                 onMouseEnter={() => setShowCursor(false)}
                 onMouseLeave={() => setShowCursor(true)}
                 className={clsx(
                   "cursor-pointer hover:text-primary hover:underline",
-                  { "underline text-primary": pathname === "/" }
+                  { "text-primary underline": pathname === "/" },
                 )}
               >
                 HOME
@@ -38,7 +38,7 @@ const Navbar = () => {
                 onMouseEnter={() => setShowCursor(false)}
                 onMouseLeave={() => setShowCursor(true)}
                 className={clsx("cursor-pointer hover:text-primary", {
-                  "underline text-primary": pathname === "/events",
+                  "text-primary underline": pathname === "/events",
                 })}
               >
                 EVENͲS
@@ -49,7 +49,7 @@ const Navbar = () => {
                 onMouseEnter={() => setShowCursor(false)}
                 onMouseLeave={() => setShowCursor(true)}
                 className={clsx("cursor-pointer hover:text-primary", {
-                  "underline text-primary": pathname === "/about",
+                  "text-primary underline": pathname === "/about",
                 })}
               >
                 ABOUͲ
@@ -58,14 +58,14 @@ const Navbar = () => {
             </div>
 
             {/* Menu Second Line */}
-            <div className="flex w-[100%] justify-between text-md xl:text-lg">
+            <div className="text-md flex w-[100%] justify-between xl:text-lg">
               <CustomLink
-                href="https://www.instagram.com/techleticscce?igsh=Ym83cGQ2eHd0cjV6"
+                href="/conferences"
                 onMouseEnter={() => setShowCursor(false)}
                 onMouseLeave={() => setShowCursor(true)}
                 className={clsx("cursor-pointer hover:text-primary")}
               >
-                ‘22 EDIͲION
+                conferences
               </CustomLink>
               <p>/</p>
               <CustomLink
@@ -89,7 +89,7 @@ const Navbar = () => {
           </div>
 
           {/* Hamburger Icon */}
-          <>
+          <div className="z-10">
             {isOpen ? (
               <Image
                 src="/icons/close.svg"
@@ -97,7 +97,7 @@ const Navbar = () => {
                 height={56}
                 alt="Close Icon"
                 priority
-                className="cursor-pointer block scale-50 lg:hidden sm:scale-75"
+                className="block scale-50 cursor-pointer sm:scale-75 lg:hidden"
                 onClick={() => setIsOpen(!isOpen)}
                 onMouseEnter={() => setShowCursor(false)}
                 onMouseLeave={() => setShowCursor(true)}
@@ -109,19 +109,19 @@ const Navbar = () => {
                 height={56}
                 alt="Menu Icon"
                 priority
-                className="cursor-pointer block scale-50 lg:hidden sm:scale-75"
+                className="block scale-50 cursor-pointer sm:scale-75 lg:hidden"
                 onClick={() => setIsOpen(!isOpen)}
                 onMouseEnter={() => setShowCursor(false)}
                 onMouseLeave={() => setShowCursor(true)}
               />
             )}
-          </>
+          </div>
           {/* Techletics '24 Text */}
           <CustomLink
             href="/"
             onMouseEnter={() => setShowCursor(false)}
             onMouseLeave={() => setShowCursor(true)}
-            className="flex text-secondary gap-x-2 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl tracking-wide lowercase static self-center sm:absolute sm:top-1/2 sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 sm:justify-center leading-tight"
+            className="static z-10 flex gap-x-2 self-center text-2xl lowercase leading-tight tracking-wide text-secondary sm:absolute sm:left-1/2 sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:transform sm:justify-center sm:text-3xl lg:text-4xl xl:text-5xl"
           >
             <p className="font-primary">ͲechlςͲics</p>
             <p className="font-secondary font-extrabold">&apos;24</p>
@@ -134,7 +134,7 @@ const Navbar = () => {
             height={56}
             alt="Contact Button"
             priority
-            className="cursor-pointer scale-75 hidden lg:scale-100 sm:block"
+            className="hidden scale-75 cursor-pointer sm:block lg:scale-100"
             onMouseEnter={() => setShowCursor(false)}
             onMouseLeave={() => setShowCursor(true)}
           />
@@ -143,19 +143,19 @@ const Navbar = () => {
 
       {/* Hamburger Menu */}
       {isOpen && (
-        <div className="bg-tertiary w-full h-screen overflow-hidden flex bg-modal-logo bg-no-repeat bg-cover z-[-1] lg:hidden">
+        <div className="z-0 flex h-screen w-full overflow-hidden bg-tertiary bg-modal-logo bg-cover bg-no-repeat lg:hidden">
           {/* Overlay */}
-          <div className="absolute inset-0 bg-tertiary bg-opacity-85 z-[-1]"></div>
+          <div className="absolute inset-0 z-[-1] bg-tertiary bg-opacity-85"></div>
           {/* Menu */}
-          <div className="font-primary text-secondary text-5xl p-16 sm:p-24 sm:text-7xl gap-8 sm:gap-4">
+          <div className="relative right-10 z-0 gap-8 p-16 font-primary text-4xl text-secondary sm:gap-4 sm:p-24 sm:text-7xl">
             <CustomLink
               href="/"
               onMouseEnter={() => setShowCursor(false)}
               onMouseLeave={() => setShowCursor(true)}
-              className="group w-fit"
+              className="group w-fit bg-green-500"
             >
               <p className="cursor-pointer group-hover:text-primary">HOME</p>
-              <hr className="border-quarternary py-2 group-hover:block hidden" />
+              <hr className="hidden border-quarternary py-2 group-hover:block" />
             </CustomLink>
             <CustomLink
               href="/events"
@@ -164,7 +164,7 @@ const Navbar = () => {
               className="group w-fit"
             >
               <p className="cursor-pointer group-hover:text-primary">EVENͲS</p>
-              <hr className="border-quarternary py-2 group-hover:block hidden" />
+              <hr className="hidden border-quarternary py-2 group-hover:block" />
             </CustomLink>
             <CustomLink
               href="/about"
@@ -173,18 +173,18 @@ const Navbar = () => {
               className="group w-fit"
             >
               <p className="cursor-pointer group-hover:text-primary">ABOUͲ</p>
-              <hr className="border-quarternary py-2 group-hover:block hidden" />
+              <hr className="hidden border-quarternary py-2 group-hover:block" />
             </CustomLink>
             <CustomLink
-              href="https://www.instagram.com/techleticscce?igsh=Ym83cGQ2eHd0cjV6"
+              href="/conferences"
               onMouseEnter={() => setShowCursor(false)}
               onMouseLeave={() => setShowCursor(true)}
               className="group w-fit"
             >
               <p className="cursor-pointer group-hover:text-primary">
-                ‘22 EDIͲION
+                conferences
               </p>
-              <hr className="border-quarternary py-2 group-hover:block hidden" />
+              <hr className="hidden border-quarternary py-2 group-hover:block" />
             </CustomLink>
             <CustomLink
               href="#location"
@@ -195,7 +195,7 @@ const Navbar = () => {
               <p className="cursor-pointer group-hover:text-primary">
                 locaͲion
               </p>
-              <hr className="border-quarternary py-2 group-hover:block hidden" />
+              <hr className="hidden border-quarternary py-2 group-hover:block" />
             </CustomLink>
             <CustomLink
               href="https://www.knowafest.com/explore/events/2019/01/3101-techletics-2019-christ-college-engineering-technical-festival-irinjalakuda"
@@ -204,7 +204,7 @@ const Navbar = () => {
               className="group w-fit"
             >
               <p className="cursor-pointer group-hover:text-primary">blog</p>
-              <hr className="border-quarternary py-2 group-hover:block hidden" />
+              <hr className="hidden border-quarternary py-2 group-hover:block" />
             </CustomLink>
           </div>
         </div>

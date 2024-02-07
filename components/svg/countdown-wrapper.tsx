@@ -8,7 +8,7 @@ const CountdownWrapper = ({ size = "large" }: CountdownWrapperProps) => {
       width="646"
       height="135"
       viewBox="0 0 646 135"
-      fill="#030402"
+      fill="none"
       fillOpacity={0.5}
       xmlns="http://www.w3.org/2000/svg"
     >

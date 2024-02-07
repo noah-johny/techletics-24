@@ -28,14 +28,14 @@ const CustomText: React.FC<CustomTextProps> = ({
   let className = numeric
     ? "font-secondary font-extrabold "
     : title || highlightedTitle
-    ? "font-primary "
-    : "font-secondary ";
+      ? "font-primary "
+      : "font-secondary ";
 
   className += description
     ? "font-regular "
     : highlightedDescription
-    ? "font-extrabold "
-    : "";
+      ? "font-extrabold "
+      : "";
 
   if (title)
     className +=
@@ -55,8 +55,8 @@ const CustomText: React.FC<CustomTextProps> = ({
         title
           ? setCursorVariant("title")
           : highlightedTitle
-          ? setCursorVariant("highlightedTitle")
-          : setCursorVariant("text");
+            ? setCursorVariant("highlightedTitle")
+            : setCursorVariant("text");
       }}
       onMouseLeave={() => setCursorVariant("default")}
     >

@@ -65,7 +65,7 @@ const Cursor = () => {
   return (
     showCursor && (
       <motion.div
-        className="rounded-full fixed top-0 left-0 pointer-events-none z-20"
+        className="pointer-events-none fixed left-0 top-0 z-20 rounded-full"
         variants={variants}
         animate={cursorVariant}
       />

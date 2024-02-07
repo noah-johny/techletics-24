@@ -16,7 +16,7 @@ const TextMarquee = ({
         type === "primary" ? (
           <p
             key={index}
-            className={clsx("font-primary flex gap-3 text-2xl md:text-3xl", {
+            className={clsx("flex gap-3 font-primary text-2xl md:text-3xl", {
               "text-tertiary": mode === "light",
               "text-primary": mode === "dark",
             })}
@@ -31,7 +31,7 @@ const TextMarquee = ({
         ) : (
           <p
             key={index}
-            className={clsx("font-primary flex gap-3 text-3xl", {
+            className={clsx("flex gap-3 font-primary text-3xl", {
               "text-tertiary": mode === "light",
               "text-primary": mode === "dark",
             })}
@@ -43,7 +43,7 @@ const TextMarquee = ({
             <span>🌞</span>
             <span>INSPIRς</span>
           </p>
-        )
+        ),
       )}
     </Marquee>
   );

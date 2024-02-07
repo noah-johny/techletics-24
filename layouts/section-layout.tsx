@@ -16,6 +16,7 @@ interface SectionProps {
   noanimation?: boolean;
   transparent?: boolean;
   glassMorphism?: boolean;
+  navbar?: boolean;
 }
 
 const SectionLayout = ({
@@ -27,24 +28,26 @@ const SectionLayout = ({
   noanimation = true,
   transparent = false,
   glassMorphism = false,
+  navbar = false,
 }: SectionProps) => {
   const { setShowCursor } = useContext(CustomCursorContext)!;
 
   return (
     <div
       className={clsx(
-        "px-6 sm:px-12 border border-x-0 border-t-0 border-quarternary",
+        "border border-x-0 border-t-0 border-quarternary px-6 sm:px-12",
         {
-          "z-10 fixed top-0 left-0 right-0": float,
+          "fixed left-0 right-0 top-0 z-10": float,
           "bg-tertiary": !transparent,
           "bg-transparent": transparent,
           "backdrop-blur-3xl": glassMorphism,
-        }
+        },
       )}
     >
       <div
-        className={clsx("relative border-quarternary border border-y-0", {
+        className={clsx("relative border border-y-0 border-quarternary", {
           "px-4 py-2 sm:px-8 sm:py-4 lg:px-16 lg:py-9": !full,
+          "py-2 sm:py-4": navbar,
           "pb-10": explorable,
         })}
       >
@@ -64,7 +67,7 @@ const SectionLayout = ({
           <>
             <Link
               href={navigate}
-              className="absolute right-0 bottom-0 hidden md:block"
+              className="absolute bottom-0 right-0 hidden md:block"
               onMouseEnter={() => setShowCursor(false)}
               onMouseLeave={() => setShowCursor(true)}
             >
@@ -72,7 +75,7 @@ const SectionLayout = ({
             </Link>
             <Link
               href={navigate}
-              className="absolute right-0 bottom-0 md:hidden"
+              className="absolute bottom-0 right-0 md:hidden"
               onMouseEnter={() => setShowCursor(false)}
               onMouseLeave={() => setShowCursor(true)}
             >

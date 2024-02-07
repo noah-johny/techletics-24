@@ -3,7 +3,7 @@ import { TechleticsLogo } from "@/components/svg/logos";
 
 const About = () => {
   return (
-    <div className="flex flex-col justify-center gap-12 py-6 lg:py-12 bg-tertiary font-primary text-secondary">
+    <div className="flex flex-col justify-center gap-12 bg-tertiary py-6 font-primary text-secondary lg:py-12">
       <CustomText title>
         Are YOU a&nbsp;
         <CustomText highlightedTitle>Ͳech enͲhusiasͲ?&nbsp;</CustomText>
@@ -17,7 +17,7 @@ const About = () => {
         is for Уou.
       </CustomText>
 
-      <div className="flex flex-wrap gap-8 mb-6 sm:mb-12 lg:mb-0 md:gap-12 lg:gap-16 xl:gap-20 items-center justify-center">
+      <div className="mb-6 flex flex-wrap items-center justify-center gap-8 sm:mb-12 md:gap-12 lg:mb-0 lg:gap-16 xl:gap-20">
         <div className="min-w-xxl">
           <TechleticsLogo />
         </div>

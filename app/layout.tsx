@@ -27,7 +27,7 @@ export default function RootLayout({
       </head>
 
       <body
-        className={`${turretRoad.variable} ${cakra.variable} antialiased bg-tertiary cursor-none`}
+        className={`${turretRoad.variable} ${cakra.variable} cursor-none bg-tertiary antialiased`}
       >
         <CustomCursorProvider>
           <CustomCursor />

@@ -1,14 +1,13 @@
 import { About, Hero, Stats } from "@/app/_components";
 import TextMarquee from "@/components/marquee";
-import Events from "./_components/events";
 import SectionLayout from "@/layouts/section-layout";
 import Navbar from "@/components/navbar";
 
 export default function Home() {
   return (
     <>
-      <section className="bg-hero-img bg-no-repeat bg-cover">
-        <SectionLayout float transparent glassMorphism>
+      <section className="bg-hero-img bg-cover bg-no-repeat">
+        <SectionLayout navbar float transparent glassMorphism>
           <Navbar />
         </SectionLayout>
         <SectionLayout full transparent>
@@ -28,11 +27,7 @@ export default function Home() {
         <Stats />
       </SectionLayout>
 
-      <SectionLayout explorable>
-        <Events />
-      </SectionLayout>
-
-      <section className="bg-tertiary py-2 md:py-4 border-quarternary border border-x-0 border-t-0">
+      <section className="border border-x-0 border-t-0 border-quarternary bg-tertiary py-2 md:py-4">
         <TextMarquee mode="dark" />
       </section>
 

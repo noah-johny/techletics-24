@@ -8,11 +8,7 @@ import React, {
   useState,
 } from "react";
 
-type CursorVariant =
-  | "default"
-  | "title"
-  | "highlightedTitle"
-  | "text"
+type CursorVariant = "default" | "title" | "highlightedTitle" | "text";
 
 type CustomCursorContextType = {
   showCursor: boolean;
