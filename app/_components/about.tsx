@@ -21,20 +21,20 @@ const About = () => {
         <div className="min-w-xxl">
           <TechleticsLogo />
         </div>
-        <div className="min-w-72 flex-1 text-justify">
+        <div className="min-w-72 flex-1 text-justify ">
           <CustomText description>
             Join us for the&nbsp;
             <CustomText highlightedDescription>third edition</CustomText>
             &nbsp;of Techletics, the&nbsp;
             <CustomText highlightedDescription>
-              techno-cultural festival of Christ College of Engineering.
+              techno-cultural festival of Christ College of Engineering.&nbsp;
             </CustomText>
             Explore, learn, and enjoy the latest innovations and trends in
             technology and culture. Participate in workshops, competitions,
             exhibitions, performances, and more. Win prizes and awards.&nbsp;
             <CustomText highlightedDescription>
               Illuminate your mind, ignite your passion, and inspire your
-              future.
+              future.&nbsp;
             </CustomText>
             Techletics &apos;24 is the ultimate rendezvous of innovation and
             zest. Don&apos;t miss it.

@@ -17,6 +17,8 @@ interface SectionProps {
   transparent?: boolean;
   glassMorphism?: boolean;
   navbar?: boolean;
+  noVerticalLines?: boolean;
+  blurred?: boolean;
 }
 
 const SectionLayout = ({
@@ -29,6 +31,8 @@ const SectionLayout = ({
   transparent = false,
   glassMorphism = false,
   navbar = false,
+  noVerticalLines = false,
+  blurred = false,
 }: SectionProps) => {
   const { setShowCursor } = useContext(CustomCursorContext)!;
 
@@ -41,12 +45,15 @@ const SectionLayout = ({
           "bg-tertiary": !transparent,
           "bg-transparent": transparent,
           "backdrop-blur-3xl": glassMorphism,
+          "backdrop-blur-md": blurred,
         },
       )}
     >
       <div
-        className={clsx("relative border border-y-0 border-quarternary", {
-          "px-4 py-2 sm:px-8 sm:py-4 lg:px-16 lg:py-9": !full,
+        className={clsx("relative border-y-0 border-quarternary", {
+          border: !noVerticalLines,
+          "px-4 sm:px-8 lg:px-16": !full,
+          "py-2 sm:py-4 lg:py-9": !full && !navbar,
           "py-2 sm:py-4": navbar,
           "pb-10": explorable,
         })}

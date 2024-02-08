@@ -63,7 +63,9 @@ const Navbar = () => {
                 href="/conferences"
                 onMouseEnter={() => setShowCursor(false)}
                 onMouseLeave={() => setShowCursor(true)}
-                className={clsx("cursor-pointer hover:text-primary")}
+                className={clsx("cursor-pointer hover:text-primary", {
+                  "text-primary underline": pathname === "/conferences",
+                })}
               >
                 conferences
               </CustomLink>
