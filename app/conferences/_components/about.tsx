@@ -20,7 +20,7 @@ const About = () => {
           </CustomText>
           Engage with industry experts, network with peers, and gain valuable insights into the future of technology. Participate in interactive sessions, panel discussions, and technical workshops. Expand your knowledge, enhance your skills, and be a part of the academic community at Christ College of Engineering.&nbsp;
           <CustomText highlightedDescription>
-            Don't miss this opportunity to be inspired and stay ahead in the ever-evolving world of engineering.&nbsp;
+            Don&apos;t miss this opportunity to be inspired and stay ahead in the ever-evolving world of engineering.&nbsp;
           </CustomText>
           Join us for the Conference Presentation at Christ College of Engineering.
         </CustomText>

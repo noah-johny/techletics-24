@@ -1,7 +1,7 @@
 import SectionLayout from "@/layouts/section-layout";
 import Navbar from "@/components/navbar";
 import Title from "@/components/title";
-import { About } from "./_compponents";
+import { About } from "./_components";
 import { CustomText } from "@/components/custom";
 
 export default function Conferences() {
