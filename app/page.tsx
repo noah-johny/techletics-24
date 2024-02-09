@@ -6,18 +6,16 @@ import Navbar from "@/components/navbar";
 export default function Home() {
   return (
     <>
-      <section className="bg-hero-img bg-cover bg-no-repeat">
+      <section className="bg-hero-img bg-cover bg-no-repeat ">
         <SectionLayout navbar float transparent glassMorphism>
           <Navbar />
         </SectionLayout>
-        <SectionLayout full transparent>
+        <SectionLayout full transparent hero>
           <Hero />
         </SectionLayout>
       </section>
 
-      <section className="bg-primary py-2 md:py-4">
-        <TextMarquee />
-      </section>
+      <TextMarquee />
 
       <SectionLayout explorable navigate="/about">
         <About />
@@ -27,13 +25,9 @@ export default function Home() {
         <Stats />
       </SectionLayout>
 
-      <section className="border border-x-0 border-t-0 border-quarternary bg-tertiary py-2 md:py-4">
-        <TextMarquee mode="dark" />
-      </section>
+      <TextMarquee />
 
-      <section className="bg-primary py-2 md:py-4">
-        <TextMarquee type="secondary" />
-      </section>
+      <TextMarquee bgColor="tertiary" textColor="dark" />
     </>
   );
 }

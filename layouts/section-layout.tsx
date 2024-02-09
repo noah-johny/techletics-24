@@ -6,6 +6,7 @@ import Link from "next/link";
 import { ReactNode, useContext } from "react";
 import AnimatedSectionLayout from "./animated-section-layout";
 import { CustomCursorContext } from "@/context/custom-cursor-context";
+import "@/app/globals.css";
 
 interface SectionProps {
   children: ReactNode;
@@ -19,6 +20,7 @@ interface SectionProps {
   navbar?: boolean;
   noVerticalLines?: boolean;
   blurred?: boolean;
+  hero?: boolean;
 }
 
 const SectionLayout = ({
@@ -33,13 +35,14 @@ const SectionLayout = ({
   navbar = false,
   noVerticalLines = false,
   blurred = false,
+  hero = false,
 }: SectionProps) => {
   const { setShowCursor } = useContext(CustomCursorContext)!;
 
   return (
     <div
       className={clsx(
-        "border border-x-0 border-t-0 border-quarternary px-6 sm:px-12",
+        "w-screen min-w-80 overflow-x-clip border border-x-0 border-t-0 border-quarternary px-6 sm:px-12",
         {
           "fixed left-0 right-0 top-0 z-10": float,
           "bg-tertiary": !transparent,
@@ -50,12 +53,13 @@ const SectionLayout = ({
       )}
     >
       <div
-        className={clsx("relative border-y-0 border-quarternary", {
+        className={clsx("relative w-full border-y-0 border-quarternary", {
           border: !noVerticalLines,
           "px-4 sm:px-8 lg:px-16": !full,
           "py-2 sm:py-4 lg:py-9": !full && !navbar,
           "py-2 sm:py-4": navbar,
           "pb-10": explorable,
+          "backdrop-brightness-50": hero,
         })}
       >
         <AnimatedSectionLayout
@@ -68,7 +72,7 @@ const SectionLayout = ({
             duration: 0.5,
           }}
         >
-          {children}
+          <div className="mx-auto w-full max-w-[1440px]">{children}</div>
         </AnimatedSectionLayout>
         {explorable && (
           <>
