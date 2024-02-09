@@ -58,7 +58,7 @@ const Hero = () => {
   const seconds = String(timeLeft?.seconds).padStart(2, "0");
 
   return (
-    <div className="flex h-screen min-h-[456px] flex-col items-center justify-center overflow-hidden lg:gap-6 2xl:h-fit 2xl:scale-150 2xl:py-96">
+    <div className="3xl:h-fit 3xl:scale-150 3xl:py-96 flex h-screen min-h-[456px] flex-col items-center justify-center overflow-hidden lg:gap-6">
       {/* Hero Text */}
       <div className="text-wider relative h-fit w-fit scale-[0.36] flex-col font-primary lowercase text-secondary sm:scale-50 md:scale-75 lg:scale-100">
         <p className="w-full text-center text-7xl">ILLUMINⱭͲe. IGNIͲЄ.</p>
