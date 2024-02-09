@@ -1,8 +1,7 @@
 import SectionLayout from "@/layouts/section-layout";
 import Navbar from "@/components/navbar";
 import Title from "@/components/title";
-import { About } from "./_components";
-import Date from "./_components/date";
+import { About, Date, Guidelines, Roadmap } from "./_components";
 
 export default function Conferences() {
   return (
@@ -20,6 +19,14 @@ export default function Conferences() {
       </div>
 
       <Date />
+
+      <SectionLayout>
+        <Roadmap />
+      </SectionLayout>
+
+      <SectionLayout>
+        <Guidelines />
+      </SectionLayout>
     </>
   );
 }
