@@ -1,7 +1,7 @@
 import SectionLayout from "@/layouts/section-layout";
 import Navbar from "@/components/navbar";
 import Title from "@/components/title";
-import { About, Date, Guidelines, Roadmap } from "./_components";
+import { About, Date, Guidelines, Roadmap, Submit } from "./_components";
 
 export default function Conferences() {
   return (
@@ -12,11 +12,11 @@ export default function Conferences() {
 
       <Title title="conferences" />
 
-      <div className="bg-conference-img bg-cover bg-center bg-no-repeat">
-        <SectionLayout transparent blurred>
-          <About />
-        </SectionLayout>
-      </div>
+      {/* <div className="bg-conference-img bg-cover bg-center bg-no-repeat"> */}
+      <SectionLayout>
+        <About />
+      </SectionLayout>
+      {/* </div> */}
 
       <Date />
 
@@ -26,6 +26,10 @@ export default function Conferences() {
 
       <SectionLayout>
         <Guidelines />
+      </SectionLayout>
+
+      <SectionLayout>
+        <Submit />
       </SectionLayout>
     </>
   );

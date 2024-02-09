@@ -1,5 +1,4 @@
 import { CustomText } from "@/components/custom";
-import Image from "next/image";
 
 const Roadmap = () => {
   const events = [
@@ -33,12 +32,12 @@ const Roadmap = () => {
   return (
     <div className="relative my-12 flex flex-col justify-start gap-12 font-secondary text-secondary">
       <CustomText title>
-        hackathon&nbsp;<CustomText highlightedTitle>roadmap</CustomText>
+        conference&nbsp;<CustomText highlightedTitle>roadmap</CustomText>
       </CustomText>
 
       <div className="flex w-full items-center justify-center gap-6">
         <div
-          className="z-10 flex w-full flex-col gap-12 sm:grid-cols-2 sm:grid-rows-3 xl:grid-cols-3 xl:grid-rows-2"
+          className="z-0 flex w-full flex-col gap-12 sm:grid-cols-2 sm:grid-rows-3 xl:grid-cols-3 xl:grid-rows-2"
           style={{ display: "grid" }}
         >
           {events.map((event, index) => (
