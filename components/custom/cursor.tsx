@@ -1,8 +1,9 @@
 "use client";
 
 import { useContext, useEffect, useState } from "react";
-import { Variants, motion } from "framer-motion";
+import { Variants, motion, spring } from "framer-motion";
 import { CustomCursorContext } from "@/context/custom-cursor-context";
+import clsx from "clsx";
 import "@/app/globals.css";
 
 const Cursor = () => {
@@ -63,13 +64,12 @@ const Cursor = () => {
   };
 
   return (
-    showCursor && (
       <motion.div
-        className="pointer-events-none fixed left-0 top-0 z-20 rounded-full"
+        className={clsx("pointer-events-none fixed left-0 top-0 z-20 rounded-full", {"hidden": !showCursor})}
         variants={variants}
         animate={cursorVariant}
+        transition={{ duration: 0.1 }}
       />
-    )
   );
 };
 
