@@ -1,7 +1,7 @@
 "use client";
 
 import { useContext, useEffect, useState } from "react";
-import { Variants, motion, spring } from "framer-motion";
+import { Variants, motion } from "framer-motion";
 import { CustomCursorContext } from "@/context/custom-cursor-context";
 import clsx from "clsx";
 import "@/app/globals.css";

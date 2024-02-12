@@ -1,6 +1,5 @@
-import { CustomText } from "@/components/custom";
+import { CustomLink, CustomText } from "@/components/custom";
 import Image from "next/image";
-import Link from "next/link";
 
 interface ConferenceCardProps {
   src: string;
@@ -16,7 +15,7 @@ const ConferenceCard: React.FC<ConferenceCardProps> = ({
   link,
 }) => {
   return (
-    <Link href={link} className="relative mb-6">
+    <CustomLink href={link} className="relative mb-6">
       <Image
         src={src}
         alt={alt}
@@ -31,7 +30,7 @@ const ConferenceCard: React.FC<ConferenceCardProps> = ({
           {label}
         </span>
       </div>
-    </Link>
+    </CustomLink>
   );
 };
 
