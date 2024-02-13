@@ -61,18 +61,18 @@ const Hero = () => {
     <div className="3xl:h-fit 3xl:scale-150 3xl:py-96 flex h-screen min-h-[456px] flex-col items-center justify-center overflow-hidden lg:gap-6">
       {/* Hero Text */}
       <div className="text-wider relative h-fit w-fit scale-[0.36] flex-col font-primary lowercase text-secondary sm:scale-50 md:scale-75 lg:scale-100">
-        <p className="w-full text-center text-7xl">ILLUMINⱭͲe. IGNIͲЄ.</p>
+        <p className="w-full text-center text-7xl">IGNIͲς. INSPIRe.</p>
         <Image
           src="/images/techletics-sticker.svg"
-          width={75}
-          height={70}
+          width={64}
+          height={64}
           alt="Techletics Sticker"
           priority
-          className="left-150 absolute right-60 top-8 ml-4 rotate-[6deg]"
+          className="absolute left-[264px] top-8 ml-4 rotate-[6deg]"
         />
         <div className="flex items-baseline gap-2">
-          <p className="font-primary text-big lowercase leading-none">
-            INSPIRς
+          <p className="font-primary text-9xl lowercase leading-none">
+            ILLUMINⱭͲς
           </p>
           <p className="text-center font-primary text-4xl lowercase">🌞</p>
         </div>
