@@ -3,7 +3,7 @@ import Navbar from "@/components/navbar";
 import Title from "@/components/title";
 import { About, Date, Guidelines, Roadmap, Submit } from "./_components";
 
-export default function Conferences() {
+export default function ConferencesPage() {
   return (
     <>
       <SectionLayout navbar float transparent glassMorphism>
@@ -12,11 +12,9 @@ export default function Conferences() {
 
       <Title title="conferences" />
 
-      {/* <div className="bg-conference-img bg-cover bg-center bg-no-repeat"> */}
       <SectionLayout>
         <About />
       </SectionLayout>
-      {/* </div> */}
 
       <Date />
 

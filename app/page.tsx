@@ -1,9 +1,10 @@
-import { About, Hero, Stats } from "@/app/_components";
+import { About, Gallery, Hero, Stats } from "@/app/_components";
 import TextMarquee from "@/components/marquee";
 import SectionLayout from "@/layouts/section-layout";
 import Navbar from "@/components/navbar";
+import Image from "next/image";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <section className="bg-hero-img bg-cover bg-no-repeat ">
@@ -25,9 +26,24 @@ export default function Home() {
         <Stats />
       </SectionLayout>
 
-      <TextMarquee />
-
       <TextMarquee bgColor="tertiary" textColor="dark" />
+
+      <SectionLayout explorable full imageContent navigate="/about#gallery">
+        <Gallery />
+      </SectionLayout>
+
+      <section className="w-full">
+        <Image
+          src={"/images/techletics-logo-construction.png"}
+          alt="Techletics Logo Construction"
+          width={5760}
+          height={4018}
+          priority
+          className="h-full w-full object-cover"
+        />
+      </section>
+
+      <TextMarquee type="secondary" />
     </>
   );
 }

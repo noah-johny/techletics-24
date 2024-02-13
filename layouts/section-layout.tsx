@@ -21,6 +21,7 @@ interface SectionProps {
   noVerticalLines?: boolean;
   blurred?: boolean;
   hero?: boolean;
+  imageContent?: boolean;
 }
 
 const SectionLayout = ({
@@ -36,6 +37,7 @@ const SectionLayout = ({
   noVerticalLines = false,
   blurred = false,
   hero = false,
+  imageContent = false,
 }: SectionProps) => {
   const { setShowCursor } = useContext(CustomCursorContext)!;
 
@@ -58,7 +60,7 @@ const SectionLayout = ({
           "px-4 sm:px-8 lg:px-16": !full,
           "py-2 sm:py-4 lg:py-9": !full && !navbar,
           "py-2 sm:py-4": navbar,
-          "pb-10": explorable,
+          "pb-10": explorable && !imageContent,
           "backdrop-brightness-50": hero,
         })}
       >
@@ -72,12 +74,19 @@ const SectionLayout = ({
             duration: 0.5,
           }}
         >
-          <div className="mx-auto w-full max-w-[1440px]">{children}</div>
+          <div
+            className={clsx("mx-auto w-full", {
+              "max-w-[1440px]": !imageContent,
+            })}
+          >
+            {children}
+          </div>
         </AnimatedSectionLayout>
         {explorable && (
           <>
             <Link
               href={navigate}
+              scroll
               className="absolute bottom-0 right-0 hidden md:block"
               onMouseEnter={() => setShowCursor(false)}
               onMouseLeave={() => setShowCursor(true)}
@@ -86,6 +95,7 @@ const SectionLayout = ({
             </Link>
             <Link
               href={navigate}
+              scroll
               className="absolute bottom-0 right-0 md:hidden"
               onMouseEnter={() => setShowCursor(false)}
               onMouseLeave={() => setShowCursor(true)}

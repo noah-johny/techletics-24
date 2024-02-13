@@ -5,6 +5,7 @@ import PhotoGallery from "./_components/gallery";
 import About from "./_components/about";
 import Hero from "./_components/hero";
 import Committee_page from "./_components/committee_page";
+
 export default function AboutPage() {
   return (
     <>
@@ -22,9 +23,9 @@ export default function AboutPage() {
         <About />
       </SectionLayout>
 
-      <SectionLayout>
-        <PhotoGallery />
-      </SectionLayout>
+        <SectionLayout>
+          <PhotoGallery />
+        </SectionLayout>
 
       {/* <section className="w-full">
         <Image

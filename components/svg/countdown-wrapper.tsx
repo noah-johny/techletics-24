@@ -32,7 +32,7 @@ const CountdownWrapper = ({ size = "large" }: CountdownWrapperProps) => {
         d="M2.62301 32.8746C2.66904 19.9879 12.884 9.43767 25.7626 8.97573L250.967 0.897893C264.616 0.408333 275.921 11.3911 275.827 25.0482L272.738 472.29C272.645 485.819 261.394 496.597 247.873 496.109L24.217 488.035C11.2743 487.568 1.03673 476.916 1.08299 463.965L2.62301 32.8746Z"
         stroke="#DFFF1B"
       />
-      <path d="M2 302L274 283" stroke="#DFFF1B" stroke-linecap="round" />
+      <path d="M2 302L274 283" stroke="#DFFF1B" strokeLinecap="round" />
     </svg>
   );
 };

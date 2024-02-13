@@ -33,8 +33,8 @@ const About = () => {
             technology and culture. Participate in workshops, competitions,
             exhibitions, performances, and more. Win prizes and awards.&nbsp;
             <CustomText highlightedDescription>
-              Illuminate your mind, ignite your passion, and inspire your
-              future.&nbsp;
+              Ignite your passion, inspire your future and illuminate your mind.
+              &nbsp;
             </CustomText>
             Techletics &apos;24 is the ultimate rendezvous of innovation and
             zest. Don&apos;t miss it.
