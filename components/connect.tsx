@@ -45,19 +45,19 @@ const SocialConnect = () => {
           <div className="z-[1] flex gap-6">
             <CustomLink
               href="https://www.instagram.com/techleticscce"
-              className="rounded-full bg-secondary p-4 hover:bg-primary"
+              className="h-16 w-16 rounded-full bg-secondary p-4 hover:bg-primary"
             >
               <SocialIcon logo="instagram" />
             </CustomLink>
             <CustomLink
               href="https://www.linkedin.com/school/christcollegeofengineering/"
-              className="rounded-full bg-secondary p-4 hover:bg-primary"
+              className="h-16 w-16 rounded-full bg-secondary p-4 hover:bg-primary"
             >
               <SocialIcon logo="linkedin" />
             </CustomLink>
             <CustomLink
               href="https://twitter.com/IedcE71858"
-              className="rounded-full bg-secondary p-4 hover:bg-primary"
+              className="h-16 w-16 rounded-full bg-secondary p-4 hover:bg-primary"
             >
               <SocialIcon logo="x" />
             </CustomLink>

@@ -21,7 +21,7 @@ export default function Events() {
         alt="Pro-Show"
         width={5760}
         height={3468}
-        className="w-full"
+        className="z-10 -mb-6 w-full"
       />
       <TextMarquee textColor="dark" bgColor="tertiary" />
     </>

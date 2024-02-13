@@ -49,14 +49,14 @@ const EventList = () => {
         <div className="font-secondary text-sm sm:text-xl md:text-lg">
           Explore, Learn, and Enjoy: The Events of Techletics '24
         </div>
-        <div className="mx-auto flex items-center justify-between rounded-full border-2 border-primary p-2 font-primary text-2xl text-primary">
+        <div className="mx-auto hidden w-full items-center justify-between rounded-full border-2 border-primary p-2 font-primary text-lg text-primary md:flex lg:text-2xl">
           {branches.map((branch) => (
             <div
               key={branch}
               className={
                 activeTab === branch
-                  ? "rounded-full bg-primary px-10 py-1 text-tertiary"
-                  : "px-10"
+                  ? "rounded-full bg-primary px-4 py-1 text-tertiary lg:px-10"
+                  : "px-4 py-1 lg:px-10"
               }
               onClick={() => setActiveTab(branch)}
             >
@@ -64,7 +64,27 @@ const EventList = () => {
             </div>
           ))}
         </div>
-        <div className="mt-10 flex flex-wrap justify-evenly">
+        <div className="md:hidden">
+          <select
+            className="w-full rounded-full bg-primary px-4 py-2 font-primary text-xl text-tertiary"
+            onChange={(e) => setActiveTab(e.target.value)}
+          >
+            {branches.map((branch) => (
+              <option
+                className={
+                  activeTab === branch
+                    ? "bg-tertiary text-primary"
+                    : "bg-primary text-tertiary"
+                }
+                key={branch}
+                value={branch}
+              >
+                {branch}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="my-10 flex flex-wrap justify-evenly">
           {eventlist
             .filter(
               (event) => activeTab === "ALL" || event.branch === activeTab,
