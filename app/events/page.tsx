@@ -5,7 +5,7 @@ import EventList from "./_components/EventList";
 import Image from "next/image";
 import TextMarquee from "@/components/marquee";
 
-export default function Events() {
+export default function EventsPage() {
   return (
     <>
       <SectionLayout navbar float transparent glassMorphism>

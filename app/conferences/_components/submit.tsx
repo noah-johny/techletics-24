@@ -15,21 +15,19 @@ const ConferenceCard: React.FC<ConferenceCardProps> = ({
   link,
 }) => {
   return (
-    <CustomLink href={link} className="relative mb-6">
+    <CustomLink href={link} className="mb-4">
       <Image
         src={src}
         alt={alt}
         width={320}
-        height={320}
+        height={256}
         priority
-        className="saturate-0 hover:saturate-100 md:w-60"
+        className="h-96 saturate-0 hover:saturate-100"
       />
 
-      <div className="absolute bottom-4 flex w-80 justify-center md:w-60">
-        <span className="flex max-w-52 text-center font-secondary text-lg font-semibold text-primary">
-          {label}
-        </span>
-      </div>
+      <span className="mt-2 flex w-80 justify-center text-center font-secondary text-lg font-semibold text-primary">
+        {label}
+      </span>
     </CustomLink>
   );
 };
@@ -37,40 +35,40 @@ const ConferenceCard: React.FC<ConferenceCardProps> = ({
 const Submit = () => {
   const conferenceData = [
     {
-      src: "/images/CSE.png",
+      src: "/images/conference/CS-conference.jpeg",
       alt: "Computer Science and Engineering",
       label: "CSE",
-      link: "",
+      link: "mailto:callforpapers@cce.edu.in",
     },
     {
-      src: "/images/EEE.png",
+      src: "/images/conference/EEE-conference.jpeg",
       alt: "Electrical and Electronics Engineering",
       label: "EEE",
-      link: "",
+      link: "mailto:iccce2024@cce.edu.in",
     },
     {
-      src: "/images/ME.png",
+      src: "/images/conference/ME-conference.jpeg",
       alt: "Mechanical Engineering",
       label: "ME",
-      link: "",
+      link: "mailto:icemme24@cce.edu.in",
     },
     {
-      src: "/images/ECE.png",
+      src: "/images/conference/EC-conference.jpeg",
       alt: "Electronics and Communication Engineering",
       label: "ECE",
-      link: "",
+      link: "mailto:icrcet24@cce.edu.in",
     },
     {
-      src: "/images/CE.png",
+      src: "/images/conference/CE-conference.jpeg",
       alt: "Civil Engineering",
       label: "CE",
-      link: "",
+      link: "mailto:icice2024@cce.edu.in",
     },
     {
-      src: "/images/ME.png",
+      src: "/images/conference/ME-conference.jpeg",
       alt: "Basic Science & Humanities",
       label: "BSH",
-      link: "",
+      link: "mailto:conference.bsh@cce.edu.in",
     },
   ];
 

@@ -55,12 +55,12 @@ const SocialConnect = () => {
             >
               <SocialIcon logo="linkedin" />
             </CustomLink>
-            <CustomLink
+            {/* <CustomLink
               href="https://twitter.com/IedcE71858"
               className="h-16 w-16 rounded-full bg-secondary p-4 hover:bg-primary"
             >
               <SocialIcon logo="x" />
-            </CustomLink>
+            </CustomLink> */}
           </div>
 
           <Image
@@ -127,17 +127,17 @@ const Connect = () => {
               />
               <div className="flex flex-wrap font-secondary text-lg font-extrabold md:text-xl xl:text-2xl">
                 <CustomLink
-                  href="/"
+                  href="tel:+91 9400336647"
                   className="whitespace-nowrap hover:text-primary"
                 >
-                  +91 1234567890
+                  +91 9400336647
                 </CustomLink>
                 <p>,&nbsp;</p>
                 <CustomLink
-                  href="/"
+                  href="tel:+91 9072809994"
                   className="whitespace-nowrap hover:text-primary"
                 >
-                  +91 9876543210
+                  +91 9072809994
                 </CustomLink>
               </div>
             </div>

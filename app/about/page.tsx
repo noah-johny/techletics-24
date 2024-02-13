@@ -5,6 +5,7 @@ import PhotoGallery from "./_components/gallery";
 import About from "./_components/about";
 import Hero from "./_components/hero";
 import Committee_page from "./_components/committee_page";
+
 export default function AboutPage() {
   return (
     <>
@@ -22,9 +23,20 @@ export default function AboutPage() {
         <About />
       </SectionLayout>
 
-      <SectionLayout>
-        <PhotoGallery />
-      </SectionLayout>
+        <SectionLayout>
+          <PhotoGallery />
+        </SectionLayout>
+
+      {/* <section className="w-full">
+        <Image
+          src="/images/logo_hero.svg"
+          layout="responsive"
+          width={1920} // Adjust the width according to your image's original dimensions
+          height={1080} // Adjust the height according to your image's original dimensions
+          alt="Techletics Sticker"
+          priority
+        />
+      </section> */}
       <Committee_page />
     </>
   );

@@ -18,6 +18,8 @@ const config: Config = {
         "conference-img": "url('/images/conference-img.jpg')",
         "college-img": "url('/images/college.png')",
         "mainlogo-img": "url('/images/logo_hero.png')",
+        "techletics-logo-construction":
+          "url('/images/techletics-logo-construction.png')",
       },
       colors: {
         primary: "#DFFF1B",

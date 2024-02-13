@@ -22,7 +22,7 @@ const TextMarquee = ({
       className={clsx("w-full min-w-80 overflow-x-clip py-2 md:py-4", {
         "bg-primary": bgColor === "primary",
         "bg-secondary": bgColor === "secondary",
-        "bg-tertiary": bgColor === "tertiary",
+        "bg-tertiary border-b border-secondary border-opacity-30": bgColor === "tertiary",
         "bg-quarternary": bgColor === "quarternary",
         "bg-transparent": bgColor === "transparent",
       })}
@@ -47,17 +47,17 @@ const TextMarquee = ({
           ) : (
             <p
               key={index}
-              className={clsx("flex gap-3 font-primary text-3xl", {
+              className={clsx("flex gap-3 font-primary text-4xl md:text-5xl py-1 md:py-2", {
                 "text-tertiary": textColor === "light",
                 "text-primary": textColor === "dark",
               })}
             >
               <span className="ml-4">◌</span>
-              <span>ILLUMINⱭͲe</span>
+              <span>IGNIͲς</span>
               <span>✺</span>
-              <span>IGNIͲЄ</span>
+              <span>INSPIRe</span>
               <span>🌞</span>
-              <span>INSPIRς</span>
+              <span>ILLUMINⱭͲς</span>
             </p>
           ),
         )}
