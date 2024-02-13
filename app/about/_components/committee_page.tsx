@@ -172,7 +172,7 @@ export default function Committee_page() {
         {
           role: "CE Deaprtment",
           name: "Jerin John Mathen",
-          localUrl: "/images/members/Jerin John Mathen.png",
+          localUrl: "/images/members/jerin john mathen.png",
           cloudUrl:
             "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2Fjerin%20john%20mathen.png?alt=media&token=e08d66ca-f736-4388-8ce2-1db897c5705c",
         },
