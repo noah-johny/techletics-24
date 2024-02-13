@@ -68,12 +68,12 @@ const PhotoGallery: React.FC = () => {
         >
           <div className="saturate-0 transition duration-500 ease-in-out hover:saturate-100">
             <Image
-              loading="lazy"
               src={image}
               alt={`Image ${index + 1}`}
               width={500}
               height={300}
               className="h-96 w-full transform object-cover transition-all duration-500 hover:scale-105"
+              priority
             />
           </div>
         </div>

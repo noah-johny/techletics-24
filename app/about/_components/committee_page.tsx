@@ -1,183 +1,243 @@
-import React from "react";
 import { CustomText } from "@/components/custom";
 import Committe_card from "./committe_card";
 import SectionLayout from "@/layouts/section-layout";
 
-interface Position {
-  position: string;
+interface Details {
+  role: string;
   name: string;
-  img: string;
+  localUrl: string;
+  cloudUrl: string;
 }
 
 interface CommitteeData {
   title: string;
-  positions: Position[];
+  details: Details[];
 }
 
 export default function Committee_page() {
   const data: CommitteeData[] = [
     {
       title: "Executive Committee",
-      positions: [
+      details: [
         {
-          position: "Faculty Co-ordinator",
+          role: "Faculty Co-ordinator",
           name: "Dr. Ravishankar A N",
-          img: "/images/members/Dr.png",
+          localUrl: "/images/members/Dr.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FDr.png?alt=media&token=f836eb8b-4dc9-462f-be8d-b478947419e2",
         },
         {
-          position: "Faculty Co-ordinator",
+          role: "Faculty Co-ordinator",
           name: "Mr. Jisanto M D R",
-          img: "/images/members/Jisanto M D R.png",
+          localUrl: "/images/members/Jisanto M D R.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FJisanto%20M%20D%20R.png?alt=media&token=f7439f39-666f-4330-a55c-a945227f73ff",
         },
         {
-          position: "Chief Co-ordinator",
+          role: "Chief Co-ordinator",
           name: "Rikson Raphel",
-          img: "/images/members/Rikson Raphel.png",
+          localUrl: "/images/members/Rikson Raphel.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FRikson%20Raphel.png?alt=media&token=24d86598-d8e5-431a-a735-5ecf34048bb2",
         },
         {
-          position: "Chief Co-ordinator",
+          role: "Chief Co-ordinator",
           name: "Benhar Raj",
-          img: "/images/members/Benhar Raj.png",
+          localUrl: "/images/members/Benhar Raj.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FBenhar%20Raj.png?alt=media&token=d0a1420a-7fdb-4b03-89e9-339f3015cbaa",
         },
         {
-          position: "Union Chairman",
+          role: "Union Chairman",
           name: "Albert Prakash",
-          img: "/images/members/albert.png",
+          localUrl: "/images/members/albert.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2Falbert.png?alt=media&token=a2a7fa4d-6fd5-4d8e-8e46-5c6f5d59b6f6",
         },
         {
-          position: "Union Vice-Chairman",
+          role: "Union Vice-Chairman",
           name: "Alena Babu T",
-          img: "/images/members/Alena Babu T.png",
+          localUrl: "/images/members/Alena Babu T.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FAlena%20Babu%20T.png?alt=media&token=25871502-f9c2-4512-9e8e-a0caec8266db",
         },
         {
-          position: "Technical Event Co-ordinator",
+          role: "Technical Event Co-ordinator",
           name: "Nasih P S",
-          img: "/images/members/Nasih P S.png",
+          localUrl: "/images/members/Nasih P S.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FNasih%20P%20S.png?alt=media&token=6e46c326-8b61-452b-b33e-00d6e6c20db0",
         },
         {
-          position: "Technical Event Co-ordinator",
+          role: "Technical Event Co-ordinator",
           name: "Nihas M S",
-          img: "/images/members/Nihas M S.png",
+          localUrl: "/images/members/Nihas M S.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FNihas%20M%20S.png?alt=media&token=29e7d256-654c-4f1e-aac3-a63078910e7c",
         },
         {
-          position: "Cultural Event Co-ordinator",
+          role: "Cultural Event Co-ordinator",
           name: "Rinoy Saju M",
-          img: "/images/members/Rinoy Saju M.png",
+          localUrl: "/images/members/Rinoy Saju M.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FRinoy%20Saju%20M.png?alt=media&token=212f69b6-8d44-4826-8628-6815fe737ee2",
         },
         {
-          position: "Cultural Event Co-ordinator",
+          role: "Cultural Event Co-ordinator",
           name: "Swathy Anil",
-          img: "/images/members/Swathi Anil.png",
+          localUrl: "/images/members/Swathi Anil.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FSwathi%20Anil.png?alt=media&token=82c04645-45ef-48d4-a8d1-b5edb0e117c7",
         },
       ],
     },
     {
       title: "Website Committee",
-      positions: [
+      details: [
         {
-          position: "Website Lead",
+          role: "Website Lead",
           name: "Pranav Madhu",
-          img: "/images/members/Pranav Madhu.png",
+          localUrl: "/images/members/pranvmadhu.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2Fpranavmadhu.png?alt=media&token=7d343bf8-dc56-46dd-b394-c8ff421c532e",
         },
         {
-          position: "Lead Developer / Designer",
+          role: "Lead Developer / Designer",
           name: "Noah Johny",
-          img: "/images/members/Noah Johny.png",
+          localUrl: "/images/members/Noah Johny.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FNoah%20Johny.png?alt=media&token=0319abc8-1952-457d-9ff8-92d71e095c73",
         },
         {
-          position: "Lead Designer",
+          role: "Lead Designer",
           name: "Enric S Neelamkavil",
-          img: "/images/members/Enric S Neelamkavil.png",
+          localUrl: "/images/members/Enric S Neelamkavil.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FEnric%20S%20Neelamkavil.png?alt=media&token=cc8150b6-7b87-459a-abe6-4418e5572328",
         },
         {
-          position: "Website Supervisor",
+          role: "Website Supervisor",
           name: "Surya Kiran P M",
-          img: "/images/members/Surya Kiran P M.png",
+          localUrl: "/images/members/Surya Kiran P M.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FSurya%20Kiran%20P%20M.png?alt=media&token=b2dd1e71-1301-466a-acd2-093c1d3d4106",
         },
         {
-          position: "Frontend Developer",
+          role: "Frontend Developer",
           name: "Nikhit Kumar N S",
-          img: "/images/members/Nikhit Kumar.png",
+          localUrl: "/images/members/Nikhit Kumar.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FNikhit%20Kumar.png?alt=media&token=1876ef36-5925-4713-a00a-c16f6e338b5a",
         },
         {
-          position: "Frontend Developer",
+          role: "Frontend Developer",
           name: "Navaneeth K U",
-          img: "/images/members/Navaneeth K U.png",
+          localUrl: "/images/members/Navaneeth K U.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FNavaneeth%20K%20U.png?alt=media&token=e8b6b61e-c62b-4809-aaba-e6e669ddde2d",
         },
         {
-          position: "Frontend Developer",
+          role: "Frontend Developer",
           name: "Alfrin J Poulouse",
-          img: "/images/members/alfrin.png",
+          localUrl: "/images/members/alfrin.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2Falfrin.png?alt=media&token=36d25766-6020-4e29-8c75-bf4eae56a54e",
         },
         {
-          position: "Backend Developer",
+          role: "Backend Developer",
           name: "Rinto Joseph T R",
-          img: "/images/members/Rinto Joseph T R.png",
+          localUrl: "/images/members/rinto.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2Frinto.png?alt=media&token=a3cb9ca4-3b7a-450d-9052-f63647af8237",
         },
       ],
     },
     {
       title: "Department Coordinators",
-      positions: [
+      details: [
         {
-          position: "BSE Deaprtment",
+          role: "BSE Deaprtment",
           name: "Farhan M Jeejo",
-          img: "/images/members/Farhan M Jeejo.png",
+          localUrl: "/images/members/Farhan M Jeejo.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FFarhan%20M%20Jeejo.png?alt=media&token=2dfa279e-5e1a-4568-9bfb-b31c4bbcbe82",
         },
         {
-          position: "BSE Deaprtment",
+          role: "BSE Deaprtment",
           name: "Raiza Rasheed",
-          img: "/images/members/Raiza Rasheed.png",
+          localUrl: "/images/members/Raiza Rasheed.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FRaiza%20Rasheed.png?alt=media&token=2e7ff74b-d7eb-4a9a-b18f-de3aa651d089",
         },
         {
-          position: "CE Deaprtment",
+          role: "CE Deaprtment",
           name: "Jerin John Mathen",
-          img: "/images/members/Jerin John Mathen.png",
+          localUrl: "/images/members/Jerin John Mathen.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2Fjerin%20john%20mathen.png?alt=media&token=e08d66ca-f736-4388-8ce2-1db897c5705c",
         },
         {
-          position: "CE Deaprtment",
+          role: "CE Deaprtment",
           name: "Nasiya S A",
-          img: "/images/members/Nasiya S A.png",
+          localUrl: "/images/members/Nasiya S A.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FNasiya%20S%20A.png?alt=media&token=a8badf76-f328-478b-ac6b-1746c4113f73",
         },
         {
-          position: "CSE Deaprtment",
+          role: "CSE Deaprtment",
           name: "Neha Johnson",
-          img: "/images/members/neha johnson.png",
+          localUrl: "/images/members/neha johnson.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2Fneha%20johnson.png?alt=media&token=4680cc3e-da62-4fff-8fd5-9e79d8dd9df8",
         },
         {
-          position: "CSE Deaprtment",
+          role: "CSE Deaprtment",
           name: "Sai Prasad",
-          img: "/images/members/Sai Prasad.png",
+          localUrl: "/images/members/Sai Prasad.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FSai%20Prasad.png?alt=media&token=6c682b5a-6553-4508-bcb2-4eb784e551cf",
         },
         {
-          position: "ECE Deaprtment",
+          role: "ECE Deaprtment",
           name: "Anamin Joseph Leo",
-          img: "/images/members/Anamin Joseph Leo.png",
+          localUrl: "/images/members/Anamin Joseph Leo.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FAnamin%20Joseph%20Leo.png?alt=media&token=06d1b41c-5106-4a93-b12a-9ff4401960bd",
         },
         {
-          position: "ECE Deaprtment",
+          role: "ECE Deaprtment",
           name: "Nasreen K Ubaid",
-          img: "/images/members/Nasreen K Ubaid.png",
+          localUrl: "/images/members/Nasreen K Ubaid.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FNasreen%20K%20Ubaid.png?alt=media&token=4ab62795-a2a2-42c1-a507-ce44e2f8c72b",
         },
         {
-          position: "EEE Deaprtment",
+          role: "EEE Deaprtment",
           name: "Nevin Yesudas",
-          img: "/images/members/Nevin Yesudas.png",
+          localUrl: "/images/members/Nevin Yesudas.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FNevin%20Yesudas.png?alt=media&token=a5cec458-4fcf-48b5-b748-8ddc6d9f16ef",
         },
         {
-          position: "EEE Deaprtment",
+          role: "EEE Deaprtment",
           name: "Nivin Tony",
-          img: "/images/members/Nivin Tony.png",
+          localUrl: "/images/members/Nivin Tony.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FNivin%20Tony.png?alt=media&token=49a1c129-2502-4b46-8e31-0a409af03e1c",
         },
         {
-          position: "ME Deaprtment",
+          role: "ME Deaprtment",
           name: "Sandeep Rajesh",
-          img: "/images/members/Sandeep Rajesh.png",
+          localUrl: "/images/members/Sandeep Rajesh.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FSANDEEP%20RAJESH.png?alt=media&token=784233e2-e93f-422d-b5b8-99591c6cc21b",
         },
         {
-          position: "ME Deaprtment",
+          role: "ME Deaprtment",
           name: "Nidhish T",
-          img: "/images/members/Nidhish T.png",
+          localUrl: "/images/members/Nidhish T.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FNidhish%20T.png?alt=media&token=5d884625-f28a-4194-ae91-a63eb7fcc49e",
         },
       ],
     },
@@ -190,8 +250,8 @@ export default function Committee_page() {
           <div className="flex flex-col items-center justify-center">
             <CustomText highlightedTitle>{item.title}</CustomText>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-5">
-              {item.positions.map((position, index) => (
-                <Committe_card info={position} key={index} />
+              {item.details.map((role, index) => (
+                <Committe_card info={role} key={index} />
               ))}
             </div>
           </div>

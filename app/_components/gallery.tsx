@@ -44,7 +44,7 @@ const Gallery: React.FC = () => {
 
   return (
     <div className="flex h-[75vh] w-full items-center justify-center">
-      <Image {...imageProps} alt={`Image ${currentIndex + 1}`} />
+      <Image {...imageProps} alt={`Image ${currentIndex + 1}`} priority />
       <div className="absolute w-2/3 text-center font-primary text-3xl lowercase leading-none tracking-wider text-secondary sm:text-4xl xl:text-6xl">
         GLIMPSE INTO THE memories WE HAVE CREATED.
       </div>
