@@ -112,7 +112,7 @@ export default function Committee_page() {
         {
           position: "Backend Developer",
           name: "Rinto Joseph T R",
-          img: "/images/members/Rinto Joseph T R.png",
+          img: "/images/members/rinto.png",
         },
       ],
     },
@@ -132,7 +132,7 @@ export default function Committee_page() {
         {
           position: "CE Deaprtment",
           name: "Jerin John Mathen",
-          img: "/images/members/Jerin John Mathen.png",
+          img: "/images/members/jerin john mathen.png",
         },
         {
           position: "CE Deaprtment",

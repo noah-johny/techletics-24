@@ -1,4 +1,3 @@
-import { CustomText } from "@/components/custom";
 import Image from "next/image";
 
 interface PositionInfo {
