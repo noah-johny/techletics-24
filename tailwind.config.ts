@@ -36,6 +36,9 @@ const config: Config = {
         xxl: "256px",
       },
     },
+    backgroundPosition: {
+      center: "center",
+    },
   },
   plugins: [],
 };
