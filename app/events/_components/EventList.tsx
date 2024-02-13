@@ -49,7 +49,7 @@ const EventList = () => {
         <div className="font-secondary text-sm sm:text-xl md:text-lg">
           Explore, Learn, and Enjoy: The Events of Techletics '24
         </div>
-        <div className="mx-auto hidden w-full items-center justify-between rounded-full border-2 border-primary p-2 font-primary text-lg text-primary md:flex lg:text-2xl">
+        <div className="mx-auto hidden w-full max-w-[800px] items-center justify-between rounded-full border-2 border-primary p-2 font-primary text-lg text-primary md:flex lg:text-2xl">
           {branches.map((branch) => (
             <div
               key={branch}
