@@ -18,12 +18,13 @@ export default function AboutPage() {
         <Hero />
       </SectionLayout>
 
-
       <SectionLayout>
         <About />
       </SectionLayout>
 
-
+      <SectionLayout>
+        <PhotoGallery />
+      </SectionLayout>
 
       {/* <section className="w-full">
         <Image
@@ -36,10 +37,6 @@ export default function AboutPage() {
         />
       </section> */}
       <Committee_page />
-
-      <SectionLayout>
-        <PhotoGallery />
-      </SectionLayout>
     </>
   );
 }
