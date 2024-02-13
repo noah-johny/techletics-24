@@ -1,8 +1,11 @@
 import SectionLayout from "@/layouts/section-layout";
 import Navbar from "@/components/navbar";
 import Title from "@/components/title";
-
-export default function About() {
+import PhotoGallery from "./_components/gallery";
+import About from "./_components/about";
+import Hero from "./_components/hero";
+import Committee_page from "./_components/committee_page";
+export default function AboutPage() {
   return (
     <>
       <SectionLayout navbar float transparent glassMorphism>
@@ -10,6 +13,30 @@ export default function About() {
       </SectionLayout>
 
       <Title title="about" />
+
+      <SectionLayout full>
+        <Hero />
+      </SectionLayout>
+
+      <SectionLayout>
+        <About />
+      </SectionLayout>
+
+      <SectionLayout>
+        <PhotoGallery />
+      </SectionLayout>
+
+      {/* <section className="w-full">
+        <Image
+          src="/images/logo_hero.svg"
+          layout="responsive"
+          width={1920} // Adjust the width according to your image's original dimensions
+          height={1080} // Adjust the height according to your image's original dimensions
+          alt="Techletics Sticker"
+          priority
+        />
+      </section> */}
+      <Committee_page />
     </>
   );
 }
