@@ -16,6 +16,8 @@ const config: Config = {
         "modal-logo": "url('/logos/techletics-metal.svg')",
         "hero-img": "url('/images/hero-img.webp')",
         "conference-img": "url('/images/conference-img.jpg')",
+        "college-img": "url('/images/college.png')",
+        "mainlogo-img": "url('/images/logo_hero.png')",
       },
       colors: {
         primary: "#DFFF1B",

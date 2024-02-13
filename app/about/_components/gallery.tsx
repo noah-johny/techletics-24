@@ -9,7 +9,7 @@ export default function PhotoGallery() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentBatchStartIndex((prevIndex) => (prevIndex + 3) % images.length);
-    }, 3000); // Change image batch every 3 seconds
+    }, 3000);
 
     return () => {
       clearInterval(timer);
@@ -20,7 +20,7 @@ export default function PhotoGallery() {
     <div className="grid grid-cols-3 gap-4">
       {images.slice(currentBatchStartIndex, currentBatchStartIndex + 3).map((image, index) => (
         <div key={index} className="col-span-1 transition duration-500 ease-in-out">
-          <div className="filter blur hover:blur-0">
+          <div className="filter grayscale hover:grayscale-0">
             <Image src={image} alt={`Image ${index + 1}`} width={500} height={300} />
           </div>
         </div>
