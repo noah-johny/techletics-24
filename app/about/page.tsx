@@ -4,6 +4,7 @@ import Title from "@/components/title";
 import PhotoGallery from "./_components/gallery";
 import About from "./_components/about";
 import Image from "next/image";
+import Hero from "./_components/hero";
 export default function AboutPage() {
   return (
     <>
@@ -13,10 +14,17 @@ export default function AboutPage() {
 
       <Title title="about" />
 
+      <SectionLayout full>
+        <Hero />
+      </SectionLayout>
+
+      
       <SectionLayout>
         <About />
       </SectionLayout>
-      
+
+
+
       {/* <section className="w-full">
         <Image
           src="/images/logo_hero.svg"
