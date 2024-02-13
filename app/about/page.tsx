@@ -3,8 +3,8 @@ import Navbar from "@/components/navbar";
 import Title from "@/components/title";
 import PhotoGallery from "./_components/gallery";
 import About from "./_components/about";
-import Image from "next/image";
 import Hero from "./_components/hero";
+import Committee_page from "./_components/committee_page";
 export default function AboutPage() {
   return (
     <>
@@ -18,7 +18,7 @@ export default function AboutPage() {
         <Hero />
       </SectionLayout>
 
-      
+
       <SectionLayout>
         <About />
       </SectionLayout>
@@ -35,6 +35,8 @@ export default function AboutPage() {
           priority
         />
       </section> */}
+      <Committee_page />
+
       <SectionLayout>
         <PhotoGallery />
       </SectionLayout>
