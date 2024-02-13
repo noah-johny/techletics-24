@@ -29,7 +29,7 @@ const About = () => {
         </CustomText>
       </div>
       <CustomText description>
-        <CustomText highlightedDescription>Techletics '22</CustomText>
+        <CustomText highlightedDescription>Techletics &apos;24</CustomText>
         &nbsp;is a techno-cultural techfest organized by Christ College of
         Engineering, Irinjalakuda in 2022.&nbsp;
         <CustomText highlightedDescription>
@@ -39,10 +39,10 @@ const About = () => {
         It is an opportunity to showcase their skills, learn from industry
         experts, and network with peers. Participants can expect a wide range of
         activities including competitions, workshops, and interactive sessions.
-        Techletics '22 is not just about technology, but also about fostering
-        creativity, innovation, and collaboration.&nbsp;
+        Techletics &apos;24 is not just about technology, but also about
+        fostering creativity, innovation, and collaboration.&nbsp;
         <CustomText highlightedDescription>
-          Join us for an unforgettable experience at Techletics '22!
+          Join us for an unforgettable experience at Techletics &apos;24!
         </CustomText>
       </CustomText>
     </div>

@@ -1,9 +1,9 @@
 import Navbar from "@/components/navbar";
 import Title from "@/components/title";
 import SectionLayout from "@/layouts/section-layout";
-import EventList from "./_components/EventList";
 import Image from "next/image";
 import TextMarquee from "@/components/marquee";
+import { Events } from "./_components";
 
 export default function EventsPage() {
   return (
@@ -14,7 +14,7 @@ export default function EventsPage() {
 
       <Title title="events" />
 
-      <EventList />
+      <Events />
 
       <Image
         src={"/images/proshow.png"}

@@ -10,7 +10,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { CustomText } from "@/components/custom";
 
-const EventList = () => {
+const Events = () => {
   const [activeTab, setActiveTab] = useState("ALL");
 
   const branches = ["ALL", "CSE", "ME", "CE", "EC", "EEE", "BSH"];
@@ -47,7 +47,7 @@ const EventList = () => {
           extravaganza.
         </CustomText>
         <div className="font-secondary text-sm sm:text-xl md:text-lg">
-          Explore, Learn, and Enjoy: The Events of Techletics '24
+          Explore, Learn, and Enjoy: The Events of Techletics &apos;24
         </div>
         <div className="mx-auto hidden w-full max-w-[800px] items-center justify-between rounded-full border-2 border-primary p-2 font-primary text-lg text-primary md:flex lg:text-2xl">
           {branches.map((branch) => (
@@ -89,8 +89,11 @@ const EventList = () => {
             .filter(
               (event) => activeTab === "ALL" || event.branch === activeTab,
             )
-            .map((event) => (
-              <div className="h-64 w-64 transition-all duration-200 ease-in hover:scale-105">
+            .map((event, index) => (
+              <div
+                className="h-64 w-64 transition-all duration-200 ease-in hover:scale-105"
+                key={index}
+              >
                 <Image
                   className="h-full w-full grayscale hover:grayscale-0"
                   src={event.img}
@@ -106,4 +109,4 @@ const EventList = () => {
   );
 };
 
-export default EventList;
+export default Events;
