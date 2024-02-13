@@ -190,8 +190,8 @@ export default function Committee_page() {
           <div className="flex flex-col items-center justify-center">
             <CustomText highlightedTitle>{item.title}</CustomText>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-5">
-              {item.positions.map((position) => (
-                <Committe_card info={position} />
+              {item.positions.map((position, index) => (
+                <Committe_card info={position} key={index} />
               ))}
             </div>
           </div>

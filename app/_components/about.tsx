@@ -41,8 +41,8 @@ const About = () => {
           </CustomText>
           <div className="min-w-64 flex-1 text-justify "></div>
             <CustomText description>
-              Techletics '22 is a techno-cultural techfest organized by Christ
-              College of Engineering, Irinjalakuda in 2022. The techfest aims to
+              Techletics &apos;24 is a techno-cultural techfest organized by Christ
+              College of Engineering, Irinjalakuda in 2024. The techfest aims to
               provide a platform for technical students and develop students and
               people from all walks of life.
             </CustomText>
