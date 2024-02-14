@@ -97,7 +97,7 @@ export default function Committee() {
         {
           role: "Website Lead",
           name: "Pranav Madhu",
-          localUrl: "/images/members/pranvmadhu.png",
+          localUrl: "/images/members/pranav.png",
           cloudUrl:
             "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2Fpranavmadhu.png?alt=media&token=7d343bf8-dc56-46dd-b394-c8ff421c532e",
         },
@@ -111,28 +111,28 @@ export default function Committee() {
         {
           role: "Lead Designer",
           name: "Enric S Neelamkavil",
-          localUrl: "/images/members/Enric S Neelamkavil.png",
+          localUrl: "/images/members/enric.png",
           cloudUrl:
             "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FEnric%20S%20Neelamkavil.png?alt=media&token=cc8150b6-7b87-459a-abe6-4418e5572328",
         },
         {
           role: "Website Supervisor",
           name: "Surya Kiran P M",
-          localUrl: "/images/members/Surya Kiran P M.png",
+          localUrl: "/images/members/suryakiran.png",
           cloudUrl:
             "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FSurya%20Kiran%20P%20M.png?alt=media&token=b2dd1e71-1301-466a-acd2-093c1d3d4106",
         },
         {
           role: "Frontend Developer",
           name: "Nikhit Kumar N S",
-          localUrl: "/images/members/Nikhit Kumar.png",
+          localUrl: "/images/members/nikhit.png",
           cloudUrl:
             "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FNikhit%20Kumar.png?alt=media&token=1876ef36-5925-4713-a00a-c16f6e338b5a",
         },
         {
           role: "Frontend Developer",
           name: "Navaneeth K U",
-          localUrl: "/images/members/Navaneeth K U.png",
+          localUrl: "/images/members/navaneeth.png",
           cloudUrl:
             "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FNavaneeth%20K%20U.png?alt=media&token=e8b6b61e-c62b-4809-aaba-e6e669ddde2d",
         },
