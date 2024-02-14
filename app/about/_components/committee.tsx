@@ -109,6 +109,13 @@ export default function Committee() {
             "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2Fnoah.png?alt=media&token=2411245c-5aaf-4b84-ab09-eba40b72e4cf",
         },
         {
+          role: "Lead Developer",
+          name: "Nikhit Kumar N S",
+          localUrl: "/images/members/nikhit.png",
+          cloudUrl:
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FNikhit%20Kumar.png?alt=media&token=1876ef36-5925-4713-a00a-c16f6e338b5a",
+        },
+        {
           role: "Lead Designer",
           name: "Enric S Neelamkavil",
           localUrl: "/images/members/enric.png",
@@ -121,13 +128,6 @@ export default function Committee() {
           localUrl: "/images/members/suryakiran.png",
           cloudUrl:
             "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FSurya%20Kiran%20P%20M.png?alt=media&token=b2dd1e71-1301-466a-acd2-093c1d3d4106",
-        },
-        {
-          role: "Frontend Developer",
-          name: "Nikhit Kumar N S",
-          localUrl: "/images/members/nikhit.png",
-          cloudUrl:
-            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FNikhit%20Kumar.png?alt=media&token=1876ef36-5925-4713-a00a-c16f6e338b5a",
         },
         {
           role: "Frontend Developer",

@@ -17,11 +17,11 @@ export default function EventsPage() {
       <Events />
 
       <Image
-        src={"/images/proshow.png"}
+        src={""||"/images/musical-night.png"}
         alt="Pro-Show"
         width={5760}
         height={3468}
-        className="z-10 -mb-6 w-full"
+        className="w-full"
       />
       <TextMarquee textColor="dark" bgColor="tertiary" />
     </>

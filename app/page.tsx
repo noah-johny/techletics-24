@@ -34,7 +34,9 @@ export default function HomePage() {
 
       <section className="w-full">
         <Image
-          src={"/images/techletics-logo-construction.png"}
+          src={
+            "https://res.cloudinary.com/techletics/image/upload/v1707888215/images/b2hw0m7pr72xzfyhnmpc.png"
+          }
           alt="Techletics Logo Construction"
           width={5760}
           height={4018}
