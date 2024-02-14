@@ -17,7 +17,7 @@ interface CommitteeData {
 export default function Committee() {
   const data: CommitteeData[] = [
     {
-      title: "Executive Committee",
+      title: "Executive",
       details: [
         {
           role: "Faculty Co-ordinator",
@@ -92,7 +92,7 @@ export default function Committee() {
       ],
     },
     {
-      title: "Website Committee",
+      title: "Website",
       details: [
         {
           role: "Website Lead",
@@ -104,9 +104,9 @@ export default function Committee() {
         {
           role: "Lead Developer / Designer",
           name: "Noah Johny",
-          localUrl: "/images/members/Noah Johny.png",
+          localUrl: "/images/members/noah.png",
           cloudUrl:
-            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FNoah%20Johny.png?alt=media&token=0319abc8-1952-457d-9ff8-92d71e095c73",
+            "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2Fnoah.png?alt=media&token=2411245c-5aaf-4b84-ab09-eba40b72e4cf",
         },
         {
           role: "Lead Designer",
@@ -153,7 +153,7 @@ export default function Committee() {
       ],
     },
     {
-      title: "Department Coordinators",
+      title: "Department",
       details: [
         {
           role: "BSH Deaprtment",
@@ -247,9 +247,13 @@ export default function Committee() {
     <>
       {data.map((item, index) => (
         <SectionLayout key={index}>
-          <div className="flex flex-col items-center justify-center">
-            <CustomText highlightedTitle>{item.title}</CustomText>
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-5">
+          <div className="flex flex-col items-center justify-center py-6 lg:py-12">
+            <CustomText title>
+              <CustomText highlightedTitle>{item.title}</CustomText>
+              &nbsp;committee
+            </CustomText>
+
+            <div className="mt-12 flex flex-wrap items-center justify-center gap-5">
               {item.details.map((role, index) => (
                 <CommitteeCard info={role} key={index} />
               ))}

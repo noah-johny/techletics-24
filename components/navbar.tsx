@@ -71,7 +71,7 @@ const Navbar = () => {
               </CustomLink>
               <p>/</p>
               <CustomLink
-                href="#location"
+                href="https://www.google.com/maps/search/Christ+College+of+Engineering/@10.3577808,76.2125602,21z?entry=ttu"
                 onMouseEnter={() => setShowCursor(false)}
                 onMouseLeave={() => setShowCursor(true)}
                 className={clsx("cursor-pointer hover:text-primary")}
@@ -130,16 +130,18 @@ const Navbar = () => {
           </CustomLink>
 
           {/* Contact Btn */}
-          <Image
-            src="/images/contact-btn.svg"
-            width={152}
-            height={56}
-            alt="Contact Button"
-            priority
-            className="hidden scale-75 cursor-pointer sm:block lg:scale-100"
-            onMouseEnter={() => setShowCursor(false)}
-            onMouseLeave={() => setShowCursor(true)}
-          />
+          <a href="#contact">
+            <Image
+              src="/images/contact-btn.svg"
+              width={152}
+              height={56}
+              alt="Contact Button"
+              priority
+              className="hidden scale-75 cursor-pointer sm:block lg:scale-100"
+              onMouseEnter={() => setShowCursor(false)}
+              onMouseLeave={() => setShowCursor(true)}
+            />
+          </a>
         </div>
       </div>
 
@@ -189,7 +191,7 @@ const Navbar = () => {
               <hr className="hidden border-quarternary py-2 group-hover:block" />
             </CustomLink>
             <CustomLink
-              href="#location"
+              href="https://www.google.com/maps/search/Christ+College+of+Engineering/@10.3577808,76.2125602,21z?entry=ttu"
               onMouseEnter={() => setShowCursor(false)}
               onMouseLeave={() => setShowCursor(true)}
               className="group w-fit"
