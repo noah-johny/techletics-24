@@ -18,7 +18,7 @@ export default function CommitteeCard({ info }: { info: Details }) {
       <div className="relative h-full w-full">
         <Image
           alt="card"
-          src={info.cloudUrl}
+          src={""}
           quality={0}
           width={275}
           height={360}
