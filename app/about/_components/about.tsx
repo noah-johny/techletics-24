@@ -6,9 +6,11 @@ const About = () => {
     <SectionLayout full imageContent>
       <div className="h-full w-full bg-college-img bg-cover  bg-center bg-no-repeat px-4 py-2 sm:px-8 sm:py-4 lg:px-16 lg:py-9">
         <div className="h-full w-full">
-          <div className="flex min-w-64 flex-col items-center justify-center gap-2 pt-8 text-center">
+          <div className="flex flex-col items-center justify-center gap-2 pt-8 text-center">
             <CustomText highlightedTitle>
-              CHRIST COLLEGE OF ENGINEERING
+              <span className="whitespace-normal">
+                CHRIST COLLEGE OF ENGINEERING
+              </span>
             </CustomText>
             <span className="font-primary text-xl text-secondary sm:text-2xl">
               Irinjalakuda, Thrissur, Kerala
