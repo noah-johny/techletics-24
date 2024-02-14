@@ -1,0 +1,25 @@
+name: Deploy to Amplify
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Amplify Publish
+        run: amplify publish
+        env:
+          AMPLIFY_APP_ID: ${{ secrets.AMPLIFY_APP_ID }}
