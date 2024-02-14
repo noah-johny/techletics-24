@@ -15,11 +15,11 @@ export default function CommitteeCard({ info }: { info: Details }) {
   }
 
   return (
-    <div className="aspect-[4/5] w-[200px] bg-black saturate-0 transition duration-200 ease-in hover:bg-primary hover:saturate-100 md:w-[240px] lg:w-[260px]">
+    <div className="aspect-[0.76] w-[200px] bg-black saturate-0 transition duration-200 ease-in hover:bg-primary hover:saturate-100 md:w-[240px] lg:w-[260px]">
       <div className="relative h-full w-full">
         <Image
           alt="card"
-          src={info.cloudUrl}
+          src={""}
           quality={0}
           width={275}
           height={360}

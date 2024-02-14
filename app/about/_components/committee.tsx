@@ -228,7 +228,7 @@ export default function Committee() {
         {
           role: "ME Deaprtment",
           name: "Sandeep Rajesh",
-          localUrl: "/images/members/Sandeep Rajesh.png",
+          localUrl: "/images/members/sandeep.png",
           cloudUrl:
             "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FSANDEEP%20RAJESH.png?alt=media&token=784233e2-e93f-422d-b5b8-99591c6cc21b",
         },
