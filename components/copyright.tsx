@@ -4,9 +4,8 @@ const Copyright = () => {
   return (
     <div className="relative flex min-h-16 items-center justify-center overflow-clip bg-tertiary">
       <div className="absolute mt-2 md:mt-8">
-        <span className="text-stroke-secondary whitespace-nowrap align-middle font-primary text-8xl font-bold lowercase leading-none tracking-widest text-transparent md:text-9xl">
+        <span className="text-stroke-secondary whitespace-nowrap align-middle font-primary text-8xl lowercase leading-none tracking-widest text-transparent md:text-9xl">
           ͲechlςͲics
-          {/* <span className="font-secondary font-extrabold">&apos;24</span> */}
         </span>
       </div>
       <div>

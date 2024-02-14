@@ -179,7 +179,7 @@ const Gallery: React.FC = () => {
         >
           <div className="saturate-0 transition duration-500 ease-in-out hover:saturate-100">
             <Image
-              src={image.localUrl}
+              src={image.cloudUrl || image.localUrl}
               alt={`Image ${index + 1}`}
               width={500}
               height={300}

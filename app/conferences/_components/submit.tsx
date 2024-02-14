@@ -2,14 +2,16 @@ import { CustomLink, CustomText } from "@/components/custom";
 import Image from "next/image";
 
 interface ConferenceCardProps {
-  src: string;
+  localURL: string;
+  cloudURL: string;
   alt: string;
   label: string;
   link: string;
 }
 
 const ConferenceCard: React.FC<ConferenceCardProps> = ({
-  src,
+  localURL,
+  cloudURL,
   alt,
   label,
   link,
@@ -17,11 +19,10 @@ const ConferenceCard: React.FC<ConferenceCardProps> = ({
   return (
     <CustomLink href={link} className="mb-4">
       <Image
-        src={src}
+        src={cloudURL || localURL}
         alt={alt}
         width={320}
         height={256}
-        priority
         className="h-96 saturate-0 hover:saturate-100"
       />
 
@@ -35,37 +36,43 @@ const ConferenceCard: React.FC<ConferenceCardProps> = ({
 const Submit = () => {
   const conferenceData = [
     {
-      src: "/images/conference/CS-conference.jpeg",
+      localURL: "/images/conference/CS-conference.jpeg",
+      cloudURL: "",
       alt: "Computer Science and Engineering",
       label: "CSE",
       link: "mailto:callforpapers@cce.edu.in",
     },
     {
-      src: "/images/conference/EEE-conference.jpeg",
+      localURL: "/images/conference/EEE-conference.jpeg",
+      cloudURL: "",
       alt: "Electrical and Electronics Engineering",
       label: "EEE",
       link: "mailto:iccce2024@cce.edu.in",
     },
     {
-      src: "/images/conference/ME-conference.jpeg",
+      localURL: "/images/conference/ME-conference.jpeg",
+      cloudURL: "",
       alt: "Mechanical Engineering",
       label: "ME",
       link: "mailto:icemme24@cce.edu.in",
     },
     {
-      src: "/images/conference/EC-conference.jpeg",
+      localURL: "/images/conference/EC-conference.jpeg",
+      cloudURL: "",
       alt: "Electronics and Communication Engineering",
       label: "ECE",
       link: "mailto:icrcet24@cce.edu.in",
     },
     {
-      src: "/images/conference/CE-conference.jpeg",
+      localURL: "/images/conference/CE-conference.jpeg",
+      cloudURL: "",
       alt: "Civil Engineering",
       label: "CE",
       link: "mailto:icice2024@cce.edu.in",
     },
     {
-      src: "/images/conference/ME-conference.jpeg",
+      localURL: "/images/conference/ME-conference.jpeg",
+      cloudURL: "",
       alt: "Basic Science & Humanities",
       label: "BSH",
       link: "mailto:conference.bsh@cce.edu.in",
@@ -86,11 +93,12 @@ const Submit = () => {
         </CustomText>
       </div>
 
-      <div className="flex flex-wrap items-center justify-center gap-6 md:gap-12  lg:gap-6 xl:justify-between">
+      <div className="flex flex-wrap items-center gap-6 md:gap-12  lg:gap-6 justify-around">
         {conferenceData.map((conference) => (
           <ConferenceCard
             key={conference.alt}
-            src={conference.src}
+            localURL={conference.localURL}
+            cloudURL={conference.cloudURL}
             alt={conference.alt}
             label={conference.label}
             link={conference.link}

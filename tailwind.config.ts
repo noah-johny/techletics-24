@@ -14,12 +14,13 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "modal-logo": "url('/logos/techletics-metal.svg')",
-        "hero-img": "url('/images/hero-img.webp')",
+        "hero-img":
+          "url('https://res.cloudinary.com/techletics/image/upload/v1707899763/images/hero-img_jayxby.webp')",
         "conference-img": "url('/images/conference-img.jpg')",
         "college-img": "url('/images/college.png')",
         "mainlogo-img": "url('/images/logo_hero.png')",
         "techletics-logo-construction":
-          "url('/images/techletics-logo-construction.png')",
+          "url('https://res.cloudinary.com/techletics/image/upload/v1707888215/images/b2hw0m7pr72xzfyhnmpc.png')",
       },
       colors: {
         primary: "#DFFF1B",
