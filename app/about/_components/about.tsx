@@ -1,51 +1,61 @@
 import { CustomText } from "@/components/custom";
+import SectionLayout from "@/layouts/section-layout";
 
 const About = () => {
   return (
-    <div className="flex flex-col justify-center gap-12 py-6 font-primary text-secondary lg:py-12">
-      <CustomText title>
-        <span className="text-primary">Techletics Legacy&nbsp;</span>
-      </CustomText>
-
-      <div className="mb-6 sm:mb-12 lg:mb-0">
-        <CustomText description>
-          Join us for the&nbsp;
-          <CustomText highlightedDescription>Techletics Tech Fest</CustomText>
-          &nbsp;at Christ College of Engineering.&nbsp;
-          <CustomText highlightedDescription>
-            Experience the latest technology and innovations in various fields
-            of engineering.&nbsp;
-          </CustomText>
-          Engage with industry experts, network with peers, and gain valuable
-          insights into the future of technology. Participate in exciting
-          competitions, workshops, and interactive sessions. Expand your
-          knowledge, enhance your skills, and be a part of the vibrant tech
-          community at Christ College of Engineering.&nbsp;
-          <CustomText highlightedDescription>
-            Don&apos;t miss this opportunity to explore and be inspired by the
-            ever-evolving world of engineering.&nbsp;
-          </CustomText>
-          Join us for the Techletics Tech Fest at Christ College of Engineering.
-        </CustomText>
+    <SectionLayout full imageContent>
+      <div className="h-full w-full bg-college-img bg-cover  bg-center bg-no-repeat px-4 py-2 sm:px-8 sm:py-4 lg:px-16 lg:py-9">
+        <div className="h-full w-full">
+          <div className="flex min-w-64 flex-col items-center justify-center gap-2 pt-8 text-center">
+            <CustomText highlightedTitle>
+              CHRIST COLLEGE OF ENGINEERING
+            </CustomText>
+            <span className="font-primary text-xl text-secondary sm:text-2xl">
+              Irinjalakuda, Thrissur, Kerala
+            </span>
+          </div>
+          <div className="mt-8 min-w-56 flex-1 text-justify">
+            <CustomText description>
+              <CustomText highlightedDescription>
+                Christ College of Engineering (CCE)
+              </CustomText>
+              , established in 2015, is affiliated to&nbsp;
+              <CustomText highlightedDescription>
+                APJ Abdul Kalam Technological University, Thiruvananthapuram
+              </CustomText>
+              &nbsp;and is recognized by&nbsp;
+              <CustomText highlightedDescription>AICTE, New Delhi</CustomText>.
+              This college was found at a time when starting a new engineering
+              college was not considered as a sensible proposition. In its short
+              span of existence, exceeding all expectations and proving all
+              critics wrong, Christ College of Engineering has managed to create
+              ripples on the academic front in the university, so much so that
+              today the college is being&nbsp;
+              <CustomText highlightedDescription>
+                recognized as one of the best self-financing engineering
+                colleges in Kerala
+              </CustomText>
+              .
+            </CustomText>
+          </div>
+          <div className="mb-8 mt-8 min-w-56 flex-1 text-justify">
+            <CustomText description>
+              Staff and students are at the center of this success story. No
+              stone is being left unturned in ensuring that along with
+              academics,&nbsp;
+              <CustomText highlightedDescription>
+                the students get the right amount of exposure required for
+                tomorrow&apos;s successful global citizen
+              </CustomText>
+              , through the various initiatives held at this campus. With the
+              kind of transformative learning model in place here, the college
+              is well on its way to making a positive impact on our society and
+              nation at large.
+            </CustomText>
+          </div>
+        </div>
       </div>
-      <CustomText description>
-        <CustomText highlightedDescription>Techletics &apos;24</CustomText>
-        &nbsp;is a techno-cultural techfest organized by Christ College of
-        Engineering, Irinjalakuda in 2022.&nbsp;
-        <CustomText highlightedDescription>
-          The techfest aims to provide a platform for technical students and
-          develop students and people from all walks of life.&nbsp;
-        </CustomText>
-        It is an opportunity to showcase their skills, learn from industry
-        experts, and network with peers. Participants can expect a wide range of
-        activities including competitions, workshops, and interactive sessions.
-        Techletics &apos;24 is not just about technology, but also about
-        fostering creativity, innovation, and collaboration.&nbsp;
-        <CustomText highlightedDescription>
-          Join us for an unforgettable experience at Techletics &apos;24!
-        </CustomText>
-      </CustomText>
-    </div>
+    </SectionLayout>
   );
 };
 

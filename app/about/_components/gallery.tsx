@@ -42,7 +42,7 @@ const getRandomIndexes = (max: number, count: number): number[] => {
   return shuffledIndexes.slice(0, count);
 };
 
-const PhotoGallery: React.FC = () => {
+const Gallery: React.FC = () => {
   const [currentBatch, setCurrentBatch] = useState<ImageBatch>([]);
 
   useEffect(() => {
@@ -82,4 +82,4 @@ const PhotoGallery: React.FC = () => {
   );
 };
 
-export default PhotoGallery;
+export default Gallery;

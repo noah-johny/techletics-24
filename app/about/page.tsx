@@ -1,10 +1,7 @@
 import SectionLayout from "@/layouts/section-layout";
 import Navbar from "@/components/navbar";
 import Title from "@/components/title";
-import PhotoGallery from "./_components/gallery";
-import About from "./_components/about";
-import Hero from "./_components/hero";
-import Committee_page from "./_components/committee_page";
+import { About, Committee, Legacy } from "./_components";
 
 export default function AboutPage() {
   return (
@@ -15,18 +12,10 @@ export default function AboutPage() {
 
       <Title title="about" />
 
-      <SectionLayout full>
-        <Hero />
-      </SectionLayout>
+      <About />
+      <Legacy />
 
-      <SectionLayout>
-        <About />
-      </SectionLayout>
-
-      <SectionLayout>
-        <PhotoGallery />
-      </SectionLayout>
-      <Committee_page />
+      <Committee />
     </>
   );
 }

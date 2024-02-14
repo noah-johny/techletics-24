@@ -1,5 +1,5 @@
+import { CommitteeCard } from "@/components/cards";
 import { CustomText } from "@/components/custom";
-import Committe_card from "./committe_card";
 import SectionLayout from "@/layouts/section-layout";
 
 interface Details {
@@ -14,7 +14,7 @@ interface CommitteeData {
   details: Details[];
 }
 
-export default function Committee_page() {
+export default function Committee() {
   const data: CommitteeData[] = [
     {
       title: "Executive Committee",
@@ -156,14 +156,14 @@ export default function Committee_page() {
       title: "Department Coordinators",
       details: [
         {
-          role: "BSE Deaprtment",
+          role: "BSH Deaprtment",
           name: "Farhan M Jeejo",
           localUrl: "/images/members/Farhan M Jeejo.png",
           cloudUrl:
             "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2FFarhan%20M%20Jeejo.png?alt=media&token=2dfa279e-5e1a-4568-9bfb-b31c4bbcbe82",
         },
         {
-          role: "BSE Deaprtment",
+          role: "BSH Deaprtment",
           name: "Raiza Rasheed",
           localUrl: "/images/members/Raiza Rasheed.png",
           cloudUrl:
@@ -251,7 +251,7 @@ export default function Committee_page() {
             <CustomText highlightedTitle>{item.title}</CustomText>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-5">
               {item.details.map((role, index) => (
-                <Committe_card info={role} key={index} />
+                <CommitteeCard info={role} key={index} />
               ))}
             </div>
           </div>
