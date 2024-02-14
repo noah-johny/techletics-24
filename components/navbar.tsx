@@ -147,11 +147,11 @@ const Navbar = () => {
 
       {/* Hamburger Menu */}
       {isOpen && (
-        <div className="z-0 flex h-screen w-full overflow-hidden bg-tertiary bg-modal-logo bg-cover bg-no-repeat lg:hidden">
+        <div className="z-0 flex h-screen w-full bg-modal-logo bg-cover bg-no-repeat lg:hidden">
           {/* Overlay */}
           <div className="absolute inset-0 z-[-1] bg-tertiary bg-opacity-85"></div>
           {/* Menu */}
-          <div className="relative right-10 z-0 gap-8 p-16 font-primary text-4xl text-secondary sm:gap-4 sm:p-24 sm:text-7xl">
+          <div className="relative right-10 z-0 gap-8 p-16 font-primary text-3xl text-secondary sm:gap-4 sm:p-24 sm:text-6xl">
             <CustomLink
               href="/"
               onMouseEnter={() => setShowCursor(false)}

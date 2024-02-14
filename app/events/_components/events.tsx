@@ -40,23 +40,25 @@ const Events = () => {
 
   return (
     <SectionLayout>
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col justify-center gap-6 bg-tertiary py-6 font-primary text-secondary lg:py-12">
         <CustomText title>
           witness the&nbsp;
           <CustomText highlightedTitle>tech-culture&nbsp;</CustomText>
           extravaganza.
         </CustomText>
-        <div className="font-secondary text-sm sm:text-xl md:text-lg">
+
+        <CustomText description>
           Explore, Learn, and Enjoy: The Events of Techletics &apos;24
-        </div>
-        <div className="mx-auto hidden w-full max-w-[800px] items-center justify-between rounded-full border-2 border-primary p-2 font-primary text-lg text-primary md:flex lg:text-2xl">
+        </CustomText>
+
+        <div className="mx-auto mt-12 hidden w-full items-center justify-between rounded-full border border-primary p-2 font-primary text-lg lowercase tracking-wider text-primary md:flex lg:w-fit lg:text-xl">
           {branches.map((branch) => (
             <div
               key={branch}
               className={
                 activeTab === branch
-                  ? "rounded-full bg-primary px-4 py-1 text-tertiary lg:px-10"
-                  : "px-4 py-1 lg:px-10"
+                  ? "rounded-full bg-primary px-6 py-1 text-tertiary transition-all duration-300 ease-in-out lg:px-8"
+                  : "px-6 py-1 lg:px-8"
               }
               onClick={() => setActiveTab(branch)}
             >
@@ -64,9 +66,10 @@ const Events = () => {
             </div>
           ))}
         </div>
+
         <div className="md:hidden">
           <select
-            className="w-full rounded-full bg-primary px-4 py-2 font-primary text-xl text-tertiary"
+            className="w-full rounded-full bg-primary px-8 py-2 font-primary text-xl text-tertiary "
             onChange={(e) => setActiveTab(e.target.value)}
           >
             {branches.map((branch) => (

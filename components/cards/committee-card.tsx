@@ -29,7 +29,9 @@ export default function CommitteeCard({ info }: { info: Details }) {
           fetchPriority="high"
         />
         <div className="absolute bottom-0 flex w-full flex-col items-center justify-center bg-gradient-to-t from-black via-black to-transparent p-3 tracking-wide transition delay-200">
-          <span className="text-md font-primary sm:text-lg">{info.name}</span>
+          <span className="text-md font-primary text-secondary sm:text-lg">
+            {info.name}
+          </span>
           <span className="text-md text-center font-secondary capitalize text-primary sm:text-lg">
             {info.role}
           </span>

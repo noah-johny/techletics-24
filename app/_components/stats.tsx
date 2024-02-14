@@ -11,7 +11,7 @@ const Stats = () => {
         <div className="flex flex-wrap justify-evenly gap-4">
           <div className="flex min-w-[320px] flex-col px-2 text-center">
             <p className="text-stroke-primary font-secondary text-5xl font-extrabold tracking-wide text-transparent md:text-7xl lg:text-8xl">
-              250+
+              30+
             </p>
             <p className="text-xl lowercase text-secondary md:text-2xl">
               CULTURAL Events
@@ -20,7 +20,7 @@ const Stats = () => {
 
           <div className="flex min-w-[320px] flex-col px-2 text-center">
             <p className="text-stroke-primary font-secondary text-5xl font-extrabold tracking-wide text-transparent md:text-7xl lg:text-8xl">
-              500+
+              50+
             </p>
             <p className="text-xl lowercase text-secondary md:text-2xl">
               TECH Events
@@ -40,7 +40,7 @@ const Stats = () => {
 
           <div className="flex min-w-[320px] flex-col px-2 text-center">
             <p className="text-stroke-primary font-secondary text-5xl font-extrabold tracking-wide md:text-7xl lg:text-8xl">
-              250k+
+              100k+
             </p>
             <p className="text-xl lowercase text-secondary md:text-2xl">
               PRIZE POOL
@@ -49,7 +49,7 @@ const Stats = () => {
 
           <div className="flex min-w-[320px] flex-col px-2 text-center">
             <p className="text-stroke-primary font-secondary text-5xl font-extrabold tracking-wide md:text-7xl lg:text-8xl">
-              10k+
+              25k+
             </p>
             <p className="text-xl lowercase text-secondary md:text-2xl">
               STUDENTS
@@ -69,7 +69,7 @@ const Stats = () => {
 
           <div className="flex min-w-[320px] flex-col px-2 text-center">
             <p className="text-stroke-primary font-secondary text-5xl font-extrabold tracking-wide text-transparent md:text-7xl lg:text-8xl">
-              75+
+              50+
             </p>
             <p className="text-xl lowercase text-secondary md:text-2xl">
               WORKSHOPS

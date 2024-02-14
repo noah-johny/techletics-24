@@ -28,9 +28,9 @@ const SocialConnect = () => {
             priority
           />
           <Image
-            src="/logos/advaya-logo.svg"
-            width={64}
-            height={64}
+            src="/logos/advaya-logo.png"
+            width={88}
+            height={88}
             alt="Advaya Logo"
             priority
           />
