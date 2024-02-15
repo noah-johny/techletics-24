@@ -84,24 +84,22 @@ const SectionLayout = ({
         </AnimatedSectionLayout>
         {explorable && (
           <>
-            <Link
+            <a
               href={navigate}
-              scroll
               className="absolute bottom-0 right-0 hidden md:block"
               onMouseEnter={() => setShowCursor(false)}
               onMouseLeave={() => setShowCursor(true)}
             >
               <ExploreButton />
-            </Link>
-            <Link
+            </a>
+            <a
               href={navigate}
-              scroll
               className="absolute bottom-0 right-0 md:hidden"
               onMouseEnter={() => setShowCursor(false)}
               onMouseLeave={() => setShowCursor(true)}
             >
               <ExploreButton size={64} />
-            </Link>
+            </a>
           </>
         )}
       </div>

@@ -41,7 +41,6 @@ const Guidelines = () => {
 
       <div className="flex w-fit justify-center rounded-xl border border-primary bg-primary bg-opacity-10 px-6 py-2 sm:min-w-80 sm:px-12 sm:py-4">
         <span className="text-center text-xl lowercase tracking-wider text-primary sm:text-2xl">
-          <span>PS:&nbsp;</span>
           selected paper will be published in conference proceedings
         </span>
       </div>

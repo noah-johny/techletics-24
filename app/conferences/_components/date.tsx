@@ -11,7 +11,7 @@ const Date = () => {
         </CustomText>
         <div className="mb-1 flex h-fit w-full items-center justify-center rounded-xl border border-primary bg-primary bg-opacity-10 py-2 sm:max-w-80 sm:py-4">
           <span className="text-xl text-primary sm:text-2xl">
-            <span className="font-secondary font-extrabold">05th&nbsp;</span>
+            <span className="font-secondary font-extrabold">15th&nbsp;</span>
             february
           </span>
         </div>
