@@ -64,12 +64,15 @@ const Cursor = () => {
   };
 
   return (
-      <motion.div
-        className={clsx("pointer-events-none fixed left-0 top-0 z-20 rounded-full", {"hidden": !showCursor})}
-        variants={variants}
-        animate={cursorVariant}
-        transition={{ duration: 0.1 }}
-      />
+    <motion.div
+      className={clsx(
+        "pointer-events-none fixed left-0 top-0 z-20 rounded-full",
+        { hidden: !showCursor },
+      )}
+      variants={variants}
+      animate={cursorVariant}
+      transition={{ duration: 0.05 }}
+    />
   );
 };
 

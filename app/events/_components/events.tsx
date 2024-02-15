@@ -1,42 +1,52 @@
 "use client";
 
+import { useState, useCallback } from "react";
+import Image, { StaticImageData } from "next/image";
+import SectionLayout from "@/layouts/section-layout";
+import { CustomText } from "@/components/custom";
+
 import Band from "../../../public/images/band.png";
 import Dristi from "../../../public/images/dristi.jpg";
 import DanceGroup from "../../../public/images/dance-group.png";
 import Designathon from "../../../public/images/designathon.png";
 
-import SectionLayout from "@/layouts/section-layout";
-import { useState } from "react";
-import Image from "next/image";
-import { CustomText } from "@/components/custom";
+type Event = {
+  name: string;
+  img: StaticImageData | string;
+  branch: string;
+};
+
+const branches = ["ALL", "CSE", "ME", "CE", "EC", "EEE", "BSH"];
+
+const eventlist: Event[] = [
+  {
+    name: "dristi",
+    img: Dristi,
+    branch: "EEE",
+  },
+  {
+    name: "band 1",
+    img: Band,
+    branch: "CE",
+  },
+  {
+    name: "dance group",
+    img: DanceGroup,
+    branch: "ME",
+  },
+  {
+    name: "designathon",
+    img: Designathon,
+    branch: "CSE",
+  },
+];
 
 const Events = () => {
   const [activeTab, setActiveTab] = useState("ALL");
 
-  const branches = ["ALL", "CSE", "ME", "CE", "EC", "EEE", "BSH"];
-
-  const eventlist = [
-    {
-      name: "dristi",
-      img: Dristi,
-      branch: "EEE",
-    },
-    {
-      name: "band 1",
-      img: Band,
-      branch: "CE",
-    },
-    {
-      name: "dance group",
-      img: DanceGroup,
-      branch: "ME",
-    },
-    {
-      name: "designathon",
-      img: Designathon,
-      branch: "CSE",
-    },
-  ];
+  const handleTabChange = useCallback((branch: string) => {
+    setActiveTab(branch);
+  }, []);
 
   return (
     <SectionLayout>
@@ -60,7 +70,7 @@ const Events = () => {
                   ? "rounded-full bg-primary px-6 py-1 text-tertiary transition-all duration-300 ease-in-out lg:px-8"
                   : "px-6 py-1 lg:px-8"
               }
-              onClick={() => setActiveTab(branch)}
+              onClick={() => handleTabChange(branch)}
             >
               {branch}
             </div>
@@ -70,7 +80,7 @@ const Events = () => {
         <div className="md:hidden">
           <select
             className="w-full rounded-full bg-primary px-8 py-2 font-primary text-xl text-tertiary "
-            onChange={(e) => setActiveTab(e.target.value)}
+            onChange={(e) => handleTabChange(e.target.value)}
           >
             {branches.map((branch) => (
               <option
@@ -92,10 +102,10 @@ const Events = () => {
             .filter(
               (event) => activeTab === "ALL" || event.branch === activeTab,
             )
-            .map((event, index) => (
+            .map((event) => (
               <div
                 className="h-64 w-64 transition-all duration-200 ease-in hover:scale-105"
-                key={index}
+                key={event.name}
               >
                 <Image
                   className="h-full w-full grayscale hover:grayscale-0"

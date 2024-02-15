@@ -15,7 +15,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "modal-logo": "url('/logos/techletics-metal.svg')",
         "hero-img":
-          "url('https://res.cloudinary.com/techletics/image/upload/v1707899763/images/hero-img_jayxby.webp')",
+          "url('https://dnbca6q7do6n.cloudfront.net/media/techletics24/hero-img.webp')",
         "conference-img": "url('/images/conference-img.jpg')",
         "college-img": "url('/images/college.png')",
         "mainlogo-img": "url('/images/logo_hero.png')",

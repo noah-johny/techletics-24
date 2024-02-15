@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
 import "@/app/globals.css";
+import type { Metadata } from "next";
 import { cakra, turretRoad } from "@/public/fonts";
 import Copyright from "@/components/copyright";
 import { Connect, SocialConnect } from "@/components/connect";
@@ -9,21 +9,22 @@ import CustomCursor from "@/components/custom/cursor";
 export const metadata: Metadata = {
   title: {
     template: "%s | Techletics '24",
-    default: "Techletics '24 | Ignite Inspire Illuminate",
-  
-
+    default: "Techletics '24",
   },
-  keywords: "Techletics, Tech Fest, Christ College of Engineering, Irinjalakuda",
+  keywords:
+    "Techletics, Tech Fest, Christ College of Engineering, Irinjalakuda",
   description:
     "Tech Fest organized by Christ College of Engineering, Irinjalakuda",
-  creator:"Website Team CCE",
-  openGraph:{
-    title :"Techletics '24 | Ignite Inspire Illuminate",
-    description: "Tech Fest organized by Christ College of Engineering, Irinjalakuda",
-    type : "website",
-    url : "https://techletics.cce.edu.in/",
-    locale :"en_US",
-  }
+  creator: "Website Team CCE",
+  openGraph: {
+    title: "Techletics '24 | Ignite Inspire Illuminate",
+    description:
+      "Tech Fest organized by Christ College of Engineering, Irinjalakuda",
+    type: "website",
+    url: "https://techletics.cce.edu.in/",
+    locale: "en_US",
+  },
+  metadataBase: new URL("https://techletics.cce.edu.in/"),
 };
 
 export default function RootLayout({
@@ -44,11 +45,10 @@ export default function RootLayout({
           href="/logos/techletics-light-logo.svg"
           media="(prefers-color-scheme: dark)"
         />
-        <meta property="og:image" content={"/images/techletics-metal.svg"} />
-        <meta property="og:instagram:app_id" content="techleticscce" />
 
-        
-        
+        <meta property="og:image" content={"/images/opengraph-image.png"} />
+        <meta property="twitter:image" content={"/images/twitter-image.png"} />
+        <meta property="og:instagram:app_id" content="techleticscce" />
       </head>
 
       <body
