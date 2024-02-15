@@ -176,17 +176,17 @@ const Gallery: React.FC = () => {
         className="h-full w-full object-cover opacity-30 saturate-0 hover:saturate-100"
       />
 
-      <div className="leading-0 absolute flex flex-col text-center font-primary text-xl lowercase tracking-wider text-secondary sm:text-3xl md:text-4xl md:leading-10 xl:text-6xl">
-        GLIMPSE INTO&nbsp;
+      <div className="leading-0 absolute flex flex-col text-center font-primary text-3xl lowercase tracking-wider text-secondary sm:text-4xl md:text-5xl lg:text-6xl">
+        GLIMPSE INTO
         <span className="sm:whitespace-nowrap">
-          THE mem<span className="opacity-0">o</span>ries we&nbsp;
+          THE mem<span className="opacity-0">o</span>ries we
           <Image
-            src="/icons/techletics-sticker-2.png"
-            width={57}
-            height={55}
+            src="/icons/gallery-sticker.svg"
+            width={132}
+            height={128}
             alt={"Techletics Sticker"}
             priority
-            className="absolute left-[68px] top-3 scale-[30%] sm:left-[116px] sm:top-6 sm:scale-[56%] md:left-36 md:top-7 md:scale-[66%] lg:left-36 lg:top-7 lg:scale-50 xl:left-[260px] xl:top-[57px] xl:scale-100"
+            className="absolute -top-4 left-[78px] scale-[26%] sm:-top-2 sm:left-[106px] sm:scale-[32%] md:left-[164px] md:top-1 md:scale-[40%] lg:left-[222px] lg:top-[22px] lg:scale-[52%]"
           />
         </span>
         HAVE CREATED.
