@@ -93,10 +93,10 @@ const Submit = () => {
         </CustomText>
       </div>
 
-      <div className="flex flex-wrap items-center gap-6 md:gap-12  lg:gap-6 justify-around">
-        {conferenceData.map((conference) => (
+      <div className="flex flex-wrap items-center justify-around gap-6  md:gap-12 lg:gap-6">
+        {conferenceData.map((conference, index) => (
           <ConferenceCard
-            key={conference.alt}
+            key={index}
             localURL={conference.localURL}
             cloudURL={conference.cloudURL}
             alt={conference.alt}

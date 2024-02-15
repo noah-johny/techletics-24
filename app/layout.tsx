@@ -34,10 +34,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/logos/techletics-metal.svg" />
+        <link
+          rel="icon"
+          href="/logos/techletics-dark-logo.svg"
+          media="(prefers-color-scheme: light)"
+        />
+        <link
+          rel="icon"
+          href="/logos/techletics-light-logo.svg"
+          media="(prefers-color-scheme: dark)"
+        />
         <meta property="og:image" content={"/images/techletics-metal.svg"} />
         <meta property="og:instagram:app_id" content="techleticscce" />
 
+        
         
       </head>
 

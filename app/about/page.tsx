@@ -13,7 +13,10 @@ export default function AboutPage() {
       <Title title="about" />
 
       <About />
-      <Legacy />
+
+      <section id="gallery">
+        <Legacy />
+      </section>
 
       <Committee />
     </>

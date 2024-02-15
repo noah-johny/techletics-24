@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="z-2 relative">
         {/* Navbar Menu */}
         <div className="flex w-full sm:justify-between">
-          <div className="hidden flex-col items-start space-y-1 font-primary lowercase tracking-wide lg:block">
+          <div className="hidden flex-col items-start space-y-1 font-primary lowercase tracking-wide text-secondary lg:block">
             {/* Menu First Line */}
             <div className="flex justify-between space-x-2 text-xl xl:text-2xl">
               <CustomLink
