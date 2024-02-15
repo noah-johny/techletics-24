@@ -7,9 +7,23 @@ import { CustomCursorProvider } from "@/context/custom-cursor-context";
 import CustomCursor from "@/components/custom/cursor";
 
 export const metadata: Metadata = {
-  title: "Techletics '24",
+  title: {
+    template: "%s | Techletics '24",
+    default: "Techletics '24 | Ignite Inspire Illuminate",
+  
+
+  },
+  keywords: "Techletics, Tech Fest, Christ College of Engineering, Irinjalakuda",
   description:
     "Tech Fest organized by Christ College of Engineering, Irinjalakuda",
+  creator:"Website Team CCE",
+  openGraph:{
+    title :"Techletics '24 | Ignite Inspire Illuminate",
+    description: "Tech Fest organized by Christ College of Engineering, Irinjalakuda",
+    type : "website",
+    url : "https://techletics.cce.edu.in/",
+    locale :"en_US",
+  }
 };
 
 export default function RootLayout({
@@ -30,6 +44,11 @@ export default function RootLayout({
           href="/logos/techletics-light-logo.svg"
           media="(prefers-color-scheme: dark)"
         />
+        <meta property="og:image" content={"/images/techletics-metal.svg"} />
+        <meta property="og:instagram:app_id" content="techleticscce" />
+
+        
+        
       </head>
 
       <body
