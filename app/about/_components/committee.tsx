@@ -138,7 +138,7 @@ export default function Committee() {
         },
         {
           role: "Frontend Developer",
-          name: "Alfrin Poulouse",
+          name: "Alfrin Poulose",
           localUrl: "/images/members/alfrin.png",
           cloudUrl:
             "https://firebasestorage.googleapis.com/v0/b/techletics-24-fe40e.appspot.com/o/members%2Falfrin.png?alt=media&token=36d25766-6020-4e29-8c75-bf4eae56a54e",

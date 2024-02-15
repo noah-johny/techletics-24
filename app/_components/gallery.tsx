@@ -166,17 +166,30 @@ const Gallery: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex h-[75vh] w-full items-center justify-center">
+    <div className="relative flex h-[75vh] w-full items-center justify-center">
       <Image
         src={images[currentIndex].cloudUrl || images[currentIndex].localUrl}
         width={5760}
         height={4018}
-        className="h-full w-full object-cover opacity-30 saturate-0 hover:saturate-100"
         alt={`Image ${currentIndex + 1}`}
         loading="lazy"
+        className="h-full w-full object-cover opacity-30 saturate-0 hover:saturate-100"
       />
-      <div className="absolute w-2/3 text-center font-primary text-3xl lowercase leading-none tracking-wider text-secondary sm:text-4xl xl:text-6xl">
-        GLIMPSE INTO THE memories WE HAVE CREATED.
+
+      <div className="leading-0 absolute flex flex-col text-center font-primary text-xl lowercase tracking-wider text-secondary sm:text-3xl md:text-4xl md:leading-10 xl:text-6xl">
+        GLIMPSE INTO&nbsp;
+        <span className="sm:whitespace-nowrap">
+          THE mem<span className="opacity-0">o</span>ries we&nbsp;
+          <Image
+            src="/icons/techletics-sticker-2.png"
+            width={57}
+            height={55}
+            alt={"Techletics Sticker"}
+            priority
+            className="absolute left-[68px] top-3 scale-[30%] sm:left-[116px] sm:top-6 sm:scale-[56%] md:left-36 md:top-7 md:scale-[66%] lg:left-36 lg:top-7 lg:scale-50 xl:left-[260px] xl:top-[57px] xl:scale-100"
+          />
+        </span>
+        HAVE CREATED.
       </div>
     </div>
   );
