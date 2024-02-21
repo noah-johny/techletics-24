@@ -226,12 +226,12 @@ export const eventList: Event[] = [
     name: "Mextalk",
     src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-21_at_22.50.07_0aa40614.jpg",
     branch: "ME",
-    category: "CULTURAL",
+    category: "TECHNICAL",
     type: "TECH-TALK",
     url: "",
   },
   {
-    name: "Belfort",
+    name: "Belfort of Wallstreet",
     src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/Untitled-2.png",
     branch: "ALL",
     category: "TECHNICAL",
@@ -256,6 +256,14 @@ export const featuredEventList: Event[] = [
     category: "TECHNICAL",
     type: "COMPETITION",
     url: "https://hacknite.devfolio.co/",
+  },
+  {
+    name: "Belfort of Wallstreet",
+    src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/Untitled-2.png",
+    branch: "ALL",
+    category: "TECHNICAL",
+    type: "TECH-TALK",
+    url: "https://bellfort-of-wallstreet.netlify.app/",
   },
 
 ];
