@@ -3,7 +3,7 @@
 import { useState, useCallback } from "react";
 import Image from "next/image";
 import SectionLayout from "@/layouts/section-layout";
-import { CustomText } from "@/components/custom";
+import { CustomSelect, CustomText } from "@/components/custom";
 import { eventList } from "./event-list";
 import Link from "next/link";
 
@@ -59,27 +59,27 @@ const Events = () => {
 
         {activeCategory === "TECHNICAL" && (
           <div className="flex justify-end gap-6 xl:absolute xl:right-16 xl:top-[348px]">
-            <select
-              className="text-md bg-transparent font-primary text-secondary focus:outline-none focus:ring-0 md:text-xl"
+            <CustomSelect
+              className="text-md cursor-pointer bg-tertiary font-primary text-secondary focus:outline-none focus:ring-0 md:text-xl"
               onChange={(e) => handleBranchChange(e.target.value)}
             >
               {branches.map((branch) => (
-                <option key={branch} value={branch}>
+                <option key={branch} value={branch} className="cursor-pointer">
                   {branch}
                 </option>
               ))}
-            </select>
+            </CustomSelect>
 
-            <select
-              className="text-md bg-transparent font-primary text-secondary focus:outline-none focus:ring-0 md:text-xl"
+            <CustomSelect
+              className="text-md cursor-pointer bg-tertiary font-primary text-secondary focus:outline-none focus:ring-0 md:text-xl"
               onChange={(e) => handleTypeChange(e.target.value)}
             >
               {types.map((type) => (
-                <option key={type} value={type}>
+                <option key={type} value={type} className="cursor-pointer">
                   {type}
                 </option>
               ))}
-            </select>
+            </CustomSelect>
           </div>
         )}
 
