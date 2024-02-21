@@ -199,3 +199,22 @@ export const eventList: Event[] = [
     url: "https://forms.gle/zFNAjmtzbAJKvadWA",
   },
 ];
+
+export const featuredEventList: Event[] = [
+  {
+    name: "Designathon",
+    src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/designathon.png",
+    branch: "CSE",
+    category: "TECHNICAL",
+    type: "COMPETITION",
+    url: "https://designathon24.vercel.app",
+  },
+  {
+    name: "Hacknite",
+    src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-18_at_22.29.08_791165df.jpg",
+    branch: "CSE",
+    category: "TECHNICAL",
+    type: "COMPETITION",
+    url: "https://hacknite.devfolio.co/",
+  },
+];
