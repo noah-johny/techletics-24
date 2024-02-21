@@ -114,7 +114,7 @@ export const eventList: Event[] = [
     url: "https://forms.gle/Jn7rwTLzPwLAqAZ56",
   },
   {
-    name: " EV Hack",
+    name: "EV Hack",
     src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-15_at_22.32.30_63b4b103-min.jpg",
     branch: "EEE",
     category: "TECHNICAL",
@@ -138,7 +138,7 @@ export const eventList: Event[] = [
     url: "https://forms.gle/9Qh7oi5pXkAdQrfu6",
   },
   {
-    name: " Wrenching Wheels",
+    name: "Wrenching Wheels",
     src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-13_at_19.31.05_d777ea88-min.jpg",
     branch: "ME",
     category: "TECHNICAL",
@@ -192,11 +192,51 @@ export const eventList: Event[] = [
     url: "https://forms.gle/A5483R6CCdL6JMPc6",
   },
   {
-    name: "BeatSync Battle",
+    name: "Group Dance Competition: Beat Sync Battle",
     src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/dance-group.png",
     category: "CULTURAL",
     type: "COMPETITION",
     url: "https://forms.gle/zFNAjmtzbAJKvadWA",
+  },
+  {
+    name: "CODE-UNO",
+    src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-20_at_22.37.40_3afdb779.jpg",
+    branch: "ECE",
+    category: "TECHNICAL",
+    type: "COMPETITION",
+    url: "https://surl.li/qsiam",
+  },
+  {
+    name: "Solo Dance Competition: Beat Sync Battle",
+    src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-21_at_20.00.10_9c00d390.jpg",
+    branch: "ALL",
+    category: "CULTURAL",
+    type: "ALL EVENTS",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSeKfrzFRR8M8-iZ9Zug8pt_Aue4UEHI77d2beyO7WJFVgzY8g/viewform?usp=sf_link",
+  },
+  {
+    name: "REMAPPED",
+    src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-21_at_22.49.47_c420fecb.jpg",
+    branch: "ME",
+    category: "CULTURAL",
+    type: "EXPO",
+    url: "",
+  },
+  {
+    name: "Mextalk",
+    src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-21_at_22.50.07_0aa40614.jpg",
+    branch: "ME",
+    category: "TECHNICAL",
+    type: "TECH-TALK",
+    url: "",
+  },
+  {
+    name: "Belfort of Wallstreet",
+    src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/Untitled-2.png",
+    branch: "ALL",
+    category: "TECHNICAL",
+    type: "TECH-TALK",
+    url: "https://bellfort-of-wallstreet.netlify.app/",
   },
 ];
 
@@ -217,4 +257,13 @@ export const featuredEventList: Event[] = [
     type: "COMPETITION",
     url: "https://hacknite.devfolio.co/",
   },
+  {
+    name: "Belfort of Wallstreet",
+    src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/Untitled-2.png",
+    branch: "ALL",
+    category: "TECHNICAL",
+    type: "TECH-TALK",
+    url: "https://bellfort-of-wallstreet.netlify.app/",
+  },
+
 ];
