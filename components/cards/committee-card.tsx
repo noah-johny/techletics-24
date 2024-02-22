@@ -8,7 +8,7 @@ interface Details {
   name: string;
   localUrl: string;
   cloudUrl: string;
-  profileUrl: string;
+  profileUrl?: string;
 }
 
 export default function CommitteeCard({ info }: { info: Details }) {
@@ -16,13 +16,13 @@ export default function CommitteeCard({ info }: { info: Details }) {
     e.target.src = info.localUrl;
   }
 
-  return info?.profileUrl ? (
+  return info.profileUrl ? (
     <CustomLink href={info.profileUrl} target="_blank">
       <div className="aspect-[0.76] w-[200px] bg-black saturate-0 transition duration-200 ease-in hover:bg-primary hover:saturate-100 md:w-[240px] lg:w-[260px]">
         <div className="relative h-full w-full">
           <Image
             alt="card"
-            src={""}
+            src={info.cloudUrl || info.localUrl}
             quality={0}
             width={275}
             height={360}
@@ -47,7 +47,7 @@ export default function CommitteeCard({ info }: { info: Details }) {
       <div className="relative h-full w-full">
         <Image
           alt="card"
-          src={""}
+          src={info.cloudUrl || info.localUrl}
           quality={0}
           width={275}
           height={360}

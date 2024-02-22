@@ -7,7 +7,7 @@ import { CustomSelect, CustomText } from "@/components/custom";
 import { eventList } from "./event-list";
 import Link from "next/link";
 
-const branches = ["ALL", "CSE", "ME", "CE", "EC", "EEE", "BSH"];
+const branches = ["ALL", "CSE", "ME", "CE", "ECE", "EEE", "BSH"];
 const types = ["ALL EVENTS", "COMPETITION", "WORKSHOP", "TECH-TALK", "EXPO"];
 const categories = ["TECHNICAL", "CULTURAL"];
 

@@ -100,7 +100,7 @@ export const eventList: Event[] = [
   {
     name: "Robo Soccer",
     src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-15_at_22.36.07_69120677-min.jpg",
-    branch: "EC",
+    branch: "ECE",
     category: "TECHNICAL",
     type: "COMPETITION",
     url: "https://forms.gle/DSPwqdXuQ7qLyPX99",
@@ -155,7 +155,7 @@ export const eventList: Event[] = [
   {
     name: "iRobotics Workshop",
     src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-20_at_11.49.45_db67373d.jpg",
-    branch: "EC",
+    branch: "ECE",
     category: "TECHNICAL",
     type: "WORKSHOP",
     url: "",
@@ -202,7 +202,7 @@ export const eventList: Event[] = [
   {
     name: "CODE-UNO",
     src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-20_at_22.37.40_3afdb779.jpg",
-    branch: "EC",
+    branch: "ECE",
     category: "TECHNICAL",
     type: "COMPETITION",
     url: "https://surl.li/qsiam",
@@ -247,7 +247,6 @@ export const eventList: Event[] = [
     type: "TECH-TALK",
     url: "",
   },
-
 ];
 
 export const featuredEventList: Event[] = [
@@ -270,7 +269,7 @@ export const featuredEventList: Event[] = [
   {
     name: "Belfort of Wallstreet",
     src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/Untitled-2.png",
-    branch: "ALL",
+    community: "IEDC",
     category: "TECHNICAL",
     type: "TECH-TALK",
     url: "https://bellfort-of-wallstreet.netlify.app/",
