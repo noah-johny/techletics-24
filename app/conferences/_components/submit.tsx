@@ -2,16 +2,14 @@ import { CustomLink, CustomText } from "@/components/custom";
 import Image from "next/image";
 
 interface ConferenceCardProps {
-  localURL: string;
-  cloudURL: string;
+  src: string;
   alt: string;
   label: string;
   link: string;
 }
 
 const ConferenceCard: React.FC<ConferenceCardProps> = ({
-  localURL,
-  cloudURL,
+  src,
   alt,
   label,
   link,
@@ -19,7 +17,7 @@ const ConferenceCard: React.FC<ConferenceCardProps> = ({
   return (
     <CustomLink href={link} className="mb-4">
       <Image
-        src={cloudURL || localURL}
+        src={src}
         alt={alt}
         width={320}
         height={256}
@@ -36,45 +34,38 @@ const ConferenceCard: React.FC<ConferenceCardProps> = ({
 const Submit = () => {
   const conferenceData = [
     {
-      localURL: "/images/conference/CS-conference.jpeg",
-      cloudURL: "",
-      alt: "Computer Science and Engineering",
+      src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/icccd.jpeg",
+      alt: "ICCCD Poster",
       label: "CSE",
       link: "mailto:callforpapers@cce.edu.in",
     },
     {
-      localURL: "/images/conference/EEE-conference.jpeg",
-      cloudURL: "",
-      alt: "Electrical and Electronics Engineering",
+      src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/iccce.jpeg",
+      alt: "ICCCE Poster",
       label: "EEE",
       link: "mailto:iccce2024@cce.edu.in",
     },
     {
-      localURL: "/images/conference/ME-conference.jpeg",
-      cloudURL: "",
-      alt: "Mechanical Engineering",
+      src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/icemme.jpeg",
+      alt: "ICEMME Poster",
       label: "ME",
       link: "mailto:icemme24@cce.edu.in",
     },
     {
-      localURL: "/images/conference/EC-conference.jpeg",
-      cloudURL: "",
-      alt: "Electronics and Communication Engineering",
+      src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/icrcet.jpeg",
+      alt: "ICRCET Poster",
       label: "ECE",
       link: "mailto:icrcet24@cce.edu.in",
     },
     {
-      localURL: "/images/conference/CE-conference.jpeg",
-      cloudURL:
-        "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-15_at_22.38.24_507d5af6-min.jpg",
-      alt: "Civil Engineering",
+      src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/icice.jpg",
+      alt: "ICICE Poster",
       label: "CE",
       link: "mailto:icice2024@cce.edu.in",
     },
     {
-      localURL: "/images/conference/BSH-conference.jpeg",
-      cloudURL: "",
-      alt: "Basic Science & Humanities",
+      src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/icicblh.jpeg",
+      alt: "ICICBLH Poster",
       label: "BSH",
       link: "mailto:conference.bsh@cce.edu.in",
     },
@@ -98,8 +89,7 @@ const Submit = () => {
         {conferenceData.map((conference, index) => (
           <ConferenceCard
             key={index}
-            localURL={conference.localURL}
-            cloudURL={conference.cloudURL}
+            src={conference.src}
             alt={conference.alt}
             label={conference.label}
             link={conference.link}
