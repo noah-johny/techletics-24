@@ -155,7 +155,7 @@ export const eventList: Event[] = [
   {
     name: "iRobotics Workshop",
     src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-20_at_11.49.45_db67373d.jpg",
-    branch: "ECE",
+    branch: "EC",
     category: "TECHNICAL",
     type: "WORKSHOP",
     url: "",
@@ -164,7 +164,8 @@ export const eventList: Event[] = [
     name: "Build your Dreams",
     src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-20_at_11.49.27_012367d9.jpg",
     branch: "CE",
-    category: "EXPO",
+    category: "TECHNICAL",
+    type: "TECH-TALK",
     url: "",
   },
   {
@@ -201,7 +202,7 @@ export const eventList: Event[] = [
   {
     name: "CODE-UNO",
     src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-20_at_22.37.40_3afdb779.jpg",
-    branch: "ECE",
+    branch: "EC",
     category: "TECHNICAL",
     type: "COMPETITION",
     url: "https://surl.li/qsiam",
@@ -238,6 +239,15 @@ export const eventList: Event[] = [
     type: "TECH-TALK",
     url: "https://bellfort-of-wallstreet.netlify.app/",
   },
+  {
+    name: "Conference - ICICE",
+    src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-15_at_22.38.24_507d5af6-min.jpg",
+    branch: "CE",
+    category: "TECHNICAL",
+    type: "TECH-TALK",
+    url: "",
+  },
+
 ];
 
 export const featuredEventList: Event[] = [
