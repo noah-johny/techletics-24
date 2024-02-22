@@ -1,4 +1,3 @@
-import { EventsCard } from "@/components/cards";
 import {
   Carousel,
   CarouselContent,
@@ -37,7 +36,7 @@ const Events = () => {
               className="flex items-center justify-center md:basis-1/2 xl:basis-1/3"
             >
               <div>
-                <EventsCard />
+                {/* <EventsCard /> */}
               </div>
             </CarouselItem>
           ))}
