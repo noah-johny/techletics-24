@@ -20,7 +20,7 @@ export const eventList: Event[] = [
   {
     name: "Idea Pitching",
     src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-18_at_22.29.37_c9735fa3.jpg",
-    branch: "CSE",
+    branch: "ECE",
     category: "TECHNICAL",
     type: "COMPETITION",
     url: "https://forms.gle/QkLi6aC2NWWVwB998",
@@ -124,7 +124,7 @@ export const eventList: Event[] = [
   {
     name: "Project Expo",
     src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-13_at_22.00.36_d0ea6677-min.jpg",
-    branch: "CSE",
+    branch: "EEE",
     category: "TECHNICAL",
     type: "EXPO",
     url: "https://bit.ly/RegProjectExpo",
@@ -238,14 +238,6 @@ export const eventList: Event[] = [
     category: "TECHNICAL",
     type: "TECH-TALK",
     url: "https://bellfort-of-wallstreet.netlify.app/",
-  },
-  {
-    name: "Conference - ICICE",
-    src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-15_at_22.38.24_507d5af6-min.jpg",
-    branch: "CE",
-    category: "TECHNICAL",
-    type: "TECH-TALK",
-    url: "",
   },
 ];
 

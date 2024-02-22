@@ -65,7 +65,8 @@ const Submit = () => {
     },
     {
       localURL: "/images/conference/CE-conference.jpeg",
-      cloudURL: "",
+      cloudURL:
+        "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-15_at_22.38.24_507d5af6-min.jpg",
       alt: "Civil Engineering",
       label: "CE",
       link: "mailto:icice2024@cce.edu.in",
