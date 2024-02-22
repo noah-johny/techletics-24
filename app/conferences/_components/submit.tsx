@@ -71,7 +71,7 @@ const Submit = () => {
       link: "mailto:icice2024@cce.edu.in",
     },
     {
-      localURL: "/images/conference/ME-conference.jpeg",
+      localURL: "/images/conference/BSH-conference.jpeg",
       cloudURL: "",
       alt: "Basic Science & Humanities",
       label: "BSH",
