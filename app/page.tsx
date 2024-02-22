@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function HomePage() {
   return (
     <>
-      <section className="bg-hero-img bg-cover bg-no-repeat ">
+      <section className="w-full bg-hero-img bg-cover bg-no-repeat">
         <SectionLayout navbar float transparent glassMorphism>
           <Navbar />
         </SectionLayout>

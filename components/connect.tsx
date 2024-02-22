@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { SocialIcon } from "./svg/icons";
 import SectionLayout from "@/layouts/section-layout";
-import { CustomLink } from "@/components/custom";
+import { CustomLink, CustomText } from "@/components/custom";
 
 const SocialConnect = () => {
   return (
@@ -82,11 +82,11 @@ const Connect = () => {
     <SectionLayout>
       <div className="flex flex-col justify-center gap-12 bg-tertiary py-6 font-primary text-secondary lg:py-12">
         <div className="flex flex-wrap justify-between gap-2 align-middle sm:gap-4">
-          <p className="flex flex-wrap text-3xl lowercase leading-tight tracking-wide sm:text-4xl md:max-w-[80%] md:text-5xl lg:max-w-[70%] lg:text-6xl xl:max-w-[60%]">
+          <CustomText title>
             Want to&nbsp;
-            <span className="whitespace-nowrap text-primary">KNOW MORE?</span>
+            <CustomText highlightedTitle>KNOW MORE?</CustomText>
             connect with us.
-          </p>
+          </CustomText>
 
           <Image
             src="/icons/connect.svg"

@@ -255,7 +255,7 @@ export const featuredEventList: Event[] = [
     branch: "CSE",
     category: "TECHNICAL",
     type: "COMPETITION",
-    url: "https://hacknite.devfolio.co/",
+    url: "https://hacknite.cce.edu.in/",
   },
   {
     name: "Belfort of Wallstreet",
@@ -265,5 +265,4 @@ export const featuredEventList: Event[] = [
     type: "TECH-TALK",
     url: "https://bellfort-of-wallstreet.netlify.app/",
   },
-
 ];
