@@ -11,7 +11,7 @@ const Legacy = () => {
           <CustomText description>
             Join us for the&nbsp;
             <CustomText highlightedDescription>
-              third edition of Techletics '24
+              third edition of Techletics &apos;24
             </CustomText>
             &nbsp;at Christ College of Engineering.&nbsp;
             <CustomText highlightedDescription>
