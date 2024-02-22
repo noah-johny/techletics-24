@@ -28,7 +28,7 @@ export default function HomePage() {
 
       <TextMarquee bgColor="tertiary" textColor="dark" />
 
-      <SectionLayout explorable full imageContent navigate="/about#gallery">
+      <SectionLayout explorable full imageContent navigate="/about#legacy">
         <Gallery />
       </SectionLayout>
 

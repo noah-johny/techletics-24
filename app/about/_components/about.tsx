@@ -4,7 +4,7 @@ import SectionLayout from "@/layouts/section-layout";
 const About = () => {
   return (
     <SectionLayout full imageContent>
-      <div className="h-full w-full bg-college-img bg-cover  bg-center bg-no-repeat px-4 py-2 sm:px-8 sm:py-4 lg:px-16 lg:py-9">
+      <div className="bg-college-img h-full w-full bg-cover  bg-center bg-no-repeat px-4 py-2 sm:px-8 sm:py-4 lg:px-16 lg:py-9">
         <div className="h-full w-full">
           <div className="flex flex-col items-center justify-center gap-2 pt-8 text-center">
             <CustomText highlightedTitle>
@@ -57,6 +57,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <div id="legacy" className="h-4"></div>
     </SectionLayout>
   );
 };

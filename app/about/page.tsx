@@ -15,9 +15,7 @@ export default function AboutPage() {
 
       <About />
 
-      <section id="gallery">
-        <Legacy />
-      </section>
+      <Legacy />
 
       <Committee />
     </>

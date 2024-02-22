@@ -5,7 +5,10 @@ import Gallery from "./gallery";
 const Legacy = () => {
   return (
     <SectionLayout>
-      <div className="flex flex-col justify-center gap-12 py-6 font-primary text-secondary lg:py-12">
+      <div
+        className="flex flex-col justify-center gap-12 py-6 mt-4 font-primary text-secondary lg:py-12"
+        id="legacy"
+      >
         <CustomText title>Techletics Legacy&nbsp;</CustomText>
         <div className="mb-6 sm:mb-12 lg:mb-0">
           <CustomText description>
