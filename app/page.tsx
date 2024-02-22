@@ -34,14 +34,11 @@ export default function HomePage() {
 
       <section className="w-full">
         <Image
-          src={
-            "https://res.cloudinary.com/techletics/image/upload/v1707888215/images/b2hw0m7pr72xzfyhnmpc.png"
-          }
+          src={"/images/logo-construction.svg"}
           alt="Techletics Logo Construction"
           width={5760}
           height={4018}
           priority
-          className="h-full w-full object-cover"
         />
       </section>
 

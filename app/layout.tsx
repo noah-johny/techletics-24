@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "Tech Fest organized by Christ College of Engineering, Irinjalakuda",
   creator: "Website Team CCE",
   openGraph: {
-    title: "Techletics '24 | Ignite Inspire Illuminate",
+    title: "Techletics '24",
     description:
       "Tech Fest organized by Christ College of Engineering, Irinjalakuda",
     type: "website",
@@ -46,8 +46,18 @@ export default function RootLayout({
           media="(prefers-color-scheme: dark)"
         />
 
-        <meta property="og:image" content={"/images/opengraph-image.png"} />
-        <meta property="twitter:image" content={"/images/twitter-image.png"} />
+        <meta
+          property="og:image"
+          content={
+            "https://dnbca6q7do6n.cloudfront.net/media/techletics24/opengraph-image.png"
+          }
+        />
+        <meta
+          property="twitter:image"
+          content={
+            "https://dnbca6q7do6n.cloudfront.net/media/techletics24/twitter-image.png"
+          }
+        />
         <meta property="og:instagram:app_id" content="techleticscce" />
       </head>
 
@@ -59,7 +69,7 @@ export default function RootLayout({
 
           {children}
 
-          <footer id="contact">
+          <footer id="contact" className="w-full">
             <Connect />
             <SocialConnect />
             <Copyright />

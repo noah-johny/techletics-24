@@ -13,7 +13,7 @@ const SocialConnect = () => {
         <div className="flex flex-col items-center justify-center gap-6 border-r border-transparent px-12 py-6 lg:w-1/2 lg:flex-row lg:border-quarternary lg:p-12">
           <CustomLink href="https://cce.edu.in" target="_blank">
             <Image
-              src="/logos/cce-logo-landscape.png"
+              src="https://dnbca6q7do6n.cloudfront.net/media/techletics24/cce-logo-landscape.png"
               width={248}
               height={64}
               alt="Christ College of Engineering Logo"
@@ -28,7 +28,7 @@ const SocialConnect = () => {
             priority
           />
           <Image
-            src="/logos/advaya-logo.png"
+            src="https://dnbca6q7do6n.cloudfront.net/media/techletics24/advaya-logo_MTHagDV.png"
             width={88}
             height={88}
             alt="Advaya Logo"
@@ -57,13 +57,6 @@ const SocialConnect = () => {
             >
               <SocialIcon logo="linkedin" />
             </CustomLink>
-            {/* <CustomLink
-              href="https://twitter.com/IedcE71858"
-              className="h-16 w-16 rounded-full bg-secondary p-4 hover:bg-primary"
-              target="_blank"
-            >
-              <SocialIcon logo="x" />
-            </CustomLink> */}
           </div>
 
           <Image
