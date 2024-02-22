@@ -11,7 +11,7 @@ const SocialConnect = () => {
       <div className="flex flex-col overflow-clip lg:flex-row">
         {/* Left Section */}
         <div className="flex flex-col items-center justify-center gap-6 border-r border-transparent px-12 py-6 lg:w-1/2 lg:flex-row lg:border-quarternary lg:p-12">
-          <CustomLink href="https://cce.edu.in">
+          <CustomLink href="https://cce.edu.in" target="_blank">
             <Image
               src="/logos/cce-logo-landscape.png"
               width={248}
@@ -46,18 +46,21 @@ const SocialConnect = () => {
             <CustomLink
               href="https://www.instagram.com/techleticscce"
               className="h-16 w-16 rounded-full bg-secondary p-4 hover:bg-primary"
+              target="_blank"
             >
               <SocialIcon logo="instagram" />
             </CustomLink>
             <CustomLink
               href="https://www.linkedin.com/school/christcollegeofengineering/"
               className="h-16 w-16 rounded-full bg-secondary p-4 hover:bg-primary"
+              target="_blank"
             >
               <SocialIcon logo="linkedin" />
             </CustomLink>
             {/* <CustomLink
               href="https://twitter.com/IedcE71858"
               className="h-16 w-16 rounded-full bg-secondary p-4 hover:bg-primary"
+              target="_blank"
             >
               <SocialIcon logo="x" />
             </CustomLink> */}
@@ -112,6 +115,7 @@ const Connect = () => {
               />
               <CustomLink
                 href="https://cce.edu.in/"
+                target="_blank"
                 className="font-secondary text-xl font-semibold hover:text-primary md:text-2xl xl:text-3xl"
               >
                 cce.edu.in

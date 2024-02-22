@@ -10,6 +10,7 @@ export default function AboutPage() {
         <Navbar />
       </SectionLayout>
 
+      <div className="mt-[72px] sm:mt-[88px] xl:mt-24"></div>
       <Title title="about" />
 
       <About />

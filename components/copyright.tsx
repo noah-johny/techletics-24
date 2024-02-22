@@ -13,6 +13,7 @@ const Copyright = () => {
           <span className="whitespace-nowrap">Copyright © 2024&nbsp;</span>
           <CustomLink
             href="https://cce.edu.in"
+            target="_blank"
             className="z-10 whitespace-nowrap text-primary"
           >
             Christ College of Engineering.&nbsp;

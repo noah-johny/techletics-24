@@ -16,7 +16,7 @@ const FeaturedEvents = () => {
       <div className="my-10 flex flex-wrap justify-center">
         {featuredEventList.map((event) => (
           <Link href={event.url} key={event.name} target="_blank">
-            <div className="h-72 w-64 px-6 py-3 transition-all duration-200 ease-in hover:scale-125">
+            <div className="h-80 w-72 px-8 py-6 transition-all duration-200 ease-in hover:scale-125">
               <Image
                 className="h-full w-full object-cover grayscale hover:grayscale-0"
                 src={event.src}
