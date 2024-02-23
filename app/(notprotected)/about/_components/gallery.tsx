@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { images } from "@/app/_components/images";
+import { images } from "@/app/(notprotected)/_components/images";
 
 type ImageBatch = { src: string }[];
 
