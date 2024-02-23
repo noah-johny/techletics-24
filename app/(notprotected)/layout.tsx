@@ -9,7 +9,9 @@ export default function NotProtectedLayout({ children }: { children: any }) {
             <SectionLayout navbar float transparent glassMorphism>
                 <Navbar />
             </SectionLayout>
+
             {children}
+
             <footer id="contact" className="w-full">
                 <Connect />
                 <SocialConnect />
