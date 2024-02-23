@@ -37,7 +37,7 @@ const Submit = () => {
       src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/icccd.jpeg",
       alt: "ICCCD Poster",
       label: "CSE",
-      link: "mailto:callforpapers@cce.edu.in",
+      link: "mailto:icccd2024@cce.edu.in",
     },
     {
       src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/iccce.jpeg",
