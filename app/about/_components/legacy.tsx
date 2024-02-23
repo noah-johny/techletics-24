@@ -5,12 +5,17 @@ import Gallery from "./gallery";
 const Legacy = () => {
   return (
     <SectionLayout>
-      <div className="flex flex-col justify-center gap-12 py-6 font-primary text-secondary lg:py-12">
+      <div
+        className="flex flex-col justify-center gap-12 py-6 mt-4 font-primary text-secondary lg:py-12"
+        id="legacy"
+      >
         <CustomText title>Techletics Legacy&nbsp;</CustomText>
         <div className="mb-6 sm:mb-12 lg:mb-0">
           <CustomText description>
             Join us for the&nbsp;
-            <CustomText highlightedDescription>Techletics Tech Fest</CustomText>
+            <CustomText highlightedDescription>
+              third edition of Techletics &apos;24
+            </CustomText>
             &nbsp;at Christ College of Engineering.&nbsp;
             <CustomText highlightedDescription>
               Experience the latest technology and innovations in various fields
@@ -25,26 +30,28 @@ const Legacy = () => {
               Don&apos;t miss this opportunity to explore and be inspired by the
               ever-evolving world of engineering.&nbsp;
             </CustomText>
-            Join us for the Techletics Tech Fest at Christ College of
-            Engineering.
           </CustomText>
         </div>
         <CustomText description>
-          <CustomText highlightedDescription>Techletics &apos;24</CustomText>
-          &nbsp;is a techno-cultural techfest organized by Christ College of
-          Engineering, Irinjalakuda in 2022.&nbsp;
+          This is a&nbsp;
           <CustomText highlightedDescription>
-            The techfest aims to provide a platform for technical students and
-            develop students and people from all walks of life.&nbsp;
+            3-day long techno-cultural techfest&nbsp;
           </CustomText>
-          It is an opportunity to showcase their skills, learn from industry
-          experts, and network with peers. Participants can expect a wide range
-          of activities including competitions, workshops, and interactive
-          sessions. Techletics &apos;24 is not just about technology, but also
-          about fostering creativity, innovation, and collaboration.&nbsp;
+          organized by Christ College of Engineering, Irinjalakuda from&nbsp;
           <CustomText highlightedDescription>
-            Join us for an unforgettable experience at Techletics &apos;24!
+            28th February to 1st March,&nbsp;
           </CustomText>
+          2024. The techfest aims to provide a
+          <CustomText highlightedDescription>
+            platform for technical students and develop students and
+            people&nbsp;
+          </CustomText>
+          from all walks of life. It is an opportunity to showcase their skills,
+          learn from industry experts, and network with peers. Participants can
+          expect a wide range of activities including competitions, workshops,
+          and interactive sessions. Techletics &apos;24 is not just about
+          technology, but also about fostering creativity, innovation, and
+          collaboration.&nbsp;
         </CustomText>
       </div>
 

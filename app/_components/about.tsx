@@ -21,7 +21,7 @@ const About = () => {
         <div className="min-w-xxl">
           <TechleticsLogo />
         </div>
-        <div className="min-w-64 flex-1 text-justify ">
+        <div className="min-w-64 flex-1 text-justify gap-2 flex flex-col">
           <CustomText description>
             Join us for the&nbsp;
             <CustomText highlightedDescription>third edition</CustomText>

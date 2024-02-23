@@ -16,11 +16,8 @@ const config: Config = {
         "modal-logo": "url('/logos/techletics-metal.svg')",
         "hero-img":
           "url('https://dnbca6q7do6n.cloudfront.net/media/techletics24/hero-img.webp')",
-        "conference-img": "url('/images/conference-img.jpg')",
-        "college-img": "url('/images/college.png')",
-        "mainlogo-img": "url('/images/logo_hero.png')",
-        "techletics-logo-construction":
-          "url('https://res.cloudinary.com/techletics/image/upload/v1707888215/images/b2hw0m7pr72xzfyhnmpc.png')",
+        "college-img":
+          "https://dnbca6q7do6n.cloudfront.net/media/techletics24/college.png",
       },
       colors: {
         primary: "#DFFF1B",

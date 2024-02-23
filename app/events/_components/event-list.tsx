@@ -124,7 +124,7 @@ export const eventList: Event[] = [
   {
     name: "Project Expo",
     src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-13_at_22.00.36_d0ea6677-min.jpg",
-    branch: "CSE",
+    branch: "EEE",
     category: "TECHNICAL",
     type: "EXPO",
     url: "https://bit.ly/RegProjectExpo",
@@ -240,14 +240,6 @@ export const eventList: Event[] = [
     url: "https://bellfort-of-wallstreet.netlify.app/",
   },
   {
-    name: "Conference - ICICE",
-    src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-15_at_22.38.24_507d5af6-min.jpg",
-    branch: "CE",
-    category: "TECHNICAL",
-    type: "TECH-TALK",
-    url: "",
-  },
-  {
     name: "Arduino Workshop",
     src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-22_at_22.46.58_3e747958.jpg",
     branch: "ECE",
@@ -313,15 +305,14 @@ export const featuredEventList: Event[] = [
     branch: "CSE",
     category: "TECHNICAL",
     type: "COMPETITION",
-    url: "https://hacknite.devfolio.co/",
+    url: "https://hacknite.cce.edu.in/",
   },
   {
     name: "Belfort of Wallstreet",
     src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/Untitled-2.png",
-    branch: "ALL",
+    community: "IEDC",
     category: "TECHNICAL",
     type: "TECH-TALK",
     url: "https://bellfort-of-wallstreet.netlify.app/",
   },
-
 ];

@@ -92,8 +92,8 @@ const Events = () => {
                 (activeType === "ALL EVENTS" || event.type === activeType),
             )
             .map((event) => (
-              <Link href={event.url} key={event.name}>
-                <div className="h-72 w-64 p-5 transition-all duration-200 ease-in hover:scale-125">
+              <Link href={event.url} key={event.name} target="_blank">
+                <div className="h-72 w-64 p-6 transition-all duration-200 ease-in hover:scale-125">
                   <Image
                     className="h-full w-full object-contain grayscale hover:grayscale-0"
                     src={event.src}

@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function HomePage() {
   return (
     <>
-      <section className="bg-hero-img bg-cover bg-no-repeat ">
+      <section className="w-full bg-hero-img bg-cover bg-no-repeat">
         <SectionLayout navbar float transparent glassMorphism>
           <Navbar />
         </SectionLayout>
@@ -28,20 +28,17 @@ export default function HomePage() {
 
       <TextMarquee bgColor="tertiary" textColor="dark" />
 
-      <SectionLayout explorable full imageContent navigate="/about#gallery">
+      <SectionLayout explorable full imageContent navigate="/about#legacy">
         <Gallery />
       </SectionLayout>
 
       <section className="w-full">
         <Image
-          src={
-            "https://res.cloudinary.com/techletics/image/upload/v1707888215/images/b2hw0m7pr72xzfyhnmpc.png"
-          }
+          src={"/images/logo-construction.svg"}
           alt="Techletics Logo Construction"
           width={5760}
           height={4018}
           priority
-          className="h-full w-full object-cover"
         />
       </section>
 

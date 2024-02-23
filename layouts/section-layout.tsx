@@ -2,7 +2,6 @@
 
 import { ExploreButton } from "@/components/svg/buttons";
 import clsx from "clsx";
-import Link from "next/link";
 import { ReactNode, useContext } from "react";
 import AnimatedSectionLayout from "./animated-section-layout";
 import { CustomCursorContext } from "@/context/custom-cursor-context";
@@ -44,7 +43,7 @@ const SectionLayout = ({
   return (
     <div
       className={clsx(
-        "w-screen min-w-80 overflow-x-clip border border-x-0 border-t-0 border-quarternary px-6 sm:px-12",
+        "w-full min-w-80 overflow-x-clip border border-x-0 border-t-0 border-quarternary px-6 sm:px-12",
         {
           "fixed left-0 right-0 top-0 z-10": float,
           "bg-tertiary": !transparent,

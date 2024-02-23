@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { SocialIcon } from "./svg/icons";
 import SectionLayout from "@/layouts/section-layout";
-import { CustomLink } from "@/components/custom";
+import { CustomLink, CustomText } from "@/components/custom";
 
 const SocialConnect = () => {
   return (
@@ -11,9 +11,9 @@ const SocialConnect = () => {
       <div className="flex flex-col overflow-clip lg:flex-row">
         {/* Left Section */}
         <div className="flex flex-col items-center justify-center gap-6 border-r border-transparent px-12 py-6 lg:w-1/2 lg:flex-row lg:border-quarternary lg:p-12">
-          <CustomLink href="https://cce.edu.in">
+          <CustomLink href="https://cce.edu.in" target="_blank">
             <Image
-              src="/logos/cce-logo-landscape.png"
+              src="https://dnbca6q7do6n.cloudfront.net/media/techletics24/cce-logo-landscape.png"
               width={248}
               height={64}
               alt="Christ College of Engineering Logo"
@@ -28,7 +28,7 @@ const SocialConnect = () => {
             priority
           />
           <Image
-            src="/logos/advaya-logo.png"
+            src="https://dnbca6q7do6n.cloudfront.net/media/techletics24/advaya-logo_MTHagDV.png"
             width={88}
             height={88}
             alt="Advaya Logo"
@@ -46,21 +46,17 @@ const SocialConnect = () => {
             <CustomLink
               href="https://www.instagram.com/techleticscce"
               className="h-16 w-16 rounded-full bg-secondary p-4 hover:bg-primary"
+              target="_blank"
             >
               <SocialIcon logo="instagram" />
             </CustomLink>
             <CustomLink
               href="https://www.linkedin.com/school/christcollegeofengineering/"
               className="h-16 w-16 rounded-full bg-secondary p-4 hover:bg-primary"
+              target="_blank"
             >
               <SocialIcon logo="linkedin" />
             </CustomLink>
-            {/* <CustomLink
-              href="https://twitter.com/IedcE71858"
-              className="h-16 w-16 rounded-full bg-secondary p-4 hover:bg-primary"
-            >
-              <SocialIcon logo="x" />
-            </CustomLink> */}
           </div>
 
           <Image
@@ -82,11 +78,11 @@ const Connect = () => {
     <SectionLayout>
       <div className="flex flex-col justify-center gap-12 bg-tertiary py-6 font-primary text-secondary lg:py-12">
         <div className="flex flex-wrap justify-between gap-2 align-middle sm:gap-4">
-          <p className="flex flex-wrap text-3xl lowercase leading-tight tracking-wide sm:text-4xl md:max-w-[80%] md:text-5xl lg:max-w-[70%] lg:text-6xl xl:max-w-[60%]">
+          <CustomText title>
             Want to&nbsp;
-            <span className="whitespace-nowrap text-primary">KNOW MORE?</span>
+            <CustomText highlightedTitle>KNOW MORE?</CustomText>
             connect with us.
-          </p>
+          </CustomText>
 
           <Image
             src="/icons/connect.svg"
@@ -112,6 +108,7 @@ const Connect = () => {
               />
               <CustomLink
                 href="https://cce.edu.in/"
+                target="_blank"
                 className="font-secondary text-xl font-semibold hover:text-primary md:text-2xl xl:text-3xl"
               >
                 cce.edu.in

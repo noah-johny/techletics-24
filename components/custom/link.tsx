@@ -10,11 +10,13 @@ interface CustomLinkProps extends LinkProps {
   onMouseEnter?: MouseEventHandler<HTMLAnchorElement>;
   onMouseLeave?: MouseEventHandler<HTMLAnchorElement>;
   className?: string;
+  target?: string;
 }
 
 const CustomLink: React.FC<CustomLinkProps> = ({
   children,
   className,
+  target,
   ...props
 }) => {
   const { setShowCursor } = useContext(CustomCursorContext)!;
@@ -25,6 +27,7 @@ const CustomLink: React.FC<CustomLinkProps> = ({
       onMouseEnter={() => setShowCursor(false)}
       onMouseLeave={() => setShowCursor(true)}
       className={className}
+      target={target}
     >
       {children}
     </Link>

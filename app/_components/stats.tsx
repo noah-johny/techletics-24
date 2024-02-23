@@ -11,7 +11,7 @@ const Stats = () => {
         <div className="flex flex-wrap justify-evenly gap-4">
           <div className="flex min-w-[320px] flex-col px-2 text-center">
             <p className="text-stroke-primary font-secondary text-5xl font-extrabold tracking-wide text-transparent md:text-7xl lg:text-8xl">
-              30+
+              10+
             </p>
             <p className="text-xl lowercase text-secondary md:text-2xl">
               CULTURAL Events
@@ -31,7 +31,7 @@ const Stats = () => {
         <div className="flex flex-wrap justify-evenly gap-4">
           <div className="flex min-w-[320px] flex-col px-2 text-center">
             <p className="text-stroke-primary font-secondary text-5xl font-extrabold tracking-wide md:text-7xl lg:text-8xl">
-              1k+
+              35+
             </p>
             <p className="text-xl lowercase text-secondary md:text-2xl">
               COLLEGES
@@ -40,7 +40,7 @@ const Stats = () => {
 
           <div className="flex min-w-[320px] flex-col px-2 text-center">
             <p className="text-stroke-primary font-secondary text-5xl font-extrabold tracking-wide md:text-7xl lg:text-8xl">
-              100k+
+              500k+
             </p>
             <p className="text-xl lowercase text-secondary md:text-2xl">
               PRIZE POOL
@@ -49,7 +49,7 @@ const Stats = () => {
 
           <div className="flex min-w-[320px] flex-col px-2 text-center">
             <p className="text-stroke-primary font-secondary text-5xl font-extrabold tracking-wide md:text-7xl lg:text-8xl">
-              25k+
+              10k+
             </p>
             <p className="text-xl lowercase text-secondary md:text-2xl">
               STUDENTS
@@ -69,7 +69,7 @@ const Stats = () => {
 
           <div className="flex min-w-[320px] flex-col px-2 text-center">
             <p className="text-stroke-primary font-secondary text-5xl font-extrabold tracking-wide text-transparent md:text-7xl lg:text-8xl">
-              50+
+              20+
             </p>
             <p className="text-xl lowercase text-secondary md:text-2xl">
               WORKSHOPS

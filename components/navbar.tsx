@@ -72,6 +72,7 @@ const Navbar = () => {
               <p>/</p>
               <CustomLink
                 href="https://www.google.com/maps/search/Christ+College+of+Engineering/@10.3577808,76.2125602,21z?entry=ttu"
+                target="_blank"
                 onMouseEnter={() => setShowCursor(false)}
                 onMouseLeave={() => setShowCursor(true)}
                 className={clsx("cursor-pointer hover:text-primary")}
@@ -81,6 +82,7 @@ const Navbar = () => {
               <p>/</p>
               <CustomLink
                 href="https://www.knowafest.com/explore/events/2019/01/3101-techletics-2019-christ-college-engineering-technical-festival-irinjalakuda"
+                target="_blank"
                 onMouseEnter={() => setShowCursor(false)}
                 onMouseLeave={() => setShowCursor(true)}
                 className={clsx("cursor-pointer hover:text-primary")}
@@ -192,6 +194,7 @@ const Navbar = () => {
             </CustomLink>
             <CustomLink
               href="https://www.google.com/maps/search/Christ+College+of+Engineering/@10.3577808,76.2125602,21z?entry=ttu"
+              target="_blank"
               onMouseEnter={() => setShowCursor(false)}
               onMouseLeave={() => setShowCursor(true)}
               className="group w-fit"
@@ -203,6 +206,7 @@ const Navbar = () => {
             </CustomLink>
             <CustomLink
               href="https://www.knowafest.com/explore/events/2019/01/3101-techletics-2019-christ-college-engineering-technical-festival-irinjalakuda"
+              target="_blank"
               onMouseEnter={() => setShowCursor(false)}
               onMouseLeave={() => setShowCursor(true)}
               className="group w-fit"
