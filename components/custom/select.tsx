@@ -10,12 +10,16 @@ interface CustomSelectProps {
   onMouseLeave?: MouseEventHandler<HTMLSelectElement>;
   onChange?: ChangeEventHandler<HTMLSelectElement>;
   className?: string;
+  id?: string;
+  name?: string;
 }
 
 const CustomSelect: React.FC<CustomSelectProps> = ({
   children,
   className,
   onChange,
+  id,
+  name,
   ...props
 }) => {
   const { setShowCursor } = useContext(CustomCursorContext)!;
@@ -26,7 +30,9 @@ const CustomSelect: React.FC<CustomSelectProps> = ({
       onMouseEnter={() => setShowCursor(false)}
       onMouseLeave={() => setShowCursor(true)}
       onChange={onChange}
-      className={className}
+      className={className + " cursor-pointer"}
+      id={id}
+      name={name}
     >
       {children}
     </select>
