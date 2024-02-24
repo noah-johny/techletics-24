@@ -2,21 +2,18 @@
 
 import { ChangeEventHandler, useContext } from "react";
 import { CustomCursorContext } from "@/context/custom-cursor-context";
-import { MouseEventHandler, ReactNode } from "react";
+import { MouseEventHandler, ReactNode, SelectHTMLAttributes } from "react";
 
-interface CustomSelectProps {
+interface CustomSelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
   children: ReactNode;
   onMouseEnter?: MouseEventHandler<HTMLSelectElement>;
   onMouseLeave?: MouseEventHandler<HTMLSelectElement>;
-  onChange?: ChangeEventHandler<HTMLSelectElement>;
-  className?: string;
-  id?: string;
-  name?: string;
 }
 
 const CustomSelect: React.FC<CustomSelectProps> = ({
   children,
   className,
+  value,
   onChange,
   id,
   name,
