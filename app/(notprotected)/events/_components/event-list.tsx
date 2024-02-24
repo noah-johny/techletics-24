@@ -99,7 +99,7 @@ export const eventList: Event[] = [
   },
   {
     name: "Robo Soccer",
-    src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-15_at_22.36.07_69120677-min.jpg",
+    src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/ROBO_SOCCER_1.1_2_hbKs789.png",
     branch: "ECE",
     category: "TECHNICAL",
     type: "COMPETITION",
@@ -286,6 +286,38 @@ export const eventList: Event[] = [
     category: "TECHNICAL",
     type: "COMPETITION",
     url: "https://forms.gle/EDtqzGPUKwQxZkCr6",
+  },
+  {
+    name: "EV Workshop",
+    src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-24_at_07.40.18_5d6fa38f.jpg",
+    branch: "ME",
+    category: "TECHNICAL",
+    type: "WORKSHOP",
+    url: "https://forms.gle/AAzGTr6bnLsDRjKN7",
+  },
+  {
+    name: "Aerion",
+    src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-24_at_07.40.23_4bc65c78.jpg",
+    branch: "ME",
+    category: "TECHNICAL",
+    type: "COMPETITION",
+    url: "https://forms.gle/woijUJEJPyPh5bPj6",
+  },
+  {
+    name: "Poster making",
+    src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-24_at_07.40.43_ce6ad284.jpg",
+    branch: "CE",
+    category: "TECHNICAL",
+    type: "COMPETITION",
+    url: "https://forms.gle/6A5ZvC5zidhENH5P7",
+  },
+  {
+    name: "Top Dog Valorant",
+    src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-24_at_07.41.03_6660e6ee.jpg",
+    branch: "ME",
+    category: "TECHNICAL",
+    type: "COMPETITION",
+    url: "https://forms.gle/wo97B5WswuDpAwaa7",
   },
 
 ];
