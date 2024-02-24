@@ -99,7 +99,7 @@ export const eventList: Event[] = [
   },
   {
     name: "Robo Soccer",
-    src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/WhatsApp_Image_2024-02-15_at_22.36.07_69120677-min.jpg",
+    src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/ROBO_SOCCER_1.1_2_hbKs789.png",
     branch: "ECE",
     category: "TECHNICAL",
     type: "COMPETITION",
