@@ -66,14 +66,7 @@ export default function RootLayout({
       >
         <CustomCursorProvider>
           <CustomCursor />
-
           {children}
-
-          <footer id="contact" className="w-full">
-            <Connect />
-            <SocialConnect />
-            <Copyright />
-          </footer>
         </CustomCursorProvider>
       </body>
     </html>

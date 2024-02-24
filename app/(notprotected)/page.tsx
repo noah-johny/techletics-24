@@ -1,16 +1,12 @@
-import { About, Gallery, Hero, Stats } from "@/app/_components";
+import { About, Gallery, Hero, Stats } from "./_components";
 import TextMarquee from "@/components/marquee";
 import SectionLayout from "@/layouts/section-layout";
-import Navbar from "@/components/navbar";
 import Image from "next/image";
 
 export default function HomePage() {
   return (
     <>
       <section className="w-full bg-hero-img bg-cover bg-no-repeat">
-        <SectionLayout navbar float transparent glassMorphism>
-          <Navbar />
-        </SectionLayout>
         <SectionLayout full transparent hero>
           <Hero />
         </SectionLayout>
