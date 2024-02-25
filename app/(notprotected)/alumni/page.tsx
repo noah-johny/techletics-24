@@ -23,7 +23,7 @@ export default function AlumniPage() {
     formData.append("file", file as Blob);
     formData.append("passout_year", passout_year);
     console.log(formData)
-    const response: any = await fetch("http://172.17.102.141:3000/alumni", {
+    const response: any = await fetch("https://alumniregistration-production.up.railway.app/alumni", {
       method: "POST",
       body: formData
       // Handle form submission
