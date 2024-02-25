@@ -12,9 +12,11 @@ export default function AlumniPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [passout_year, setPassoutYear] = useState("");
+  const [passout_year, setPassoutYear] = useState("2019");
   const [file, setFile] = useState<Blob>();
+  const [displayButton, setDisplayButton] = useState(false)
   async function handleSubmit(e: any) {
+    setDisplayButton(true)
     e.preventDefault();
     const formData = new FormData();
     formData.append("name", name);
@@ -184,6 +186,7 @@ export default function AlumniPage() {
               Reset
             </CustomButton>
             <CustomButton
+              disabled={displayButton}
               type="submit"
               className="text-md rounded-md bg-primary px-4 py-2 font-semibold text-tertiary sm:px-6 sm:text-lg"
             >
