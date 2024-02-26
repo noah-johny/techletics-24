@@ -34,7 +34,7 @@ const ConferenceCard: React.FC<ConferenceCardProps> = ({
 const Submit = () => {
   const conferenceData = [
     {
-      src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/icccd.jpeg",
+      src: "https://dnbca6q7do6n.cloudfront.net/media/techletics24/iccd.jpg",
       alt: "ICCCD Poster",
       label: "CSE",
       link: "mailto:icccd2024@cce.edu.in",
