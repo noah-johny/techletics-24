@@ -2,6 +2,7 @@ import { About, Gallery, Hero, Stats } from "./_components";
 import TextMarquee from "@/components/marquee";
 import SectionLayout from "@/layouts/section-layout";
 import Image from "next/image";
+import Partner from "./_components/partner";
 
 export default function HomePage() {
   return (
@@ -39,6 +40,9 @@ export default function HomePage() {
       </section>
 
       <TextMarquee type="secondary" />
+      <SectionLayout>
+        <Partner />
+      </SectionLayout>
     </>
   );
 }
