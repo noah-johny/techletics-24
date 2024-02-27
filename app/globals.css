@@ -60,4 +60,49 @@ body {
   .text-stroke-secondary {
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
   }
+
+  .svg1 {
+    display: block;
+  }
+  
+  .path1 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+  }
+  
+  .path1.circle {
+    -webkit-animation: dash .9s ease-in-out;
+    animation: dash .9s ease-in-out;
+  }
+  
+  .path1.line {
+    stroke-dashoffset: 1000;
+    -webkit-animation: dash .9s .35s ease-in-out forwards;
+    animation: dash .9s .35s ease-in-out forwards;
+  }
+  
+  .path1.check {
+    stroke-dashoffset: -100;
+    -webkit-animation: dash-check .9s .35s ease-in-out forwards;
+    animation: dash-check .9s .35s ease-in-out forwards;
+  }
+  
+  @keyframes dash {
+    0% {
+      stroke-dashoffset: 1000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes dash-check {
+    0% {
+      stroke-dashoffset: -100;
+    }
+    100% {
+      stroke-dashoffset: 900;
+    }
+  }
+  
 }
