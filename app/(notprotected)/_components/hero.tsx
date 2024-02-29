@@ -77,10 +77,9 @@ const Hero = () => {
           <p className="text-center font-primary text-4xl lowercase">🌞</p>
         </div>
       </div>
-
-      {/*
+ 
       {/* Countdown */}
-      <section className="relative mt-12 hidden w-[632px] items-center justify-center font-secondary text-secondary sm:flex sm:scale-75 lg:scale-100">
+      { difference > 0 && <section className="relative mt-12 hidden w-[632px] items-center justify-center font-secondary text-secondary sm:flex sm:scale-75 lg:scale-100">
         {/* Timer */}
         <div className="absolute left-10 flex w-fit gap-4">
           <div className="flex w-fit flex-col -space-y-1 text-center">
@@ -117,10 +116,10 @@ const Hero = () => {
         <div className="absolute">
           <CountdownWrapper />
         </div>
-      </section>
+      </section>}
 
       {/* Countdown */}
-      <section className="relative -mt-28 flex h-[496px] w-[275px] scale-75 items-center justify-center font-secondary text-secondary sm:hidden">
+      {difference > 0 && <section className="relative -mt-28 flex h-[496px] w-[275px] scale-75 items-center justify-center font-secondary text-secondary sm:hidden">
         {/* Timer */}
         <div className="absolute left-11 top-14 flex w-fit flex-col gap-4">
           <div className="flex gap-4">
@@ -161,7 +160,7 @@ const Hero = () => {
         <div className="absolute">
           <CountdownWrapper size="small" />
         </div>
-      </section> */}
+      </section>}
     </div>
   );
 };
