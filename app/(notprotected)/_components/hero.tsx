@@ -78,6 +78,7 @@ const Hero = () => {
         </div>
       </div>
 
+      {/*
       {/* Countdown */}
       <section className="relative mt-12 hidden w-[632px] items-center justify-center font-secondary text-secondary sm:flex sm:scale-75 lg:scale-100">
         {/* Timer */}
@@ -160,7 +161,7 @@ const Hero = () => {
         <div className="absolute">
           <CountdownWrapper size="small" />
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
